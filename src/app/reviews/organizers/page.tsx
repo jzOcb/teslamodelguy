@@ -25,7 +25,6 @@ const products = [
     description:
       "Simple, high-impact upgrade for center console organization with better access to daily carry items.",
     amazonSearch: "Tesla+Model+Y+Juniper+center+console+organizer",
-    gradient: "from-zinc-800 via-emerald-800 to-teal-700",
   },
   {
     rank: 2,
@@ -37,7 +36,6 @@ const products = [
     description:
       "Keeps groceries and tools from sliding around in the large Model Y trunk.",
     amazonSearch: "Tesla+Model+Y+trunk+organizer+collapsible",
-    gradient: "from-zinc-800 via-cyan-800 to-blue-700",
   },
 ];
 
@@ -56,7 +54,7 @@ export default function OrganizersPage() {
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
-              <CardVisual emoji="📦" label={p.brand} gradient={p.gradient} />
+              <CardVisual emoji="📦" label={p.brand} />
               <div>
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>

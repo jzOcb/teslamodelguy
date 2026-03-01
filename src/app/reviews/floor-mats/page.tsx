@@ -26,7 +26,6 @@ const products = [
     description:
       "The most recommended floor mat in the Tesla community. Three-layer construction with a patented fiber backing that grips without damaging carpet, raised edges that contain every spill, and a premium OEM look.",
     amazonSearch: "3D+MAXpider+Kagu+Tesla+Model+Y+Juniper+2026",
-    gradient: "from-zinc-800 via-cyan-800 to-blue-700",
   },
   {
     rank: 2,
@@ -38,7 +37,6 @@ const products = [
     description:
       "Laser-measured for precise fit and excellent spill containment. Great choice for heavy snow and muddy climates.",
     amazonSearch: "WeatherTech+Tesla+Model+Y+Juniper+floor+mat",
-    gradient: "from-zinc-800 via-slate-700 to-zinc-600",
   },
   {
     rank: 3,
@@ -50,7 +48,6 @@ const products = [
     description:
       "Around 30% cheaper than MAXpider with solid coverage and strong anti-slip hold. Great value option.",
     amazonSearch: "Tesmanian+Tesla+Model+Y+floor+mats",
-    gradient: "from-zinc-800 via-emerald-800 to-teal-700",
   },
   {
     rank: 4,
@@ -62,7 +59,6 @@ const products = [
     description:
       "Highest sidewall coverage in this category, ideal for owners in harsh winter climates.",
     amazonSearch: "Tuxmat+Tesla+Model+Y+floor+mats",
-    gradient: "from-zinc-800 via-purple-800 to-indigo-700",
   },
 ];
 
@@ -76,7 +72,7 @@ export default function FloorMatsPage() {
       </div>
       <h1 className="text-4xl md:text-5xl font-black mb-3 text-white tracking-tight">Best Tesla Floor Mats</h1>
       <p className="text-base md:text-lg text-zinc-200 mb-8 leading-relaxed">
-        Compatible with 2025–2026 Model Y Juniper. Make sure your mats explicitly list "Juniper" support.
+        Compatible with 2025–2026 Model Y Juniper. Make sure your mats explicitly list &quot;Juniper&quot; support.
       </p>
 
       <Link
@@ -90,7 +86,7 @@ export default function FloorMatsPage() {
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
-              <CardVisual emoji="🏗️" label={p.brand} gradient={p.gradient} />
+              <CardVisual emoji="🏗️" label={p.brand} />
               <div>
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>

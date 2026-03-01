@@ -39,7 +39,6 @@ export default function JuniperVsOldPage() {
         emoji="⚖️"
         title="Juniper vs Previous Model Y"
         subtitle="A side-by-side breakdown of design, comfort, features, and ownership impact."
-        gradient="from-zinc-800 via-purple-800 to-indigo-700"
       />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>

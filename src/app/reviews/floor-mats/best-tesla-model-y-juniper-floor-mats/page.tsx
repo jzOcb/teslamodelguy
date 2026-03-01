@@ -22,7 +22,6 @@ export default function FloorMatsPage() {
         emoji="🏗️"
         title="Floor Mat Deep Dive"
         subtitle="Real-world comparison of fit, coverage, and value for Model Y Juniper owners."
-        gradient="from-zinc-800 via-cyan-800 to-blue-700"
       />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">REVIEWS / FLOOR MATS</p>

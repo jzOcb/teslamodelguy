@@ -132,7 +132,6 @@ export default function CeramicTintGuidePage() {
         emoji="🌤️"
         title="Ceramic Tint Cost Guide"
         subtitle="Pricing, film types, and legal basics for Model Y owners by use case."
-        gradient="from-zinc-800 via-amber-700 to-orange-700"
       />
 
       <header className="mb-10">

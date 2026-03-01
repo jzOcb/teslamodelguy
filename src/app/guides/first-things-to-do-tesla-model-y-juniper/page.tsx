@@ -67,7 +67,6 @@ export default function FirstThingsPage() {
         emoji="🚀"
         title="First Week Setup Plan"
         subtitle="Seven practical actions to protect your car and avoid common new-owner mistakes."
-        gradient="from-zinc-800 via-sky-800 to-cyan-700"
       />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>

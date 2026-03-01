@@ -195,7 +195,7 @@ export default function BestAccessoriesPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-16">
       <StructuredData data={[articleJsonLd, breadcrumbJsonLd]} />
-      <GradientHero emoji="🏆" title="10 Must-Have Juniper Accessories" subtitle="A ranked starter kit to protect your Tesla, improve comfort, and avoid wasted spend." gradient="from-zinc-800 via-cyan-800 to-blue-700" />
+      <GradientHero emoji="🏆" title="10 Must-Have Juniper Accessories" subtitle="A ranked starter kit to protect your Tesla, improve comfort, and avoid wasted spend." />
 
       {/* Header */}
       <header className="mb-12">

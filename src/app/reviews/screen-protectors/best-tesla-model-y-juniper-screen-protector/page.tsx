@@ -22,7 +22,6 @@ export default function ScreenProtectorPage() {
         emoji="🛡️"
         title="Screen Protector Showdown"
         subtitle="Matte vs clear and which protector fits the 15.4-inch Juniper display best."
-        gradient="from-zinc-800 via-indigo-800 to-blue-700"
       />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">REVIEWS / SCREEN PROTECTORS</p>

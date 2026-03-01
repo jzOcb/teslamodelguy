@@ -78,7 +78,6 @@ export default function DeliveryChecklistPage() {
         emoji="✅"
         title="Delivery Day Checklist"
         subtitle="Use this inspection flow before accepting your Tesla delivery."
-        gradient="from-zinc-800 via-emerald-800 to-teal-700"
       />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>

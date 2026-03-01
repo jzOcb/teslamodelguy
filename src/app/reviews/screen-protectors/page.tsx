@@ -24,7 +24,6 @@ const products = [
     price: "$30–40",
     description: "Foolproof alignment tray, strong 9H protection, and great clarity.",
     amazonSearch: "Spigen+EZ+Fit+Tesla+Model+Y+Juniper+screen+protector",
-    gradient: "from-zinc-800 via-indigo-800 to-blue-700",
   },
   {
     rank: 2,
@@ -35,7 +34,6 @@ const products = [
     price: "$40–50",
     description: "Top-tier install tray and premium glass quality.",
     amazonSearch: "dbrand+Prism+Tesla+Model+Y+Juniper",
-    gradient: "from-zinc-800 via-purple-800 to-indigo-700",
   },
   {
     rank: 3,
@@ -46,7 +44,6 @@ const products = [
     price: "$15–25",
     description: "Strong value if you can handle manual alignment during install.",
     amazonSearch: "TPARTS+Tesla+Model+Y+Juniper+screen+protector",
-    gradient: "from-zinc-800 via-emerald-800 to-teal-700",
   },
   {
     rank: 4,
@@ -57,7 +54,6 @@ const products = [
     price: "$20–35",
     description: "Excellent reflection control for sunny driving conditions.",
     amazonSearch: "Tesery+Tesla+Model+Y+screen+protector+matte",
-    gradient: "from-zinc-800 via-amber-700 to-orange-700",
   },
 ];
 
@@ -86,7 +82,7 @@ export default function ScreenProtectorsPage() {
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
-              <CardVisual emoji="🛡️" label={p.brand} gradient={p.gradient} />
+              <CardVisual emoji="🛡️" label={p.brand} />
               <div>
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
