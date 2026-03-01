@@ -14,5 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guides/first-things-to-do-tesla-model-y-juniper`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/guides/tesla-model-y-juniper-delivery-checklist`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/guides/tesla-model-y-juniper-vs-old-differences`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/guides/tesla-model-y-ceramic-tint-cost-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 }

@@ -25,6 +25,12 @@ const guides = [
     desc: "Complete comparison — what changed, what improved, is it worth upgrading?",
     tag: null,
   },
+  {
+    title: "Best Ceramic Tint for Tesla Model Y — Complete Cost Guide",
+    slug: "/guides/tesla-model-y-ceramic-tint-cost-guide",
+    desc: "Ceramic vs carbon vs dyed, cost breakdown, legal limits by state, top brands, and DIY vs pro install.",
+    tag: "POPULAR",
+  },
 ];
 
 export default function GuidesPage() {
