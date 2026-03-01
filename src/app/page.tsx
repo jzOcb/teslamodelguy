@@ -20,7 +20,7 @@ export default function Home() {
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Real reviews from an actual owner. No sponsored BS — just honest recommendations
-            for the best Tesla accessories — starting with the Model Y Juniper.
+            for the best Tesla accessories. No fluff, no sponsored BS — just honest reviews from a real owner.
           </p>
           <div className="flex gap-4 justify-center">
             <Link
