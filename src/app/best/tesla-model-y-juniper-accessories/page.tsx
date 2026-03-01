@@ -264,7 +264,7 @@ export default function BestAccessoriesPage() {
                 <div className="flex items-center gap-4">
                   <span className="font-semibold text-white">{a.price}</span>
                   <a
-                    href={a.asin ? `https://www.amazon.com/dp/${a.asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${a.amazonSearch}&tag=teslamodelguy-20`}
+                    href={(a as any).asin ? `https://www.amazon.com/dp/${(a as any).asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${a.amazonSearch}&tag=teslamodelguy-20`}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition"
