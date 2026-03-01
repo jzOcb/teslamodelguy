@@ -20,7 +20,7 @@ const categories = [
     name: "Floor Mats",
     slug: "floor-mats",
     desc: "All-weather protection for your Tesla",
-    image: "/images/tesla-hero-desktop.jpg",
+    image: "/images/floor-mats-card.jpg",
   },
   {
     name: "Center Console",
@@ -32,13 +32,13 @@ const categories = [
     name: "Screen Protectors",
     slug: "screen-protectors",
     desc: "Protect your 15.4\" touchscreen",
-    image: "/images/tesla-hero-global.jpg",
+    image: "/images/screen-protector-card.jpg",
   },
   {
     name: "Sunshades",
     slug: "sunshades",
     desc: "Keep your cabin cool in summer",
-    image: "/images/juniper-hero.jpg",
+    image: "/images/tesla-model-y-snow.jpg",
   },
   {
     name: "Charging & Tech",
@@ -50,7 +50,7 @@ const categories = [
     name: "Exterior",
     slug: "exterior",
     desc: "Mud flaps, PPF, and wheel covers",
-    image: "/images/tesla-hero-global.jpg",
+    image: "/images/tesla-model-y-hero.jpg",
   },
 ];
 
