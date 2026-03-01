@@ -39,6 +39,7 @@ const products = [
     description:
       "Laser-measured for precise fit and excellent spill containment. Great choice for heavy snow and muddy climates.",
     amazonSearch: "WeatherTech+Tesla+Model+Y+Juniper+floor+mat",
+    asin: "B08XN3DFYM",
   },
   {
     rank: 3,
@@ -51,6 +52,7 @@ const products = [
     description:
       "Around 30% cheaper than MAXpider with solid coverage and strong anti-slip hold. Great value option.",
     amazonSearch: "Tesmanian+Tesla+Model+Y+floor+mats",
+    asin: "B0F2FFNT3X",
   },
   {
     rank: 4,
@@ -63,6 +65,7 @@ const products = [
     description:
       "Highest sidewall coverage in this category, ideal for owners in harsh winter climates.",
     amazonSearch: "Tuxmat+Tesla+Model+Y+floor+mats",
+    asin: "B096MW5VMS",
   },
 ];
 
@@ -102,7 +105,7 @@ export default function FloorMatsPage() {
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
                 <div className="flex items-center gap-3 flex-wrap">
                   <a
-                    href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
+                    href={p.asin ? `https://www.amazon.com/dp/${p.asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200"

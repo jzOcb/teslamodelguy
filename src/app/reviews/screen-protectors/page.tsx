@@ -46,6 +46,7 @@ const products = [
     price: "$15–25",
     description: "Strong value if you can handle manual alignment during install.",
     amazonSearch: "TPARTS+Tesla+Model+Y+Juniper+screen+protector",
+    asin: "B0CPDLRCXX",
   },
   {
     rank: 4,
@@ -57,6 +58,7 @@ const products = [
     price: "$20–35",
     description: "Excellent reflection control for sunny driving conditions.",
     amazonSearch: "Tesery+Tesla+Model+Y+screen+protector+matte",
+    asin: "B0CPDLRCXX",
   },
 ];
 
@@ -97,7 +99,7 @@ export default function ScreenProtectorsPage() {
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
                 <div className="flex items-center gap-3 flex-wrap">
                   <a
-                    href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
+                    href={p.asin ? `https://www.amazon.com/dp/${p.asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200"
