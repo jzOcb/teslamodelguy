@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     description:
       "Real owner reviews for Tesla accessories.",
   },
+  verification: {
+    google: "3zONnzR5Hiz4ObC4CvEi1n1CSaHlb20pjfOmqbqo5Eg",
+  },
   robots: {
     index: true,
     follow: true,
