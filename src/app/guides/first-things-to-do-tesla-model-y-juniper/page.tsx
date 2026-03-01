@@ -115,7 +115,7 @@ export default function FirstThingsPage() {
               <p className="font-medium text-white">Screen Protector (Spigen EZ Fit)</p>
               <p className="text-base text-zinc-300">15.4&quot; front + 8&quot; rear</p>
             </div>
-            <a href="https://www.amazon.com/s?k=Spigen+EZ+Fit+Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$35 on Amazon →</a>
+            <a href="https://www.amazon.com/dp/B0CHV4WP2C?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$35 on Amazon →</a>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
