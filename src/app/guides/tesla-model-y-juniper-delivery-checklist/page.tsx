@@ -1,58 +1,55 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "Tesla Model Y Juniper Delivery Checklist (2025-2026) — Don't Miss These",
+  title: "Tesla Delivery Checklist 2025-2026 — Don't Miss These",
   description:
-    "The complete delivery inspection checklist for your Tesla Model Y Juniper. Panel gaps, paint, software, interior — everything to check before you sign. Printable guide.",
+    "The complete Tesla delivery checklist for Model 3, Model Y, Model S, Model X, and Cybertruck. Inspect exterior, interior, software, and paperwork before you accept delivery.",
   keywords: [
+    "tesla delivery checklist",
+    "tesla delivery checklist 2025",
+    "tesla model 3 delivery checklist",
     "tesla model y delivery checklist",
-    "model y juniper delivery inspection",
-    "tesla delivery day what to check",
-    "model y panel gaps check",
-    "tesla model y juniper quality issues",
+    "tesla model s delivery checklist",
+    "tesla model x delivery checklist",
+    "cybertruck delivery checklist",
+    "tesla delivery day inspection",
   ],
 };
 
 const exteriorChecks = [
-  { item: "Panel gaps even on both sides", detail: "Compare left vs right. Run your finger along door edges." },
-  { item: "Paint — no scratches, chips, or swirl marks", detail: "Use phone flashlight. Check hood, bumpers, door edges, roof rails." },
-  { item: "Frunk & trunk sit flush", detail: "No gaps or misalignment. Should not pool water." },
-  { item: "All glass — no chips, cracks, distortions", detail: "Windshield, roof, side windows. Look for stress lines." },
-  { item: "Headlights & taillights aligned", detail: "No condensation inside. Even gaps to body panels." },
-  { item: "Wheels — no curb rash or scratches", detail: "Check all 4 rims closely. Verify valve stems present." },
-  { item: "Charge port door opens/closes smoothly", detail: "Sits flush when closed. Latches properly." },
-  { item: "All doors open & close smoothly", detail: "No sticking, excessive force, or weird noises." },
-  { item: "Rubber seals intact on all doors", detail: "No peeling, gaps, or loose trim." },
-  { item: "Camera housings tight (not loose)", detail: "Gently wiggle front, rear, and side repeater cameras." },
-  { item: "Mud flaps (if applicable)", detail: "Check they're properly attached with no missing clips." },
+  { item: "Panel gaps even and consistent", detail: "Compare left vs right and front vs rear. Variance should be small and visually consistent." },
+  { item: "Paint quality in direct and angled light", detail: "Look for chips, scratches, sanding haze, or color mismatch on bumpers and doors." },
+  { item: "Glass inspection", detail: "Check windshield, roof glass, and side glass for chips, cracks, and optical distortion." },
+  { item: "Doors, frunk, trunk, and tonneau operation", detail: "All should open/close smoothly without rubbing, binding, or excessive force." },
+  { item: "Lighting alignment and moisture check", detail: "Headlights and taillights should sit straight and have no trapped condensation." },
+  { item: "Wheel and tire condition", detail: "Inspect every wheel face and sidewall. Verify no curb rash, cuts, or shipping damage." },
+  { item: "Charge port fitment", detail: "Door should open/close reliably and sit flush when closed." },
+  { item: "Weather seals and trim", detail: "Check all door seals, window trim, and wheel-arch trim for gaps, tears, or loose clips." },
+  { item: "Camera and sensor placement", detail: "Confirm housings are secure and lenses are clean across all camera locations." },
 ];
 
 const interiorChecks = [
-  { item: "Touchscreen — no dead pixels or scratches", detail: "15.4\" front + 8\" rear. Swipe through all menus." },
-  { item: "All seats adjust properly", detail: "Forward, backward, up, down. Test lumbar if available." },
-  { item: "Seatbelts fully extend & retract", detail: "Test all 5 seatbelts." },
-  { item: "Rear seats fold & lock back", detail: "Test both button and manual. Should click firmly." },
-  { item: "No rattles — press on trim pieces", detail: "Gently press dashboard, door cards, center console." },
-  { item: "All USB-C ports working", detail: "Front console and rear ports. Plug in a device to test." },
-  { item: "Wireless charging pad works", detail: "Place your phone on both pads." },
-  { item: "Heated & ventilated seats work", detail: "Test all levels for front seats. Check rear heated seats." },
-  { item: "AC & heat functioning", detail: "Test hot, cold, different fan speeds. Listen for unusual noises." },
-  { item: "Ambient lighting works evenly", detail: "No flickering or dead sections." },
-  { item: "Glovebox opens smoothly", detail: "Button release should be responsive." },
+  { item: "Main display quality and responsiveness", detail: "No dead pixels, discoloration, or touch dead zones. Navigate through core menus." },
+  { item: "Seat adjustment and seatbelt function", detail: "Test all powered seat movements and verify each seatbelt fully extends/retracts." },
+  { item: "Trim and panel fit", detail: "Check dash, door cards, center console, and headliner for rattles or loose alignment." },
+  { item: "USB ports and wireless charging", detail: "Test with your own cable/device to confirm charging on every port/pad." },
+  { item: "HVAC performance", detail: "Run AC and heat at multiple fan speeds; listen for unusual noise or vibration." },
+  { item: "Window, mirror, and steering controls", detail: "Verify all switches work and mirrors fold/adjust correctly." },
+  { item: "Rear seating functions", detail: "Check fold/recline/latch behavior where applicable by model." },
+  { item: "Model-specific features", detail: "Juniper-specific note: check rear display responsiveness and ambient light continuity." },
 ];
 
 const functionalChecks = [
-  { item: "VIN matches your paperwork", detail: "Check windshield VIN against order confirmation." },
-  { item: "Tesla app connects via Bluetooth", detail: "Phone key should unlock/lock the car." },
-  { item: "Software version is current", detail: "Go to Controls > Software. Set updates to Advanced." },
-  { item: "All cameras display clearly", detail: "Check backup camera, side views, and forward camera." },
-  { item: "Wipers & washer fluid work", detail: "Test spray and all wiper speeds." },
-  { item: "All exterior lights function", detail: "Headlights, fog lights, brake lights, turn signals, reverse." },
-  { item: "Tire pressure ~42 PSI all around", detail: "Check in the Tesla app or on-screen tire display." },
-  { item: "PIN to Drive set up", detail: "Controls > Safety > PIN to Drive. Essential security feature." },
-  { item: "No active alerts on screen", detail: "Check for any error messages or warning indicators." },
+  { item: "VIN matches delivery documents", detail: "Match the windshield VIN to your Tesla account and paperwork." },
+  { item: "Phone key setup", detail: "Pair your phone and verify lock/unlock, start, and passive entry behavior." },
+  { item: "Software version and connectivity", detail: "Confirm current software baseline and LTE/Wi-Fi connectivity." },
+  { item: "Camera feed and parking visualization", detail: "Open reverse/park views and verify no camera dropout or major artifacts." },
+  { item: "Wipers, washers, horn, and all exterior lights", detail: "Do a full walk-around while signals, brakes, and reverse lights are active." },
+  { item: "Tire pressure check", detail: "Confirm all tires are near Tesla-recommended PSI for your specific model/wheels." },
+  { item: "Safety and security setup", detail: "Enable PIN to Drive, review Sentry settings, and check no active warning alerts." },
 ];
 
 function CheckSection({ title, items }: { title: string; items: { item: string; detail: string }[] }) {
@@ -78,65 +75,67 @@ export default function DeliveryChecklistPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12">
       <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
-        <Image src="/images/tesla-hero-global.jpg" alt="Tesla Model Y" fill priority className="object-cover" sizes="100vw" />
+        <Image src="/images/tesla-hero-global.jpg" alt="Tesla delivery checklist" fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       </div>
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Tesla Model Y Juniper Delivery Checklist
-        </h1>
-        <p className="text-lg text-zinc-300">
-          Tesla&apos;s quality has improved with the Juniper, but issues still slip through.
-          Don&apos;t let excitement make you skip the inspection. Here&apos;s everything to check
-          before you sign — bookmark this page and pull it up at delivery.
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Tesla Delivery Checklist 2025-2026</h1>
+        <p className="text-lg text-zinc-300 mb-6">
+          Use this checklist for any new Tesla delivery: Model 3, Model Y, Model S, Model X, or Cybertruck.
+          Tesla build quality is better than in prior years, but delivery-day misses still happen. Inspect first,
+          then accept.
         </p>
+        <EmailCapture source="delivery-checklist-hero" compact />
         <p className="text-sm text-zinc-400 mt-4">Last updated: March 2026 · 10 min read</p>
       </header>
 
       <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-6 mb-10">
-        <h2 className="font-bold text-red-400 mb-2">⚠️ Do This Before You Sign</h2>
+        <h2 className="font-bold text-red-400 mb-2">Do This Before You Sign</h2>
         <p className="text-sm text-red-400">
-          Once you accept delivery, getting issues fixed becomes significantly harder. Tesla may
-          promise to &quot;fix it later&quot; — but your leverage drops the moment you drive off the lot.
-          Take your time. If something is seriously wrong, you can refuse delivery and reschedule.
+          Once you accept delivery, getting issues fixed can be slower and less flexible. Document defects on-site
+          with photos, and escalate serious fit/finish or functional issues before final acceptance.
         </p>
       </div>
 
-      <CheckSection title="🚗 Exterior Inspection (31 checkpoints)" items={exteriorChecks} />
-      <CheckSection title="🪑 Interior Inspection (11 checkpoints)" items={interiorChecks} />
-      <CheckSection title="⚙️ Functional Checks (9 checkpoints)" items={functionalChecks} />
+      <CheckSection title="Exterior Inspection" items={exteriorChecks} />
+      <CheckSection title="Interior Inspection" items={interiorChecks} />
+      <CheckSection title="Functional + Delivery Checks" items={functionalChecks} />
 
       <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 mb-10">
         <h2 className="text-xl font-bold text-white mb-3">What to Bring to Delivery</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
-          <li>📱 <strong>Phone</strong> — Tesla app installed & logged in</li>
-          <li>🔦 <strong>Flashlight</strong> — for paint inspection in indoor delivery centers</li>
-          <li>📋 <strong>This checklist</strong> — bookmark or screenshot this page</li>
-          <li>📷 <strong>Camera ready</strong> — photograph any issues before signing</li>
-          <li>📄 <strong>Insurance proof</strong> — coverage effective on delivery day</li>
-          <li>💳 <strong>Payment/financing docs</strong> — if not already completed online</li>
+          <li>Phone with Tesla app installed and logged in</li>
+          <li>Flashlight for paint and trim inspection in low light</li>
+          <li>This checklist (saved offline or printed)</li>
+          <li>Camera ready for documenting defects</li>
+          <li>Insurance proof and ID</li>
+          <li>Payment/financing documents if not already finalized in-app</li>
         </ul>
+      </section>
+
+      <section className="mb-10">
+        <EmailCapture source="delivery-checklist-main" />
       </section>
 
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold text-white">Can I really refuse delivery?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Yes. If there are significant defects (major paint damage, panel misalignment, software issues), you can refuse and Tesla will reschedule. Your deposit is safe.</p>
+            <h3 className="font-semibold text-white">Can I refuse delivery if there are major issues?</h3>
+            <p className="text-zinc-400 text-sm mt-1">Yes. If defects are significant, you can refuse and request re-delivery after correction.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-white">How long should the inspection take?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Budget 30-45 minutes. Don&apos;t let anyone rush you. This is a $45,000+ purchase.</p>
+            <h3 className="font-semibold text-white">How long should inspection take?</h3>
+            <p className="text-zinc-400 text-sm mt-1">Plan for 30-45 minutes. Bring your checklist and don&apos;t rush.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-white">What if I find an issue after driving home?</h3>
-            <p className="text-zinc-400 text-sm mt-1">You can still report issues through the Tesla app (Service &gt; Request Service). But it&apos;s much easier to document issues at delivery. Always photograph everything on the spot.</p>
+            <h3 className="font-semibold text-white">Anything specific for refreshed Model Y Juniper?</h3>
+            <p className="text-zinc-400 text-sm mt-1">Yes. Pay extra attention to rear display behavior, ambient lighting continuity, and trim transitions introduced in the refresh.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-white">Are Juniper panel gaps better than older Model Y?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Generally yes — Tesla improved fit and finish significantly with the Juniper refresh. But it&apos;s not perfect. Still worth checking every panel.</p>
+            <h3 className="font-semibold text-white">What if I notice an issue after leaving?</h3>
+            <p className="text-zinc-400 text-sm mt-1">Open a service request in the Tesla app immediately and include photos and delivery-day timestamps.</p>
           </div>
         </div>
       </section>
@@ -149,7 +148,7 @@ export default function DeliveryChecklistPage() {
         </div>
       </section>
 
-      <p className="text-xs text-zinc-400">Last updated March 2026. Based on community reports from r/TeslaModelY and real owner experiences.</p>
+      <p className="text-xs text-zinc-400">Last updated March 2026. Compiled from Tesla owner delivery reports across Model 3, Y, S, X, and Cybertruck communities.</p>
     </article>
   );
 }
