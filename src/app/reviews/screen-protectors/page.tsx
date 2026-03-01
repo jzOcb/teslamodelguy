@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Screen Protectors for Tesla Model Y Juniper (2025-2026)",
+  title: "Best Tesla Screen Protectors (2025-2026)",
   description:
     "Top screen protector picks for the Model Y Juniper's new 15.4-inch touchscreen. Spigen EZ Fit, dbrand Prism 2.0, TPARTS, and Tesery — matte vs clear.",
   keywords: [
@@ -17,7 +17,7 @@ const products = [
   {
     rank: 1,
     badge: "Best Overall",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-blue-900/50 text-blue-400",
     name: "Spigen EZ Fit Tempered Glass",
     brand: "Spigen",
     price: "$30–40",
@@ -28,7 +28,7 @@ const products = [
   {
     rank: 2,
     badge: "Premium Pick",
-    badgeColor: "bg-purple-100 text-purple-700",
+    badgeColor: "bg-purple-900/50 text-purple-400",
     name: "dbrand Prism 2.0",
     brand: "dbrand",
     price: "$40–50",
@@ -39,7 +39,7 @@ const products = [
   {
     rank: 3,
     badge: "Best Budget",
-    badgeColor: "bg-green-100 text-green-700",
+    badgeColor: "bg-green-900/50 text-green-400",
     name: "TPARTS Tempered Glass",
     brand: "TPARTS",
     price: "$15–25",
@@ -50,7 +50,7 @@ const products = [
   {
     rank: 4,
     badge: "Best Anti-Glare",
-    badgeColor: "bg-amber-100 text-amber-700",
+    badgeColor: "bg-amber-100 text-amber-400",
     name: "Tesery Matte Screen Protector",
     brand: "Tesery",
     price: "$20–35",
@@ -68,8 +68,8 @@ export default function ScreenProtectorsPage() {
           ← All Reviews
         </Link>
       </div>
-      <h1 className="text-3xl font-bold mb-2">Best Screen Protectors for Tesla Model Y Juniper</h1>
-      <p className="text-gray-600 mb-2">
+      <h1 className="text-3xl font-bold mb-2">Best Tesla Screen Protectors</h1>
+      <p className="text-gray-300 mb-2">
         The Juniper upgraded to a 15.4&quot; touchscreen — which means old Model Y screen protectors won&apos;t fit. Only buy protectors that explicitly say &quot;Juniper,&quot; &quot;2025,&quot; or &quot;2026.&quot;
       </p>
       <Link
@@ -79,21 +79,21 @@ export default function ScreenProtectorsPage() {
         → Full comparison: Spigen vs dbrand vs TPARTS vs Tesery (matte vs clear)
       </Link>
 
-      <div className="bg-red-50 rounded-xl p-4 mb-8 text-sm text-red-700">
+      <div className="bg-red-50 rounded-xl p-4 mb-8 text-sm text-red-400">
         <strong>⚠️ Compatibility Warning:</strong> The Juniper screen is 15.4&quot;, up from 15&quot; on the previous Model Y. Screen protectors for 2020–2024 Model Y will NOT fit.
       </div>
 
       <div className="space-y-4">
         {products.map((p) => (
-          <div key={p.rank} className="border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-md transition">
+          <div key={p.rank} className="border border-gray-800 rounded-xl p-6 hover:border-blue-500/50 hover:shadow-md transition">
             <div className="flex items-center gap-3 mb-2">
               <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
-              <span className="text-xs text-gray-400">#{p.rank}</span>
+              <span className="text-xs text-gray-500">#{p.rank}</span>
             </div>
-            <h2 className="text-xl font-bold text-gray-900">{p.name}</h2>
+            <h2 className="text-xl font-bold text-white">{p.name}</h2>
             <p className="text-sm text-gray-500 mb-1">{p.brand}</p>
             <p className="text-blue-600 font-semibold mb-3">{p.price}</p>
-            <p className="text-gray-600 text-sm mb-4">{p.description}</p>
+            <p className="text-gray-500 text-sm mb-4">{p.description}</p>
             <div className="flex items-center gap-3">
               <a
                 href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}

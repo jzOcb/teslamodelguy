@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Organizers for Tesla Model Y Juniper (2025-2026)",
+  title: "Best Tesla Organizers (2025-2026)",
   description:
     "Keep your Model Y Juniper's interior tidy. EVBASE center console organizer, Spigen console tray, and trunk cargo organizer — reviewed by a real owner.",
   keywords: [
@@ -17,7 +17,7 @@ const products = [
   {
     rank: 1,
     badge: "Best Overall",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-blue-900/50 text-blue-400",
     name: "EVBASE / Spigen Console Tray",
     brand: "EVBASE / Spigen",
     price: "$20–35",
@@ -28,7 +28,7 @@ const products = [
   {
     rank: 2,
     badge: "Cargo Solution",
-    badgeColor: "bg-green-100 text-green-700",
+    badgeColor: "bg-green-900/50 text-green-400",
     name: "Collapsible Cargo Organizer",
     brand: "Various",
     price: "$30–40",
@@ -46,22 +46,22 @@ export default function OrganizersPage() {
           ← All Reviews
         </Link>
       </div>
-      <h1 className="text-3xl font-bold mb-2">Best Organizers for Tesla Model Y Juniper</h1>
-      <p className="text-gray-600 mb-8">
+      <h1 className="text-3xl font-bold mb-2">Best Tesla Organizers</h1>
+      <p className="text-gray-500 mb-8">
         Compatible with 2025–2026 Model Y Juniper. The Juniper's redesigned interior means some older organizers won't fit the center console — double-check Juniper compatibility before buying.
       </p>
 
       <div className="space-y-4">
         {products.map((p) => (
-          <div key={p.rank} className="border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-md transition">
+          <div key={p.rank} className="border border-gray-800 rounded-xl p-6 hover:border-blue-500/50 hover:shadow-md transition">
             <div className="flex items-center gap-3 mb-2">
               <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
-              <span className="text-xs text-gray-400">#{p.rank}</span>
+              <span className="text-xs text-gray-500">#{p.rank}</span>
             </div>
-            <h2 className="text-xl font-bold text-gray-900">{p.name}</h2>
+            <h2 className="text-xl font-bold text-white">{p.name}</h2>
             <p className="text-sm text-gray-500 mb-1">{p.brand}</p>
             <p className="text-blue-600 font-semibold mb-3">{p.price}</p>
-            <p className="text-gray-600 text-sm mb-4">{p.description}</p>
+            <p className="text-gray-500 text-sm mb-4">{p.description}</p>
             <a
               href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
               target="_blank"
@@ -74,7 +74,7 @@ export default function OrganizersPage() {
         ))}
       </div>
 
-      <p className="mt-8 text-xs text-gray-400">
+      <p className="mt-8 text-xs text-gray-500">
         Some links are affiliate links. We earn a small commission at no extra cost to you.
       </p>
     </div>

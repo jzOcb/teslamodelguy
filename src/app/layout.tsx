@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Tesla Model Guy",
   },
   description:
-    "Real owner reviews and guides for Tesla accessories. Starting with Model Y Juniper — floor mats, organizers, screen protectors, and more.",
+    "Real owner reviews and guides for Tesla accessories. Floor mats, organizers, screen protectors, and more for every Tesla model.",
   keywords: [
     "tesla model y juniper accessories",
     "model y juniper floor mats",
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     siteName: "Tesla Model Guy",
     title: "Tesla Model Guy - Tesla Accessories Reviews & Guides",
     description:
-      "Real owner reviews and guides for Tesla Model Y Juniper accessories.",
+      "Real owner reviews and guides for Tesla accessories.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Tesla Model Guy",
     description:
-      "Real owner reviews for Tesla Model Y Juniper accessories.",
+      "Real owner reviews for Tesla accessories.",
   },
   robots: {
     index: true,
@@ -56,7 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased bg-white text-gray-900`}>
+      <body className={`${inter.className} antialiased bg-black text-gray-100`}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

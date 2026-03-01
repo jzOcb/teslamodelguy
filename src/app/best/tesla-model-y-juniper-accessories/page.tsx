@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -28,7 +29,7 @@ const accessories = [
     emoji: "🏗️",
     price: "$70–230",
     priority: "Day 1",
-    priorityColor: "bg-red-100 text-red-700",
+    priorityColor: "bg-red-900/50 text-red-400",
     amazonSearch: "3D+MAXpider+Tesla+Model+Y+Juniper+2026",
     why: "Your Juniper's carpet will get destroyed without protection. This is the single most important accessory you can buy.",
     detail:
@@ -42,7 +43,7 @@ const accessories = [
     emoji: "🛡️",
     price: "$30–40",
     priority: "Day 1",
-    priorityColor: "bg-red-100 text-red-700",
+    priorityColor: "bg-red-900/50 text-red-400",
     amazonSearch: "Spigen+Tesla+Model+Y+Juniper+screen+protector",
     why: "The Juniper has a gorgeous 15.4-inch touchscreen. It will get scratched and covered in fingerprints.",
     detail:
@@ -56,7 +57,7 @@ const accessories = [
     emoji: "📦",
     price: "$20–35",
     priority: "Week 1",
-    priorityColor: "bg-yellow-100 text-yellow-700",
+    priorityColor: "bg-yellow-900/50 text-yellow-400",
     amazonSearch: "Tesla+Model+Y+Juniper+center+console+organizer",
     why: "Without an organizer, small items disappear into a black hole. Keys, sunglasses, cables — gone.",
     detail:
@@ -70,7 +71,7 @@ const accessories = [
     emoji: "☀️",
     price: "$50–80",
     priority: "Month 1",
-    priorityColor: "bg-green-100 text-green-700",
+    priorityColor: "bg-green-900/50 text-green-400",
     amazonSearch: "Tesla+Model+Y+Juniper+sunshade+roof",
     why: "The glass roof turns your car into a greenhouse in summer. A sunshade drops cabin temp by 10-15°F.",
     detail:
@@ -84,7 +85,7 @@ const accessories = [
     emoji: "💧",
     price: "$20–30",
     priority: "Week 1",
-    priorityColor: "bg-yellow-100 text-yellow-700",
+    priorityColor: "bg-yellow-900/50 text-yellow-400",
     amazonSearch: "Tesla+Model+Y+Juniper+mud+flaps",
     why: "Tesla's paint is famously thin. Without mud flaps, road debris will chip your rear panels within months.",
     detail:
@@ -98,7 +99,7 @@ const accessories = [
     emoji: "💾",
     price: "$60–80",
     priority: "Week 1",
-    priorityColor: "bg-yellow-100 text-yellow-700",
+    priorityColor: "bg-yellow-900/50 text-yellow-400",
     amazonSearch: "Samsung+T7+SSD+500GB",
     why: "Sentry Mode and dashcam need external storage. Flash drives are slow and unreliable.",
     detail:
@@ -112,7 +113,7 @@ const accessories = [
     emoji: "📱",
     price: "$15–20",
     priority: "Month 1",
-    priorityColor: "bg-green-100 text-green-700",
+    priorityColor: "bg-green-900/50 text-green-400",
     amazonSearch: "Tesla+Model+Y+Juniper+rear+screen+protector",
     why: "The Juniper added an 8-inch rear screen — a first for Model Y. If you have kids, protect it from day one.",
     detail:
@@ -126,7 +127,7 @@ const accessories = [
     emoji: "🏎️",
     price: "$20–30",
     priority: "Month 1",
-    priorityColor: "bg-green-100 text-green-700",
+    priorityColor: "bg-green-900/50 text-green-400",
     amazonSearch: "Tesla+Model+Y+performance+pedal+covers",
     why: "Gives your Juniper a sportier feel, similar to the Performance model.",
     detail: "Purely aesthetic but makes the interior feel more premium. Easy snap-on install, no drilling.",
@@ -139,7 +140,7 @@ const accessories = [
     emoji: "🧳",
     price: "$30–40",
     priority: "Month 1",
-    priorityColor: "bg-green-100 text-green-700",
+    priorityColor: "bg-green-900/50 text-green-400",
     amazonSearch: "Tesla+Model+Y+trunk+organizer",
     why: "The Model Y trunk is massive but has zero organization. Groceries slide everywhere.",
     detail:
@@ -153,7 +154,7 @@ const accessories = [
     emoji: "🔧",
     price: "$30–50",
     priority: "Month 1",
-    priorityColor: "bg-green-100 text-green-700",
+    priorityColor: "bg-green-900/50 text-green-400",
     amazonSearch: "portable+tire+inflator+car",
     why: "The Model Y doesn't come with a spare tire. This is safety equipment, not optional.",
     detail:
@@ -165,13 +166,19 @@ const accessories = [
 export default function BestAccessoriesPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12">
+      {/* Hero Image */}
+      <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
+        <Image src="/images/tesla-hero-desktop.jpg" alt="Tesla Model Y Juniper" fill priority className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+      </div>
+
       {/* Header */}
       <header className="mb-12">
         <p className="text-sm text-blue-600 font-medium mb-2">BEST PICKS</p>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           10 Must-Have Accessories for Your Tesla Model Y Juniper
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-gray-300">
           Just picked up your Model Y Juniper? Congrats — it&apos;s a hell of a car. But Tesla
           ships a great vehicle with a few obvious gaps. Here are the 10 accessories that are
           actually worth your money — no filler, no junk.
@@ -180,12 +187,12 @@ export default function BestAccessoriesPage() {
       </header>
 
       {/* Quick Nav */}
-      <nav className="bg-gray-50 rounded-xl p-6 mb-12">
-        <h2 className="font-semibold text-gray-900 mb-3">Quick Jump</h2>
+      <nav className="bg-gray-900 rounded-xl p-6 mb-12">
+        <h2 className="font-semibold text-white mb-3">Quick Jump</h2>
         <ol className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
           {accessories.map((a) => (
             <li key={a.rank}>
-              <a href={`#item-${a.rank}`} className="text-blue-600 hover:underline">
+              <a href={`#item-${a.rank}`} className="text-blue-400 hover:text-blue-300 hover:underline">
                 {a.rank}. {a.name} — {a.product}
               </a>
             </li>
@@ -201,23 +208,23 @@ export default function BestAccessoriesPage() {
               <div className="text-3xl">{a.emoji}</div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
-                  <h2 className="text-xl font-bold text-gray-900">
+                  <h2 className="text-xl font-bold text-white">
                     #{a.rank} {a.name}
                   </h2>
                   <span className={`text-xs font-medium px-2 py-1 rounded-full ${a.priorityColor}`}>
                     {a.priority}
                   </span>
                 </div>
-                <p className="text-sm font-medium text-gray-500 mb-2">{a.product}</p>
-                <p className="text-gray-800 font-medium mb-2">{a.why}</p>
-                <p className="text-gray-600 mb-3">{a.detail}</p>
+                <p className="text-sm font-medium text-gray-300 mb-2">{a.product}</p>
+                <p className="text-gray-200 font-medium mb-2">{a.why}</p>
+                <p className="text-gray-300 mb-4">{a.detail}</p>
                 {a.tip && (
-                  <p className="text-sm text-amber-700 bg-amber-50 rounded-lg p-3 mb-3">
+                  <p className="text-sm text-amber-400 bg-amber-950 rounded-lg p-3 mb-3">
                     💡 {a.tip}
                   </p>
                 )}
                 <div className="flex items-center gap-4">
-                  <span className="font-semibold text-gray-900">{a.price}</span>
+                  <span className="font-semibold text-white">{a.price}</span>
                   <a
                     href={`https://www.amazon.com/s?k=${a.amazonSearch}&tag=teslamodelguy-20`}
                     target="_blank"
@@ -234,18 +241,18 @@ export default function BestAccessoriesPage() {
       </div>
 
       {/* Cost Breakdown */}
-      <section className="mt-16 bg-gray-50 rounded-xl p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Total Cost Breakdown</h2>
+      <section className="mt-16 bg-gray-900 rounded-xl p-8">
+        <h2 className="text-xl font-bold text-white mb-4">Total Cost Breakdown</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left text-gray-500 border-b">
+              <tr className="text-left text-gray-400 border-b">
                 <th className="pb-2">Priority</th>
                 <th className="pb-2">Item</th>
                 <th className="pb-2">Price</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-200">
+            <tbody className="divide-y divide-gray-800">
               {accessories.map((a) => (
                 <tr key={a.rank}>
                   <td className="py-2">
@@ -253,23 +260,23 @@ export default function BestAccessoriesPage() {
                       {a.priority}
                     </span>
                   </td>
-                  <td className="py-2 text-gray-900">{a.name}</td>
-                  <td className="py-2 text-gray-600">{a.price}</td>
+                  <td className="py-2 text-white">{a.name}</td>
+                  <td className="py-2 text-gray-400">{a.price}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="mt-4 text-sm text-gray-600">
+        <p className="mt-4 text-sm text-gray-400">
           You don&apos;t need everything at once. Start with Day 1 essentials (screen protector +
           floor mats) and add the rest over time.
         </p>
       </section>
 
       {/* Trust Section */}
-      <section className="mt-12 border-t pt-8">
-        <h2 className="text-lg font-semibold text-gray-900 mb-3">Why Trust This List?</h2>
-        <p className="text-gray-600 text-sm">
+      <section className="mt-12 border-t border-gray-800 pt-8">
+        <h2 className="text-lg font-semibold text-white mb-3">Why Trust This List?</h2>
+        <p className="text-gray-400 text-sm">
           I drive a 2025 Model Y Juniper every day. These aren&apos;t recommendations from
           someone who Googled &quot;tesla accessories&quot; — they&apos;re based on real use,
           hundreds of Reddit discussions, and YouTube reviews from actual owners. No product
@@ -280,7 +287,7 @@ export default function BestAccessoriesPage() {
 
       {/* Back */}
       <div className="mt-12">
-        <Link href="/" className="text-blue-600 hover:underline text-sm">
+        <Link href="/" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
           ← Back to Home
         </Link>
       </div>

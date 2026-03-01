@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -57,13 +58,13 @@ const functionalChecks = [
 function CheckSection({ title, items }: { title: string; items: { item: string; detail: string }[] }) {
   return (
     <section className="mb-10">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+      <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
       <div className="space-y-3">
         {items.map((check, i) => (
           <div key={i} className="flex items-start gap-3 border border-gray-100 rounded-lg p-4">
-            <div className="flex-shrink-0 w-6 h-6 border-2 border-gray-300 rounded mt-0.5" />
+            <div className="flex-shrink-0 w-6 h-6 border-2 border-gray-700 rounded mt-0.5" />
             <div>
-              <p className="font-medium text-gray-900">{check.item}</p>
+              <p className="font-medium text-white">{check.item}</p>
               <p className="text-sm text-gray-500 mt-0.5">{check.detail}</p>
             </div>
           </div>
@@ -76,22 +77,26 @@ function CheckSection({ title, items }: { title: string; items: { item: string; 
 export default function DeliveryChecklistPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12">
+      <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
+        <Image src="/images/tesla-hero-global.jpg" alt="Tesla Model Y" fill priority className="object-cover" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+      </div>
       <header className="mb-10">
         <p className="text-sm text-blue-600 font-medium mb-2">GUIDES</p>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Tesla Model Y Juniper Delivery Checklist
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-gray-300">
           Tesla&apos;s quality has improved with the Juniper, but issues still slip through.
           Don&apos;t let excitement make you skip the inspection. Here&apos;s everything to check
           before you sign — bookmark this page and pull it up at delivery.
         </p>
-        <p className="text-sm text-gray-400 mt-4">Last updated: March 2026 · 10 min read</p>
+        <p className="text-sm text-gray-500 mt-4">Last updated: March 2026 · 10 min read</p>
       </header>
 
       <div className="bg-red-50 rounded-xl p-6 mb-10">
         <h2 className="font-bold text-red-800 mb-2">⚠️ Do This Before You Sign</h2>
-        <p className="text-sm text-red-700">
+        <p className="text-sm text-red-400">
           Once you accept delivery, getting issues fixed becomes significantly harder. Tesla may
           promise to &quot;fix it later&quot; — but your leverage drops the moment you drive off the lot.
           Take your time. If something is seriously wrong, you can refuse delivery and reschedule.
@@ -103,8 +108,8 @@ export default function DeliveryChecklistPage() {
       <CheckSection title="⚙️ Functional Checks (9 checkpoints)" items={functionalChecks} />
 
       <section className="bg-blue-50 rounded-xl p-6 mb-10">
-        <h2 className="text-xl font-bold text-gray-900 mb-3">What to Bring to Delivery</h2>
-        <ul className="space-y-2 text-sm text-gray-700">
+        <h2 className="text-xl font-bold text-white mb-3">What to Bring to Delivery</h2>
+        <ul className="space-y-2 text-sm text-gray-300">
           <li>📱 <strong>Phone</strong> — Tesla app installed & logged in</li>
           <li>🔦 <strong>Flashlight</strong> — for paint inspection in indoor delivery centers</li>
           <li>📋 <strong>This checklist</strong> — bookmark or screenshot this page</li>
@@ -115,36 +120,36 @@ export default function DeliveryChecklistPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">FAQ</h2>
+        <h2 className="text-2xl font-bold text-white mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold text-gray-900">Can I really refuse delivery?</h3>
-            <p className="text-gray-600 text-sm mt-1">Yes. If there are significant defects (major paint damage, panel misalignment, software issues), you can refuse and Tesla will reschedule. Your deposit is safe.</p>
+            <h3 className="font-semibold text-white">Can I really refuse delivery?</h3>
+            <p className="text-gray-500 text-sm mt-1">Yes. If there are significant defects (major paint damage, panel misalignment, software issues), you can refuse and Tesla will reschedule. Your deposit is safe.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">How long should the inspection take?</h3>
-            <p className="text-gray-600 text-sm mt-1">Budget 30-45 minutes. Don&apos;t let anyone rush you. This is a $45,000+ purchase.</p>
+            <h3 className="font-semibold text-white">How long should the inspection take?</h3>
+            <p className="text-gray-500 text-sm mt-1">Budget 30-45 minutes. Don&apos;t let anyone rush you. This is a $45,000+ purchase.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">What if I find an issue after driving home?</h3>
-            <p className="text-gray-600 text-sm mt-1">You can still report issues through the Tesla app (Service &gt; Request Service). But it&apos;s much easier to document issues at delivery. Always photograph everything on the spot.</p>
+            <h3 className="font-semibold text-white">What if I find an issue after driving home?</h3>
+            <p className="text-gray-500 text-sm mt-1">You can still report issues through the Tesla app (Service &gt; Request Service). But it&apos;s much easier to document issues at delivery. Always photograph everything on the spot.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Are Juniper panel gaps better than older Model Y?</h3>
-            <p className="text-gray-600 text-sm mt-1">Generally yes — Tesla improved fit and finish significantly with the Juniper refresh. But it&apos;s not perfect. Still worth checking every panel.</p>
+            <h3 className="font-semibold text-white">Are Juniper panel gaps better than older Model Y?</h3>
+            <p className="text-gray-500 text-sm mt-1">Generally yes — Tesla improved fit and finish significantly with the Juniper refresh. But it&apos;s not perfect. Still worth checking every panel.</p>
           </div>
         </div>
       </section>
 
       <section className="border-t pt-8 mb-8">
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">Ready for After Delivery?</h2>
+        <h2 className="text-lg font-semibold text-white mb-4">Ready for After Delivery?</h2>
         <div className="space-y-2">
           <Link href="/guides/first-things-to-do-tesla-model-y-juniper" className="text-blue-600 hover:underline block">→ First 7 Things to Do After Getting Your Model Y Juniper</Link>
           <Link href="/best/tesla-model-y-juniper-accessories" className="text-blue-600 hover:underline block">→ 10 Must-Have Accessories</Link>
         </div>
       </section>
 
-      <p className="text-xs text-gray-400">Last updated March 2026. Based on community reports from r/TeslaModelY and real owner experiences.</p>
+      <p className="text-xs text-gray-500">Last updated March 2026. Based on community reports from r/TeslaModelY and real owner experiences.</p>
     </article>
   );
 }

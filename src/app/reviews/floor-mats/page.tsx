@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Floor Mats for Tesla Model Y Juniper (2025-2026)",
+  title: "Best Tesla Floor Mats (2025-2026)",
   description:
     "Top floor mat picks for the Tesla Model Y Juniper. 3D MAXpider Kagu, WeatherTech FloorLiner, Tesmanian, and Tuxmat — find the best fit for your budget.",
   keywords: [
@@ -18,7 +18,7 @@ const products = [
   {
     rank: 1,
     badge: "Best Overall",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-blue-900/50 text-blue-400",
     name: "3D MAXpider Kagu Series",
     brand: "3D MAXpider",
     price: "$170–230",
@@ -29,7 +29,7 @@ const products = [
   {
     rank: 2,
     badge: "Runner-Up",
-    badgeColor: "bg-gray-100 text-gray-700",
+    badgeColor: "bg-gray-800 text-gray-300",
     name: "WeatherTech FloorLiner",
     brand: "WeatherTech",
     price: "$180–250",
@@ -40,7 +40,7 @@ const products = [
   {
     rank: 3,
     badge: "Best Value",
-    badgeColor: "bg-green-100 text-green-700",
+    badgeColor: "bg-green-900/50 text-green-400",
     name: "Tesmanian All-Weather Mats",
     brand: "Tesmanian",
     price: "$120–160",
@@ -51,7 +51,7 @@ const products = [
   {
     rank: 4,
     badge: "Best Coverage",
-    badgeColor: "bg-purple-100 text-purple-700",
+    badgeColor: "bg-purple-900/50 text-purple-400",
     name: "Tuxmat Custom Fit Mats",
     brand: "Tuxmat",
     price: "$200–260",
@@ -69,8 +69,8 @@ export default function FloorMatsPage() {
           ← All Reviews
         </Link>
       </div>
-      <h1 className="text-3xl font-bold mb-2">Best Floor Mats for Tesla Model Y Juniper</h1>
-      <p className="text-gray-600 mb-2">
+      <h1 className="text-3xl font-bold mb-2">Best Tesla Floor Mats</h1>
+      <p className="text-gray-300 mb-2">
         Compatible with 2025–2026 Model Y Juniper (refreshed). The Juniper has slightly different interior dimensions than earlier Model Y — make sure your mats explicitly say "Juniper" or "2025–2026."
       </p>
       <Link
@@ -82,15 +82,15 @@ export default function FloorMatsPage() {
 
       <div className="space-y-4">
         {products.map((p) => (
-          <div key={p.rank} className="border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-md transition">
+          <div key={p.rank} className="border border-gray-800 rounded-xl p-6 hover:border-blue-500/50 hover:shadow-md transition">
             <div className="flex items-center gap-3 mb-2">
               <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
-              <span className="text-xs text-gray-400">#{p.rank}</span>
+              <span className="text-xs text-gray-500">#{p.rank}</span>
             </div>
-            <h2 className="text-xl font-bold text-gray-900">{p.name}</h2>
+            <h2 className="text-xl font-bold text-white">{p.name}</h2>
             <p className="text-sm text-gray-500 mb-1">{p.brand}</p>
             <p className="text-blue-600 font-semibold mb-3">{p.price}</p>
-            <p className="text-gray-600 text-sm mb-4">{p.description}</p>
+            <p className="text-gray-500 text-sm mb-4">{p.description}</p>
             <div className="flex items-center gap-3">
               <a
                 href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
@@ -108,7 +108,7 @@ export default function FloorMatsPage() {
         ))}
       </div>
 
-      <div className="mt-8 bg-amber-50 rounded-xl p-4 text-sm text-amber-800">
+      <div className="mt-8 bg-amber-950 rounded-xl p-4 text-sm text-amber-300">
         <strong>⚠️ Compatibility Note:</strong> Old Model Y floor mats (pre-2025) do not fit the Juniper. Always confirm "Juniper" or "2025–2026" compatibility before buying.
       </div>
     </div>

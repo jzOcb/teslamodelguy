@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Sunshades for Tesla Model Y Juniper (2025-2026)",
+  title: "Best Tesla Sunshades (2025-2026)",
   description:
     "Keep your Model Y Juniper cool in summer. EVBASE Juniper-specific roof sunshade reviewed — drops cabin temperature by 10-15°F.",
   keywords: [
@@ -17,7 +17,7 @@ const products = [
   {
     rank: 1,
     badge: "Best Fit",
-    badgeColor: "bg-blue-100 text-blue-700",
+    badgeColor: "bg-blue-900/50 text-blue-400",
     name: "EVBASE Juniper Roof Sunshade",
     brand: "EVBASE",
     price: "$50–80",
@@ -35,22 +35,22 @@ export default function SunshadesPage() {
           ← All Reviews
         </Link>
       </div>
-      <h1 className="text-3xl font-bold mb-2">Best Sunshades for Tesla Model Y Juniper</h1>
-      <p className="text-gray-600 mb-8">
+      <h1 className="text-3xl font-bold mb-2">Best Tesla Sunshades</h1>
+      <p className="text-gray-500 mb-8">
         The Juniper&apos;s panoramic glass roof is stunning — and turns into a greenhouse on hot days. A good sunshade is one of the highest-ROI accessories you can buy: cooler cabin, better range, less AC wear.
       </p>
 
       <div className="space-y-4 mb-10">
         {products.map((p) => (
-          <div key={p.rank} className="border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-md transition">
+          <div key={p.rank} className="border border-gray-800 rounded-xl p-6 hover:border-blue-500/50 hover:shadow-md transition">
             <div className="flex items-center gap-3 mb-2">
               <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
-              <span className="text-xs text-gray-400">#{p.rank}</span>
+              <span className="text-xs text-gray-500">#{p.rank}</span>
             </div>
-            <h2 className="text-xl font-bold text-gray-900">{p.name}</h2>
+            <h2 className="text-xl font-bold text-white">{p.name}</h2>
             <p className="text-sm text-gray-500 mb-1">{p.brand}</p>
             <p className="text-blue-600 font-semibold mb-3">{p.price}</p>
-            <p className="text-gray-600 text-sm mb-4">{p.description}</p>
+            <p className="text-gray-500 text-sm mb-4">{p.description}</p>
             <a
               href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
               target="_blank"
@@ -63,14 +63,14 @@ export default function SunshadesPage() {
         ))}
       </div>
 
-      <div className="border border-gray-200 rounded-xl p-6 bg-gray-50">
-        <h2 className="font-semibold text-gray-900 mb-1">More Sunshade Options Coming Soon</h2>
-        <p className="text-sm text-gray-600">
+      <div className="border border-gray-800 rounded-xl p-6 bg-gray-900">
+        <h2 className="font-semibold text-white mb-1">More Sunshade Options Coming Soon</h2>
+        <p className="text-sm text-gray-500">
           We&apos;re currently testing additional sunshade options including the Tesla OEM sunshade and budget alternatives. Detailed comparisons coming soon.
         </p>
       </div>
 
-      <p className="mt-8 text-xs text-gray-400">
+      <p className="mt-8 text-xs text-gray-500">
         Some links are affiliate links. We earn a small commission at no extra cost to you.
       </p>
     </div>
