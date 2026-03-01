@@ -12,5 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/guides/first-things-to-do-tesla-model-y-juniper`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/guides/tesla-model-y-juniper-delivery-checklist`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/guides/tesla-model-y-juniper-vs-old-differences`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }

@@ -3,14 +3,27 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Guides - Tesla Model Y Owner Guides & Tips",
-  description: "Practical guides for Tesla Model Y owners — setup tips, delivery checklists, and how-tos.",
+  description: "Practical guides for Tesla Model Y owners — setup tips, delivery checklists, comparisons, and how-tos.",
 };
 
 const guides = [
   {
-    title: "First 7 Things to Do After Getting Your Tesla Model Y Juniper",
+    title: "Tesla Model Y Juniper Delivery Checklist",
+    slug: "/guides/tesla-model-y-juniper-delivery-checklist",
+    desc: "Everything to inspect before you sign — panel gaps, paint, software, interior. Don't skip this.",
+    tag: "ESSENTIAL",
+  },
+  {
+    title: "First 7 Things to Do After Getting Your Model Y Juniper",
     slug: "/guides/first-things-to-do-tesla-model-y-juniper",
-    desc: "The day-one checklist every new Juniper owner needs — from delivery inspection to must-have settings.",
+    desc: "Day-one setup checklist — from screen protector to Sentry Mode to charging routine.",
+    tag: null,
+  },
+  {
+    title: "Model Y Juniper vs Old Model Y: Every Difference",
+    slug: "/guides/tesla-model-y-juniper-vs-old-differences",
+    desc: "Complete comparison — what changed, what improved, is it worth upgrading?",
+    tag: null,
   },
 ];
 
@@ -22,7 +35,8 @@ export default function GuidesPage() {
       <div className="space-y-4">
         {guides.map((g) => (
           <Link key={g.slug} href={g.slug} className="block border border-gray-200 rounded-xl p-6 hover:border-blue-300 hover:shadow-md transition">
-            <h2 className="text-xl font-bold text-gray-900">{g.title}</h2>
+            {g.tag && <span className="text-xs font-medium text-red-600 bg-red-50 px-2 py-0.5 rounded-full">{g.tag}</span>}
+            <h2 className="text-xl font-bold text-gray-900 mt-1">{g.title}</h2>
             <p className="text-gray-600 text-sm mt-1">{g.desc}</p>
           </Link>
         ))}
