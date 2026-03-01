@@ -19,7 +19,7 @@ export default function FloorMatsPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
-        emoji="🏗️"
+        emoji="🛞"
         title="Floor Mat Deep Dive"
         subtitle="Real-world comparison of fit, coverage, and value for Model Y Juniper owners."
       />

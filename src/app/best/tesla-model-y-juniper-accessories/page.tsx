@@ -54,7 +54,7 @@ const accessories = [
     rank: 1,
     name: "All-Weather Floor Mats",
     product: "3D MAXpider Kagu",
-    emoji: "🏗️",
+    emoji: "🛞",
     price: "$70–230",
     priority: "Day 1",
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
