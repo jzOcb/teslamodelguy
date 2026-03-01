@@ -21,6 +21,7 @@ const products = [
     badgeColor: "bg-blue-900/50 text-blue-300",
     name: "Spigen EZ Fit Tempered Glass",
     brand: "Spigen",
+    image: "/images/spigen-product.jpg",
     price: "$30–40",
     description: "Foolproof alignment tray, strong 9H protection, and great clarity.",
     amazonSearch: "Spigen+EZ+Fit+Tesla+Model+Y+Juniper+screen+protector",
@@ -41,6 +42,7 @@ const products = [
     badgeColor: "bg-emerald-500/10 text-emerald-300 border border-emerald-500/30",
     name: "TPARTS Tempered Glass",
     brand: "TPARTS",
+    image: "/images/tparts-product.jpg",
     price: "$15–25",
     description: "Strong value if you can handle manual alignment during install.",
     amazonSearch: "TPARTS+Tesla+Model+Y+Juniper+screen+protector",
@@ -51,6 +53,7 @@ const products = [
     badgeColor: "bg-amber-500/10 text-amber-300 border border-amber-500/30",
     name: "Tesery Matte Screen Protector",
     brand: "Tesery",
+    image: "/images/tesery-product.jpg",
     price: "$20–35",
     description: "Excellent reflection control for sunny driving conditions.",
     amazonSearch: "Tesery+Tesla+Model+Y+screen+protector+matte",
@@ -82,7 +85,7 @@ export default function ScreenProtectorsPage() {
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
-              <CardVisual emoji="🛡️" label={p.brand} />
+              <CardVisual emoji="🛡️" label={p.brand} image={p.image} />
               <div>
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>

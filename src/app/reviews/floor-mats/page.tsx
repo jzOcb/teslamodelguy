@@ -22,6 +22,7 @@ const products = [
     badgeColor: "bg-blue-900/50 text-blue-300",
     name: "3D MAXpider Kagu Series",
     brand: "3D MAXpider",
+    image: "/images/maxpider-product.jpg",
     price: "$170–230",
     description:
       "The most recommended floor mat in the Tesla community. Three-layer construction with a patented fiber backing that grips without damaging carpet, raised edges that contain every spill, and a premium OEM look.",
@@ -33,6 +34,7 @@ const products = [
     badgeColor: "bg-zinc-700 text-zinc-100",
     name: "WeatherTech FloorLiner",
     brand: "WeatherTech",
+    image: "/images/weathertech-product.jpg",
     price: "$180–250",
     description:
       "Laser-measured for precise fit and excellent spill containment. Great choice for heavy snow and muddy climates.",
@@ -44,6 +46,7 @@ const products = [
     badgeColor: "bg-emerald-500/10 text-emerald-300 border border-emerald-500/30",
     name: "Tesmanian All-Weather Mats",
     brand: "Tesmanian",
+    image: "/images/tesmanian-product.jpg",
     price: "$120–160",
     description:
       "Around 30% cheaper than MAXpider with solid coverage and strong anti-slip hold. Great value option.",
@@ -55,6 +58,7 @@ const products = [
     badgeColor: "bg-purple-900/50 text-purple-300",
     name: "Tuxmat Custom Fit Mats",
     brand: "Tuxmat",
+    image: "/images/tuxmat-product.jpg",
     price: "$200–260",
     description:
       "Highest sidewall coverage in this category, ideal for owners in harsh winter climates.",
@@ -86,7 +90,7 @@ export default function FloorMatsPage() {
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
-              <CardVisual emoji="🛞" label={p.brand} />
+              <CardVisual emoji="🛞" label={p.brand} image={p.image} />
               <div>
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>

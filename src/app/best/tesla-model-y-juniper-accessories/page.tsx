@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 import GradientHero from "@/components/GradientHero";
@@ -55,6 +56,7 @@ const accessories = [
     name: "All-Weather Floor Mats",
     product: "3D MAXpider Kagu",
     emoji: "🛞",
+    image: "/images/maxpider-product.jpg",
     price: "$70–230",
     priority: "Day 1",
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
@@ -69,6 +71,7 @@ const accessories = [
     name: "Screen Protector",
     product: "Spigen EZ Fit Tempered Glass",
     emoji: "🛡️",
+    image: "/images/spigen-product.jpg",
     price: "$30–40",
     priority: "Day 1",
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
@@ -230,7 +233,7 @@ export default function BestAccessoriesPage() {
         {accessories.map((a) => (
           <section key={a.rank} id={`item-${a.rank}`} className="scroll-mt-20">
             <div className="flex items-start gap-4">
-              <div className="text-3xl">{a.emoji}</div>
+              {a.image ? <div className="relative w-16 h-16 rounded-lg overflow-hidden bg-white flex-shrink-0"><Image src={a.image} alt={a.name} fill className="object-contain p-1" sizes="64px" /></div> : <div className="text-3xl">{a.emoji}</div>}
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <h2 className="text-xl font-bold text-white">
