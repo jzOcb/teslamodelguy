@@ -16,11 +16,11 @@ export default function Home() {
       <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            The Only Model Y Juniper Accessories Guide You Need
+            Your Go-To Guide for Tesla Accessories
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Real reviews from an actual owner. No sponsored BS — just honest recommendations
-            for the best accessories for your 2025 Tesla Model Y.
+            for the best Tesla accessories — starting with the Model Y Juniper.
           </p>
           <div className="flex gap-4 justify-center">
             <Link

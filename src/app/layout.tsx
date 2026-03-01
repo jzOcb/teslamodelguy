@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Tesla Model Guy - Model Y Juniper Accessories Guide",
+    default: "Tesla Model Guy - Tesla Accessories Reviews & Guides",
     template: "%s | Tesla Model Guy",
   },
   description:
-    "Real owner reviews and guides for Tesla Model Y Juniper accessories. Floor mats, organizers, screen protectors, and more — tested and reviewed by an actual owner.",
+    "Real owner reviews and guides for Tesla accessories. Starting with Model Y Juniper — floor mats, organizers, screen protectors, and more.",
   keywords: [
     "tesla model y juniper accessories",
     "model y juniper floor mats",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://teslamodelguy.com",
     siteName: "Tesla Model Guy",
-    title: "Tesla Model Guy - Model Y Juniper Accessories Guide",
+    title: "Tesla Model Guy - Tesla Accessories Reviews & Guides",
     description:
       "Real owner reviews and guides for Tesla Model Y Juniper accessories.",
   },
