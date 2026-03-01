@@ -109,26 +109,26 @@ export default function FirstThingsPage() {
           These are the items you should have ready before or on delivery day:
         </p>
         <div className="space-y-3">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">Screen Protector (Spigen EZ Fit)</p>
               <p className="text-sm text-zinc-400">15.4&quot; front + 8&quot; rear</p>
             </div>
-            <a href="https://www.amazon.com/s?k=Spigen+Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$35 on Amazon →</a>
+            <a href="https://www.amazon.com/s?k=Spigen+Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$35 on Amazon →</a>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">SSD for Sentry Mode (Samsung T7)</p>
               <p className="text-sm text-zinc-400">500GB, format as exFAT</p>
             </div>
-            <a href="https://www.amazon.com/s?k=Samsung+T7+SSD+500GB&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$70 on Amazon →</a>
+            <a href="https://www.amazon.com/s?k=Samsung+T7+SSD+500GB&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$70 on Amazon →</a>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">All-Weather Floor Mats</p>
               <p className="text-sm text-zinc-400">3D MAXpider Kagu or Tesmanian</p>
             </div>
-            <a href="https://www.amazon.com/s?k=3D+MAXpider+Tesla+Model+Y+Juniper&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$170 on Amazon →</a>
+            <a href="https://www.amazon.com/s?k=3D+MAXpider+Tesla+Model+Y+Juniper&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$170 on Amazon →</a>
           </div>
         </div>
       </section>
@@ -142,6 +142,12 @@ export default function FirstThingsPage() {
           </Link>
           <Link href="/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" className="text-blue-400 hover:text-blue-300 hover:underline block">
             → Best Floor Mats Compared: MAXpider vs WeatherTech vs Tesmanian
+          </Link>
+          <Link href="/guides/tesla-model-y-juniper-delivery-checklist" className="text-blue-400 hover:text-blue-300 hover:underline block">
+            → Tesla Model Y Juniper Delivery Checklist
+          </Link>
+          <Link href="/guides/tesla-model-y-ceramic-tint-cost-guide" className="text-blue-400 hover:text-blue-300 hover:underline block">
+            → Ceramic Tint Cost Guide for Model Y
           </Link>
         </div>
       </section>

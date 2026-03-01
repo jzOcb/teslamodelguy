@@ -4,10 +4,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Tesla Model Guy - Tesla Accessories Reviews & Guides",
     template: "%s | Tesla Model Guy",
@@ -21,21 +24,30 @@ export const metadata: Metadata = {
     "model y juniper center console organizer",
     "tesla accessories guide",
   ],
-  authors: [{ name: "Tesla Model Guy" }],
+  authors: [{ name: SITE_NAME }],
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://teslamodelguy.com",
-    siteName: "Tesla Model Guy",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     title: "Tesla Model Guy - Tesla Accessories Reviews & Guides",
     description:
       "Real owner reviews and guides for Tesla accessories.",
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} cover image`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tesla Model Guy",
-    description:
-      "Real owner reviews for Tesla accessories.",
+    title: SITE_NAME,
+    description: "Real owner reviews for Tesla accessories.",
+    images: [DEFAULT_OG_IMAGE],
   },
   verification: {
     google: "3zONnzR5Hiz4ObC4CvEi1n1CSaHlb20pjfOmqbqo5Eg",
@@ -51,6 +63,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  url: SITE_URL,
+  inLanguage: "en-US",
 };
 
 export default function RootLayout({
@@ -70,6 +90,7 @@ export default function RootLayout({
         `}
       </Script>
       <body className={`${inter.className} antialiased bg-zinc-950 text-zinc-100`}>
+        <StructuredData data={websiteJsonLd} />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

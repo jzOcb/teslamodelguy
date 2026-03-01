@@ -1,11 +1,13 @@
 import Image from "next/image";
-import type { Metadata } from "next";
 import Link from "next/link";
+import StructuredData from "@/components/StructuredData";
+import { absoluteUrl, buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "10 Must-Have Accessories for Tesla Model Y Juniper (2025-2026)",
   description:
-    "The definitive list of must-have accessories for the refreshed Tesla Model Y Juniper. Floor mats, screen protectors, organizers — tested recommendations from a real owner.",
+    "The definitive list of must-have accessories for the refreshed Tesla Model Y Juniper. Floor mats, screen protectors, organizers, and more from real-owner testing.",
+  path: "/best/tesla-model-y-juniper-accessories",
   keywords: [
     "tesla model y juniper accessories",
     "best model y accessories 2025",
@@ -13,12 +15,38 @@ export const metadata: Metadata = {
     "model y juniper floor mats",
     "tesla model y screen protector",
   ],
-  openGraph: {
-    title: "10 Must-Have Accessories for Tesla Model Y Juniper",
-    description: "Real owner recommendations for the best Model Y Juniper accessories.",
-    type: "article",
-    publishedTime: "2026-03-01",
-  },
+  type: "article",
+  publishedTime: "2026-03-01",
+  modifiedTime: "2026-03-01",
+});
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "10 Must-Have Accessories for Tesla Model Y Juniper (2025-2026)",
+  description:
+    "The definitive list of must-have accessories for the refreshed Tesla Model Y Juniper.",
+  mainEntityOfPage: absoluteUrl("/best/tesla-model-y-juniper-accessories"),
+  image: [absoluteUrl("/images/tesla-hero-desktop.jpg")],
+  datePublished: "2026-03-01",
+  dateModified: "2026-03-01",
+  author: { "@type": "Person", name: "Tesla Model Guy" },
+  publisher: { "@type": "Organization", name: "Tesla Model Guy" },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+    { "@type": "ListItem", position: 2, name: "Best Picks", item: absoluteUrl("/best") },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "10 Must-Have Accessories for Tesla Model Y Juniper",
+      item: absoluteUrl("/best/tesla-model-y-juniper-accessories"),
+    },
+  ],
 };
 
 const accessories = [
@@ -29,7 +57,7 @@ const accessories = [
     emoji: "🏗️",
     price: "$70–230",
     priority: "Day 1",
-    priorityColor: "bg-red-500/5 border border-red-500/100/10 text-red-400 border border-red-500/20",
+    priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
     amazonSearch: "3D+MAXpider+Tesla+Model+Y+Juniper+2026",
     why: "Your Juniper's carpet will get destroyed without protection. This is the single most important accessory you can buy.",
     detail:
@@ -43,7 +71,7 @@ const accessories = [
     emoji: "🛡️",
     price: "$30–40",
     priority: "Day 1",
-    priorityColor: "bg-red-500/5 border border-red-500/100/10 text-red-400 border border-red-500/20",
+    priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
     amazonSearch: "Spigen+Tesla+Model+Y+Juniper+screen+protector",
     why: "The Juniper has a gorgeous 15.4-inch touchscreen. It will get scratched and covered in fingerprints.",
     detail:
@@ -166,6 +194,7 @@ const accessories = [
 export default function BestAccessoriesPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-12">
+      <StructuredData data={[articleJsonLd, breadcrumbJsonLd]} />
       {/* Hero Image */}
       <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
         <Image src="/images/tesla-hero-desktop.jpg" alt="Tesla Model Y Juniper" fill priority className="object-cover" sizes="100vw" />
@@ -228,7 +257,7 @@ export default function BestAccessoriesPage() {
                   <a
                     href={`https://www.amazon.com/s?k=${a.amazonSearch}&tag=teslamodelguy-20`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer sponsored"
                     className="text-sm bg-white text-zinc-900 px-5 py-2 rounded-lg font-medium hover:bg-zinc-200 transition"
                   >
                     Check Price on Amazon →
@@ -286,7 +315,22 @@ export default function BestAccessoriesPage() {
       </section>
 
       {/* Back */}
-      <div className="mt-12">
+      <section className="mt-12 border-t border-zinc-800 pt-8">
+        <h2 className="text-lg font-semibold text-white mb-3">Related Articles</h2>
+        <div className="space-y-2">
+          <Link href="/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" className="text-blue-400 hover:text-blue-300 hover:underline block text-sm">
+            → Best Floor Mats for Tesla Model Y Juniper
+          </Link>
+          <Link href="/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" className="text-blue-400 hover:text-blue-300 hover:underline block text-sm">
+            → Best Screen Protector for Tesla Model Y Juniper
+          </Link>
+          <Link href="/guides/first-things-to-do-tesla-model-y-juniper" className="text-blue-400 hover:text-blue-300 hover:underline block text-sm">
+            → First 7 Things to Do After Delivery
+          </Link>
+        </div>
+      </section>
+
+      <div className="mt-10">
         <Link href="/" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
           ← Back to Home
         </Link>

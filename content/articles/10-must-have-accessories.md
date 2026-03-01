@@ -31,7 +31,7 @@ The 3D MAXpider Kagu mats are the gold standard. Three-layer construction with a
 **Why not WeatherTech?** WeatherTech is solid, but the MAXpider looks more premium and fits just as well — most Reddit owners who've tried both prefer the Kagu.
 
 - **Price:** ~$70-230 (depending on full set vs individual)
-- **Where to buy:** [Amazon](https://www.amazon.com/s?k=3D+MAXpider+Tesla+Model+Y+Juniper+2026&tag=teslamodelguy-20) | [EV Bandit](https://evbandit.com/collections/3d-maxpider)
+- **Where to buy:** [Amazon](https://www.amazon.com/s?k=3D+MAXpider+Tesla+Model+Y+Juniper+2026&tag=teslamodelguy-20) | [EV Bandit](https://evbandit.com/collections/3d-maxpider?sca_ref=10733634.pROAnZ9F8x)
 
 **Runner-up:** Tesmanian mats — about 30% cheaper, still great coverage with velcro-like strips to stay in place.
 

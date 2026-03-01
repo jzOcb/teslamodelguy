@@ -1,19 +1,45 @@
 import { MetadataRoute } from "next";
 
+const base = "https://teslamodelguy.com";
+const staticRoutes = [
+  "/",
+  "/about",
+  "/best",
+  "/best/tesla-model-y-juniper-accessories",
+  "/guides",
+  "/guides/first-things-to-do-tesla-model-y-juniper",
+  "/guides/tesla-model-y-ceramic-tint-cost-guide",
+  "/guides/tesla-model-y-juniper-delivery-checklist",
+  "/guides/tesla-model-y-juniper-vs-old-differences",
+  "/reviews",
+  "/reviews/charging",
+  "/reviews/exterior",
+  "/reviews/floor-mats",
+  "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
+  "/reviews/organizers",
+  "/reviews/screen-protectors",
+  "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector",
+  "/reviews/sunshades",
+] as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://teslamodelguy.com";
-  return [
-    { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
-    { url: `${base}/reviews`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/guides`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/best`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/best/tesla-model-y-juniper-accessories`, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/guides/first-things-to-do-tesla-model-y-juniper`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/guides/tesla-model-y-juniper-delivery-checklist`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/guides/tesla-model-y-juniper-vs-old-differences`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/guides/tesla-model-y-ceramic-tint-cost-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-  ];
+  const now = new Date();
+
+  return staticRoutes.map((path) => {
+    const isPrimaryContentRoute =
+      path === "/" ||
+      path === "/best" ||
+      path === "/guides" ||
+      path === "/reviews" ||
+      path.startsWith("/best/") ||
+      path.startsWith("/guides/") ||
+      path.startsWith("/reviews/");
+
+    return {
+      url: `${base}${path === "/" ? "" : path}`,
+      lastModified: now,
+      changeFrequency: isPrimaryContentRoute ? "weekly" : "monthly",
+      priority: path === "/" ? 1 : isPrimaryContentRoute ? 0.9 : 0.7,
+    };
+  });
 }

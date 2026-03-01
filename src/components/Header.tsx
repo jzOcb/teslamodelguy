@@ -1,18 +1,37 @@
 import Link from "next/link";
 
+const navLinks = [
+  { href: "/reviews", label: "Reviews" },
+  { href: "/guides", label: "Guides" },
+  { href: "/best", label: "Best Picks" },
+  { href: "/about", label: "About" },
+];
+
 export default function Header() {
   return (
     <header className="bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-800/50 sticky top-0 z-50">
-      <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-white">
-          Tesla Model <span className="text-blue-500">Guy</span>
-        </Link>
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-400">
-          <Link href="/reviews" className="hover:text-white transition">Reviews</Link>
-          <Link href="/guides" className="hover:text-white transition">Guides</Link>
-          <Link href="/best" className="hover:text-white transition">Best Picks</Link>
-          <Link href="/about" className="hover:text-white transition">About</Link>
+      <nav aria-label="Primary" className="max-w-6xl mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="text-xl font-bold text-white">
+            Tesla Model <span className="text-blue-500">Guy</span>
+          </Link>
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-400">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-white transition">
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
+        <ul className="mt-4 flex md:hidden gap-4 overflow-x-auto pb-1 text-sm font-medium text-zinc-400">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="whitespace-nowrap hover:text-white transition">
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );
