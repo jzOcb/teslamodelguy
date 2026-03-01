@@ -40,27 +40,27 @@ export default function JuniperVsOldPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       </div>
       <header className="mb-10">
-        <p className="text-sm text-blue-600 font-medium mb-2">GUIDES</p>
+        <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Tesla Model Y Juniper vs Old Model Y: Every Difference
         </h1>
-        <p className="text-lg text-gray-300">
+        <p className="text-lg text-zinc-300">
           The &quot;Juniper&quot; refresh is the biggest Model Y update since launch. But is it worth upgrading
           from a 2020-2024 Model Y? Here&apos;s every change, explained honestly.
         </p>
-        <p className="text-sm text-gray-500 mt-4">Last updated: March 2026 · 7 min read</p>
+        <p className="text-sm text-zinc-400 mt-4">Last updated: March 2026 · 7 min read</p>
       </header>
 
       {/* Quick Answer */}
-      <section className="bg-blue-50 rounded-xl p-6 mb-10">
+      <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-white mb-3">⚡ The Short Answer</h2>
-        <p className="text-sm text-gray-300 mb-2">
+        <p className="text-sm text-zinc-300 mb-2">
           <strong>If you&apos;re buying new:</strong> Get the Juniper. It&apos;s better in every way — quieter, more comfortable, better tech.
         </p>
-        <p className="text-sm text-gray-300 mb-2">
+        <p className="text-sm text-zinc-300 mb-2">
           <strong>If you own a 2022-2024 Model Y:</strong> Not worth upgrading unless ventilated seats and the rear screen are must-haves for you. The driving experience improvement is noticeable but not dramatic.
         </p>
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-zinc-300">
           <strong>If you own a 2020-2021 Model Y:</strong> More compelling upgrade — 4-5 years of improvements in build quality, ride comfort, and features add up significantly.
         </p>
       </section>
@@ -69,8 +69,8 @@ export default function JuniperVsOldPage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Complete Comparison</h2>
         <div className="overflow-x-auto">
-          <table className="w-full text-sm border border-gray-800 rounded-lg">
-            <thead className="bg-gray-900">
+          <table className="w-full text-sm border border-zinc-800 rounded-lg">
+            <thead className="bg-zinc-900">
               <tr>
                 <th className="text-left p-3 font-semibold w-1/6">Area</th>
                 <th className="text-left p-3 font-semibold w-1/5">Feature</th>
@@ -78,12 +78,12 @@ export default function JuniperVsOldPage() {
                 <th className="text-left p-3 font-semibold w-1/4">Juniper</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-800">
+            <tbody className="divide-y divide-zinc-800">
               {differences.map((d, i) => (
                 <tr key={i}>
-                  <td className="p-3 text-gray-500">{d.category}</td>
+                  <td className="p-3 text-zinc-400">{d.category}</td>
                   <td className="p-3 font-medium text-white">{d.feature}</td>
-                  <td className="p-3 text-gray-500">{d.old}</td>
+                  <td className="p-3 text-zinc-400">{d.old}</td>
                   <td className="p-3 text-white">{d.juniper}</td>
                 </tr>
               ))}
@@ -93,7 +93,7 @@ export default function JuniperVsOldPage() {
       </section>
 
       {/* Accessory Compatibility Warning */}
-      <section className="bg-amber-950 rounded-xl p-6 mb-10">
+      <section className="bg-amber-500/5 border border-amber-500/10 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-amber-300 mb-3">⚠️ Accessory Compatibility</h2>
         <p className="text-sm text-amber-400 mb-2">
           The Juniper&apos;s redesigned interior means many pre-refresh accessories DON&apos;T FIT:
@@ -112,7 +112,7 @@ export default function JuniperVsOldPage() {
       {/* The Honest Take */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">The Honest Take</h2>
-        <div className="space-y-4 text-gray-500">
+        <div className="space-y-4 text-zinc-400">
           <p>
             <strong>What&apos;s genuinely great:</strong> Ventilated seats are a game-changer in summer.
             The quieter cabin is immediately noticeable. The rear screen is a nice touch for families.
@@ -127,7 +127,7 @@ export default function JuniperVsOldPage() {
             <strong>What still needs work:</strong> Software glitches persist. Some early Juniper owners
             report FSD issues, failed updates, and phantom alerts. Tesla&apos;s quality lottery hasn&apos;t
             been fully eliminated — use our{" "}
-            <Link href="/guides/tesla-model-y-juniper-delivery-checklist" className="text-blue-600 hover:underline">
+            <Link href="/guides/tesla-model-y-juniper-delivery-checklist" className="text-blue-400 hover:text-blue-300 hover:underline">
               delivery checklist
             </Link>{" "}to protect yourself.
           </p>
@@ -140,15 +140,15 @@ export default function JuniperVsOldPage() {
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold text-white">Is the Juniper a 2025 or 2026 model?</h3>
-            <p className="text-gray-500 text-sm mt-1">Technically it&apos;s a 2026 model year, but deliveries started in 2025. You&apos;ll see it referred to as both. Same car.</p>
+            <p className="text-zinc-400 text-sm mt-1">Technically it&apos;s a 2026 model year, but deliveries started in 2025. You&apos;ll see it referred to as both. Same car.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">Did the battery or range change?</h3>
-            <p className="text-gray-500 text-sm mt-1">The battery is largely the same, but improved aerodynamics give the Juniper slightly better efficiency — roughly 3-5% more real-world range.</p>
+            <p className="text-zinc-400 text-sm mt-1">The battery is largely the same, but improved aerodynamics give the Juniper slightly better efficiency — roughly 3-5% more real-world range.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">Can I retrofit Juniper features to my old Model Y?</h3>
-            <p className="text-gray-500 text-sm mt-1">No. The ventilated seats, rear screen, and redesigned interior are hardware changes that can&apos;t be added after the fact. Software features like updated UI are shared via updates.</p>
+            <p className="text-zinc-400 text-sm mt-1">No. The ventilated seats, rear screen, and redesigned interior are hardware changes that can&apos;t be added after the fact. Software features like updated UI are shared via updates.</p>
           </div>
         </div>
       </section>
@@ -156,13 +156,13 @@ export default function JuniperVsOldPage() {
       <section className="border-t pt-8 mb-8">
         <h2 className="text-lg font-semibold text-white mb-4">Buying a Juniper? Start Here</h2>
         <div className="space-y-2">
-          <Link href="/guides/tesla-model-y-juniper-delivery-checklist" className="text-blue-600 hover:underline block">→ Delivery Day Checklist</Link>
-          <Link href="/guides/first-things-to-do-tesla-model-y-juniper" className="text-blue-600 hover:underline block">→ First 7 Things to Do</Link>
-          <Link href="/best/tesla-model-y-juniper-accessories" className="text-blue-600 hover:underline block">→ 10 Must-Have Accessories</Link>
+          <Link href="/guides/tesla-model-y-juniper-delivery-checklist" className="text-blue-400 hover:text-blue-300 hover:underline block">→ Delivery Day Checklist</Link>
+          <Link href="/guides/first-things-to-do-tesla-model-y-juniper" className="text-blue-400 hover:text-blue-300 hover:underline block">→ First 7 Things to Do</Link>
+          <Link href="/best/tesla-model-y-juniper-accessories" className="text-blue-400 hover:text-blue-300 hover:underline block">→ 10 Must-Have Accessories</Link>
         </div>
       </section>
 
-      <p className="text-xs text-gray-500">Based on owner reports, community discussions, and official Tesla specifications.</p>
+      <p className="text-xs text-zinc-400">Based on owner reports, community discussions, and official Tesla specifications.</p>
     </article>
   );
 }

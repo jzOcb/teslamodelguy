@@ -25,13 +25,13 @@ export default function ReviewsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold mb-2">Reviews</h1>
-      <p className="text-gray-500 mb-8">Honest, detailed reviews of Tesla accessories from a real owner.</p>
+      <p className="text-zinc-300 mb-8">Honest, detailed reviews of Tesla accessories from a real owner.</p>
       <div className="space-y-4">
         {reviews.map((r) => (
-          <Link key={r.slug} href={r.slug} className="block border border-gray-800 rounded-xl p-6 hover:border-blue-500/50 hover:shadow-md transition">
-            <span className="text-xs font-medium text-gray-500">{r.category}</span>
+          <Link key={r.slug} href={r.slug} className="block border border-zinc-800 rounded-2xl p-6 hover:border-zinc-700 transition">
+            <span className="text-xs font-medium text-zinc-400">{r.category}</span>
             <h2 className="text-xl font-bold text-white mt-1">{r.title}</h2>
-            <p className="text-gray-500 text-sm mt-1">{r.desc}</p>
+            <p className="text-zinc-400 text-sm mt-1">{r.desc}</p>
           </Link>
         ))}
       </div>

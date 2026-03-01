@@ -31,13 +31,13 @@ export default function GuidesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold mb-2">Guides</h1>
-      <p className="text-gray-500 mb-8">Practical guides and how-tos for Tesla owners.</p>
+      <p className="text-zinc-300 mb-8">Practical guides and how-tos for Tesla owners.</p>
       <div className="space-y-4">
         {guides.map((g) => (
-          <Link key={g.slug} href={g.slug} className="block border border-gray-800 rounded-xl p-6 hover:border-blue-500/50 hover:shadow-md transition">
-            {g.tag && <span className="text-xs font-medium text-red-600 bg-red-50 px-2 py-0.5 rounded-full">{g.tag}</span>}
+          <Link key={g.slug} href={g.slug} className="block border border-zinc-800 rounded-2xl p-6 hover:border-zinc-700 transition">
+            {g.tag && <span className="text-xs font-medium text-red-600 bg-red-500/5 border border-red-500/10 px-2 py-0.5 rounded-full">{g.tag}</span>}
             <h2 className="text-xl font-bold text-white mt-1">{g.title}</h2>
-            <p className="text-gray-500 text-sm mt-1">{g.desc}</p>
+            <p className="text-zinc-400 text-sm mt-1">{g.desc}</p>
           </Link>
         ))}
       </div>
