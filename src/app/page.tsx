@@ -69,7 +69,7 @@ export default function Home() {
 
       <section className="relative min-h-[72vh] overflow-hidden px-4 py-20 md:py-24">
         <Image
-          src="/images/juniper-hero.jpg"
+          src="/images/tesla-model-y-hero.jpg"
           alt="Tesla Model Y Juniper"
           fill
           priority
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 mx-auto flex min-h-[60vh] max-w-5xl flex-col items-center justify-center text-center">
           <h1 className="mb-6 text-5xl font-black leading-tight tracking-tight text-white md:text-7xl">
-            Tesla Gear, Tested by a Real Owner
+            Your Guide to Tesla Accessories
           </h1>
           <p className="mb-10 max-w-3xl text-base leading-relaxed text-zinc-100 md:text-xl">
             Honest reviews, practical guides, and the best accessories for Model Y Juniper owners who want signal, not noise.
