@@ -37,7 +37,7 @@ export default function ReviewsPage() {
       <p className="text-base md:text-lg text-zinc-200 mb-10 leading-relaxed">Honest, detailed reviews of Tesla accessories from a real owner.</p>
       <div className="space-y-6">
         {reviews.map((r) => (
-          <Link key={r.slug} href={r.slug} className="block bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+          <Link key={r.slug} href={r.slug} className="block bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <CardVisual emoji={r.emoji} label={r.category} gradient={r.gradient} compact />
             <span className="inline-block text-xs font-semibold text-cyan-300 mt-4">{r.category}</span>
             <h2 className="text-2xl font-bold text-white mt-2">{r.title}</h2>

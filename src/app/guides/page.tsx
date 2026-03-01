@@ -53,7 +53,7 @@ export default function GuidesPage() {
       <p className="text-base md:text-lg text-zinc-200 mb-10 leading-relaxed">Practical guides and how-tos for Tesla owners.</p>
       <div className="space-y-6">
         {guides.map((g) => (
-          <Link key={g.slug} href={g.slug} className="block bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+          <Link key={g.slug} href={g.slug} className="block bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <CardVisual emoji={g.emoji} label="Guide" gradient={g.gradient} compact />
             {g.tag && <span className="inline-block text-xs font-semibold text-cyan-300 bg-cyan-500/10 border border-cyan-500/30 px-2 py-0.5 rounded-full mt-4">{g.tag}</span>}
             <h2 className="text-2xl font-bold text-white mt-2">{g.title}</h2>

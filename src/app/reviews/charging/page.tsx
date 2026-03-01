@@ -24,7 +24,7 @@ export default function ChargingPage() {
         Home chargers, NACS adapters, and portable cables for the 2025–2026 Model Y Juniper.
       </p>
 
-      <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+      <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
         <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5 items-start">
           <CardVisual emoji="🔌" label="Charging" gradient="from-zinc-800 via-lime-700 to-emerald-700" />
           <div>

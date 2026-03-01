@@ -82,10 +82,10 @@ export default function Home() {
               <Link
                 key={cat.slug}
                 href={`/reviews/${cat.slug}`}
-                className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200 group"
+                className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200 group"
               >
                 <CardVisual emoji={cat.emoji} label={cat.name} gradient={cat.gradient} />
-                <h3 className="font-bold text-xl text-white group-hover:text-cyan-300 transition-colors mt-4">{cat.name}</h3>
+                <h3 className="sr-only">{cat.name}</h3>
                 <p className="text-base text-zinc-200 mt-2 leading-relaxed">{cat.desc}</p>
               </Link>
             ))}
@@ -101,17 +101,17 @@ export default function Home() {
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-white mb-12">Built for Owners, Not Algorithms</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
               <div className="text-3xl mb-4" aria-hidden="true">🚗</div>
               <h3 className="font-bold text-xl text-white mb-2">Real Owner</h3>
               <p className="text-base text-zinc-200 leading-relaxed">I drive a Tesla daily. Every review is based on real use and ownership.</p>
             </div>
-            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
               <div className="text-3xl mb-4" aria-hidden="true">📸</div>
               <h3 className="font-bold text-xl text-white mb-2">Visual Proof</h3>
               <p className="text-base text-zinc-200 leading-relaxed">Clear product visuals and practical examples on every page.</p>
             </div>
-            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
               <div className="text-3xl mb-4" aria-hidden="true">🧪</div>
               <h3 className="font-bold text-xl text-white mb-2">No Fluff</h3>
               <p className="text-base text-zinc-200 leading-relaxed">If something is bad, I call it out. No paid reviews, ever.</p>

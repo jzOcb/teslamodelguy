@@ -54,7 +54,7 @@ export default function OrganizersPage() {
 
       <div className="space-y-6">
         {products.map((p) => (
-          <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+          <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
               <CardVisual emoji="📦" label={p.brand} gradient={p.gradient} />
               <div>

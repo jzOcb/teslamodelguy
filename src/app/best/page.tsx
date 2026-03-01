@@ -29,7 +29,7 @@ export default function BestPage() {
       <p className="text-base md:text-lg text-zinc-200 mb-10 leading-relaxed">Our curated recommendations — only products we actually stand behind.</p>
       <div className="space-y-6">
         {articles.map((a) => (
-          <Link key={a.slug} href={a.slug} className="block bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+          <Link key={a.slug} href={a.slug} className="block bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <CardVisual emoji={a.emoji} label="Best Picks" gradient={a.gradient} compact />
             <span className="inline-block text-xs font-semibold text-cyan-300 bg-cyan-500/10 border border-cyan-500/30 px-2 py-0.5 rounded-full mt-4">{a.tag}</span>
             <h2 className="text-2xl font-bold text-white mt-2">{a.title}</h2>
