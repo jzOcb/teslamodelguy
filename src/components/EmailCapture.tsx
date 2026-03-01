@@ -50,11 +50,11 @@ export default function EmailCapture({
   }
 
   return (
-    <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 md:p-6">
+    <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-4 md:p-6">
       <h2 className={`${compact ? "text-xl" : "text-2xl"} font-bold text-white mb-2`}>
         Get the Printable Delivery Checklist
       </h2>
-      <p className="text-zinc-300 text-sm md:text-base mb-4">
+      <p className="text-zinc-200 text-sm md:text-base mb-4">
         Enter your email and we&apos;ll send you a PDF you can bring to your delivery appointment.
       </p>
 
@@ -75,12 +75,12 @@ export default function EmailCapture({
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder="you@example.com"
-            className="w-full rounded-lg border border-zinc-700 bg-zinc-950 px-4 py-2.5 text-zinc-100 placeholder:text-zinc-500 focus:border-emerald-500 focus:outline-none"
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-950 px-6 py-3.5 text-zinc-100 placeholder:text-zinc-500 focus:border-emerald-500 focus:outline-none"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-5 py-2.5 font-medium text-white transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-70"
+            className="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-6 py-3.5 font-medium text-white transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {status === "loading" ? "Sending..." : "Send Me the PDF"}
           </button>

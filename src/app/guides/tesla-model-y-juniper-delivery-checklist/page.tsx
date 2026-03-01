@@ -1,7 +1,7 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
+import GradientHero from "@/components/GradientHero";
 
 export const metadata: Metadata = {
   title: "Tesla Delivery Checklist 2025-2026 — Don't Miss These",
@@ -58,11 +58,11 @@ function CheckSection({ title, items }: { title: string; items: { item: string; 
       <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
       <div className="space-y-3">
         {items.map((check, i) => (
-          <div key={i} className="flex items-start gap-3 border border-zinc-800 rounded-lg p-4">
+          <div key={i} className="flex items-start gap-3 border border-zinc-700 rounded-lg p-4">
             <div className="flex-shrink-0 w-6 h-6 border-2 border-zinc-700 rounded mt-0.5" />
             <div>
               <p className="font-medium text-white">{check.item}</p>
-              <p className="text-sm text-zinc-400 mt-0.5">{check.detail}</p>
+              <p className="text-base text-zinc-300 mt-0.5">{check.detail}</p>
             </div>
           </div>
         ))}
@@ -73,21 +73,23 @@ function CheckSection({ title, items }: { title: string; items: { item: string; 
 
 export default function DeliveryChecklistPage() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
-        <Image src="/images/tesla-hero-global.jpg" alt="Tesla delivery checklist" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-      </div>
+    <article className="max-w-4xl mx-auto px-4 py-16">
+      <GradientHero
+        emoji="✅"
+        title="Delivery Day Checklist"
+        subtitle="Use this inspection flow before accepting your Tesla delivery."
+        gradient="from-zinc-800 via-emerald-800 to-teal-700"
+      />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Tesla Delivery Checklist 2025-2026</h1>
-        <p className="text-lg text-zinc-300 mb-6">
+        <p className="text-lg text-zinc-200 mb-6">
           Use this checklist for any new Tesla delivery: Model 3, Model Y, Model S, Model X, or Cybertruck.
           Tesla build quality is better than in prior years, but delivery-day misses still happen. Inspect first,
           then accept.
         </p>
         <EmailCapture source="delivery-checklist-hero" compact />
-        <p className="text-sm text-zinc-400 mt-4">Last updated: March 2026 · 10 min read</p>
+        <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 10 min read</p>
       </header>
 
       <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-6 mb-10">
@@ -102,9 +104,9 @@ export default function DeliveryChecklistPage() {
       <CheckSection title="Interior Inspection" items={interiorChecks} />
       <CheckSection title="Functional + Delivery Checks" items={functionalChecks} />
 
-      <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 mb-10">
+      <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
         <h2 className="text-xl font-bold text-white mb-3">What to Bring to Delivery</h2>
-        <ul className="space-y-2 text-sm text-zinc-300">
+        <ul className="space-y-2 text-base text-zinc-200 leading-relaxed">
           <li>Phone with Tesla app installed and logged in</li>
           <li>Flashlight for paint and trim inspection in low light</li>
           <li>This checklist (saved offline or printed)</li>
@@ -123,19 +125,19 @@ export default function DeliveryChecklistPage() {
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold text-white">Can I refuse delivery if there are major issues?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Yes. If defects are significant, you can refuse and request re-delivery after correction.</p>
+            <p className="text-zinc-300 text-base mt-1">Yes. If defects are significant, you can refuse and request re-delivery after correction.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">How long should inspection take?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Plan for 30-45 minutes. Bring your checklist and don&apos;t rush.</p>
+            <p className="text-zinc-300 text-base mt-1">Plan for 30-45 minutes. Bring your checklist and don&apos;t rush.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">Anything specific for refreshed Model Y Juniper?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Yes. Pay extra attention to rear display behavior, ambient lighting continuity, and trim transitions introduced in the refresh.</p>
+            <p className="text-zinc-300 text-base mt-1">Yes. Pay extra attention to rear display behavior, ambient lighting continuity, and trim transitions introduced in the refresh.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">What if I notice an issue after leaving?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Open a service request in the Tesla app immediately and include photos and delivery-day timestamps.</p>
+            <p className="text-zinc-300 text-base mt-1">Open a service request in the Tesla app immediately and include photos and delivery-day timestamps.</p>
           </div>
         </div>
       </section>
@@ -148,7 +150,7 @@ export default function DeliveryChecklistPage() {
         </div>
       </section>
 
-      <p className="text-xs text-zinc-400">Last updated March 2026. Compiled from Tesla owner delivery reports across Model 3, Y, S, X, and Cybertruck communities.</p>
+      <p className="text-xs text-zinc-300">Last updated March 2026. Compiled from Tesla owner delivery reports across Model 3, Y, S, X, and Cybertruck communities.</p>
     </article>
   );
 }

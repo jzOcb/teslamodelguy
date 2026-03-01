@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 body {
-  background: #09090b; /* zinc-950 */
-  color: #d4d4d8; /* zinc-300 */
+  background: radial-gradient(circle at top, #18181b 0%, #09090b 45%, #030712 100%);
+  color: #f4f4f5;
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import StructuredData from "@/components/StructuredData";
+import CardVisual from "@/components/CardVisual";
 import { absoluteUrl, buildMetadata, SITE_NAME } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -16,12 +16,12 @@ export const metadata = buildMetadata({
 });
 
 const categories = [
-  { name: "Floor Mats", slug: "floor-mats", emoji: "🏗️", desc: "All-weather protection for your Tesla" },
-  { name: "Center Console", slug: "organizers", emoji: "📦", desc: "Organizers, trays & storage solutions" },
-  { name: "Screen Protectors", slug: "screen-protectors", emoji: "🛡️", desc: "Protect your 15\" touchscreen" },
-  { name: "Sunshades", slug: "sunshades", emoji: "☀️", desc: "Keep your cabin cool in summer" },
-  { name: "Charging & Tech", slug: "charging", emoji: "⚡", desc: "USB hubs, wireless chargers, SSDs" },
-  { name: "Exterior", slug: "exterior", emoji: "🚗", desc: "Mud flaps, PPF, wheel covers" },
+  { name: "Floor Mats", slug: "floor-mats", emoji: "🏗️", desc: "All-weather protection for your Tesla", gradient: "from-slate-800 via-cyan-800 to-blue-700" },
+  { name: "Center Console", slug: "organizers", emoji: "📦", desc: "Organizers, trays & storage solutions", gradient: "from-zinc-800 via-emerald-800 to-teal-700" },
+  { name: "Screen Protectors", slug: "screen-protectors", emoji: "🛡️", desc: "Protect your 15.4\" touchscreen", gradient: "from-zinc-800 via-indigo-800 to-blue-700" },
+  { name: "Sunshades", slug: "sunshades", emoji: "☀️", desc: "Keep your cabin cool in summer", gradient: "from-zinc-800 via-amber-700 to-orange-600" },
+  { name: "Charging & Tech", slug: "charging", emoji: "⚡", desc: "USB hubs, wireless chargers, SSDs", gradient: "from-zinc-800 via-lime-700 to-emerald-700" },
+  { name: "Exterior", slug: "exterior", emoji: "🚗", desc: "Mud flaps, PPF, wheel covers", gradient: "from-zinc-800 via-rose-800 to-red-700" },
 ];
 
 const homeJsonLd = {
@@ -36,105 +36,92 @@ export default function Home() {
   return (
     <div className="bg-zinc-950">
       <StructuredData data={homeJsonLd} />
-      <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center">
-        <Image
-          src="/images/tesla-hero-global.jpg"
-          alt="Tesla Model Y on highway"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-zinc-950/50" />
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-            Your Go-To Guide for Tesla Accessories
-          </h1>
-          <p className="text-xl md:text-2xl text-zinc-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Real reviews from an actual owner. No fluff, no sponsored BS, just honest recommendations.
-          </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link
-              href="/best"
-              className="bg-white text-zinc-900 px-8 py-3.5 rounded font-medium hover:bg-zinc-200 transition text-lg"
-            >
-              See Best Picks
-            </Link>
-            <Link
-              href="/guides"
-              className="border border-white/70 text-white px-8 py-3.5 rounded font-medium hover:bg-zinc-950/10 transition text-lg"
-            >
-              Read Guides
-            </Link>
+
+      <section className="relative py-20 md:py-24 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-slate-900 to-blue-900" />
+        <div className="absolute -top-16 -right-16 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
+
+        <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
+              Tesla Gear, Tested by a Real Owner
+            </h1>
+            <p className="text-base md:text-xl text-zinc-100 mb-10 max-w-2xl leading-relaxed">
+              Honest reviews, practical guides, and the best accessories for Model Y Juniper owners who want signal, not noise.
+            </p>
+            <div className="flex gap-4 flex-wrap">
+              <Link href="/best" className="bg-white text-zinc-900 px-9 py-4 rounded-xl font-semibold hover:bg-zinc-200 transition-all duration-200 text-lg">
+                See Best Picks
+              </Link>
+              <Link href="/guides" className="border border-zinc-100/80 text-white px-9 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-200 text-lg">
+                Read Guides
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-zinc-700 bg-zinc-900/60 p-6 backdrop-blur">
+            <CardVisual emoji="⚡" label="REAL TESTING" gradient="from-zinc-800 via-blue-800 to-cyan-700" />
+            <div className="mt-4 grid grid-cols-2 gap-4">
+              <CardVisual emoji="📸" label="NO STOCK PHOTOS" compact gradient="from-zinc-800 via-emerald-800 to-teal-700" />
+              <CardVisual emoji="💯" label="NO PAID REVIEWS" compact gradient="from-zinc-800 via-rose-800 to-orange-700" />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden aspect-video">
-            <Image
-              src="/images/tesla-menu-y.png"
-              alt="Tesla Model Y"
-              fill
-              className="object-contain bg-zinc-950"
-              sizes="(max-width: 1200px) 100vw, 1200px"
-            />
-          </div>
-          <p className="text-center text-zinc-400 text-sm mt-4">
-            The best accessories for every Tesla, tested by a real owner.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-zinc-950 py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
-            Browse by Category
-          </h2>
+          <div className="inline-flex items-center gap-2 rounded-full border border-zinc-700 bg-gradient-to-r from-zinc-900 to-zinc-800 px-6 py-3 mb-6">
+            <span className="text-cyan-300">✦</span>
+            <span className="text-sm font-semibold text-zinc-100">Browse by Category</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-10">Find What You Need Fast</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.map((cat) => (
               <Link
                 key={cat.slug}
                 href={`/reviews/${cat.slug}`}
-                className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-700 transition-all duration-300 group"
+                className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200 group"
               >
-                <div className="text-3xl mb-3" aria-hidden="true">{cat.emoji}</div>
-                <h3 className="font-semibold text-white group-hover:text-blue-400 transition">
-                  {cat.name}
-                </h3>
-                <p className="text-sm text-zinc-400 mt-1">{cat.desc}</p>
+                <CardVisual emoji={cat.emoji} label={cat.name} gradient={cat.gradient} />
+                <h3 className="font-bold text-xl text-white group-hover:text-cyan-300 transition-colors mt-4">{cat.name}</h3>
+                <p className="text-base text-zinc-200 mt-2 leading-relaxed">{cat.desc}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-zinc-950 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12">Why Trust Tesla Model Guy?</h2>
+      <section className="py-20 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-zinc-700 bg-gradient-to-r from-zinc-900 to-zinc-800 px-6 py-3 mb-6">
+            <span className="text-cyan-300">★</span>
+            <span className="text-sm font-semibold text-zinc-100">Why Trust Tesla Model Guy?</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-12">Built for Owners, Not Algorithms</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
               <div className="text-3xl mb-4" aria-hidden="true">🚗</div>
-              <h3 className="font-semibold text-white mb-2">Real Owner</h3>
-              <p className="text-sm text-zinc-400">I drive a Tesla daily. Every review is based on real use and ownership.</p>
+              <h3 className="font-bold text-xl text-white mb-2">Real Owner</h3>
+              <p className="text-base text-zinc-200 leading-relaxed">I drive a Tesla daily. Every review is based on real use and ownership.</p>
             </div>
-            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
               <div className="text-3xl mb-4" aria-hidden="true">📸</div>
-              <h3 className="font-semibold text-white mb-2">Real Photos</h3>
-              <p className="text-sm text-zinc-400">No stock images. Every photo is taken in my actual car.</p>
+              <h3 className="font-bold text-xl text-white mb-2">Visual Proof</h3>
+              <p className="text-base text-zinc-200 leading-relaxed">Clear product visuals and practical examples on every page.</p>
             </div>
-            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
-              <div className="text-3xl mb-4" aria-hidden="true">💯</div>
-              <h3 className="font-semibold text-white mb-2">Honest Reviews</h3>
-              <p className="text-sm text-zinc-400">If something is bad, I call it out. No paid reviews, ever.</p>
+            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+              <div className="text-3xl mb-4" aria-hidden="true">🧪</div>
+              <h3 className="font-bold text-xl text-white mb-2">No Fluff</h3>
+              <p className="text-base text-zinc-200 leading-relaxed">If something is bad, I call it out. No paid reviews, ever.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="bg-zinc-950 border-t border-zinc-800 py-6 px-4 text-center">
-        <p className="text-xs text-zinc-400">
+      <div className="bg-zinc-950 border-t border-zinc-700 py-8 px-4 text-center">
+        <p className="text-base text-zinc-200 leading-relaxed">
           Tesla, Model Y, Model 3, Model S, and Model X are trademarks of Tesla, Inc. This site is not affiliated with Tesla.
         </p>
       </div>

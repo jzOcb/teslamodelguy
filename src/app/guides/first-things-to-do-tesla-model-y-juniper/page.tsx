@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
+import GradientHero from "@/components/GradientHero";
 
 export const metadata: Metadata = {
   title: "First 7 Things to Do After Getting Your Tesla Model Y Juniper",
@@ -62,22 +62,24 @@ const steps = [
 
 export default function FirstThingsPage() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
-        <Image src="/images/tesla-hero-global.jpg" alt="Tesla Model Y" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-      </div>
+    <article className="max-w-4xl mx-auto px-4 py-16">
+      <GradientHero
+        emoji="🚀"
+        title="First Week Setup Plan"
+        subtitle="Seven practical actions to protect your car and avoid common new-owner mistakes."
+        gradient="from-zinc-800 via-sky-800 to-cyan-700"
+      />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           First 7 Things to Do After Getting Your Tesla Model Y Juniper
         </h1>
-        <p className="text-lg text-zinc-300">
+        <p className="text-lg text-zinc-200 leading-relaxed">
           Congrats on the new car. Here&apos;s exactly what to do on day one — from the delivery
           inspection to the settings most people don&apos;t find for weeks. This is the checklist
           I wish I had.
         </p>
-        <p className="text-sm text-zinc-400 mt-4">Last updated: March 2026 · 6 min read</p>
+        <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 6 min read</p>
       </header>
 
       {/* Steps */}
@@ -90,7 +92,7 @@ export default function FirstThingsPage() {
               </div>
               <div className="flex-1">
                 <h2 className="text-xl font-bold text-white mb-3">{step.title}</h2>
-                <p className="text-zinc-300 leading-relaxed">{step.content}</p>
+                <p className="text-zinc-200 leading-relaxed">{step.content}</p>
                 {step.tip && (
                   <div className="bg-amber-500/5 border border-amber-500/10 rounded-lg p-4 mt-3 text-sm text-amber-300">
                     <strong>💡 Pro tip:</strong> {step.tip}
@@ -105,28 +107,28 @@ export default function FirstThingsPage() {
       {/* Quick Shopping List */}
       <section className="mt-12 bg-zinc-900 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-white mb-4">Day 1 Shopping List</h2>
-        <p className="text-sm text-zinc-400 mb-4">
+        <p className="text-base text-zinc-300 mb-4">
           These are the items you should have ready before or on delivery day:
         </p>
         <div className="space-y-3">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">Screen Protector (Spigen EZ Fit)</p>
-              <p className="text-sm text-zinc-400">15.4&quot; front + 8&quot; rear</p>
+              <p className="text-base text-zinc-300">15.4&quot; front + 8&quot; rear</p>
             </div>
             <a href="https://www.amazon.com/s?k=Spigen+Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$35 on Amazon →</a>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">SSD for Sentry Mode (Samsung T7)</p>
-              <p className="text-sm text-zinc-400">500GB, format as exFAT</p>
+              <p className="text-base text-zinc-300">500GB, format as exFAT</p>
             </div>
             <a href="https://www.amazon.com/s?k=Samsung+T7+SSD+500GB&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$70 on Amazon →</a>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">All-Weather Floor Mats</p>
-              <p className="text-sm text-zinc-400">3D MAXpider Kagu or Tesmanian</p>
+              <p className="text-base text-zinc-300">3D MAXpider Kagu or Tesmanian</p>
             </div>
             <a href="https://www.amazon.com/s?k=3D+MAXpider+Tesla+Model+Y+Juniper&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$170 on Amazon →</a>
           </div>
@@ -152,7 +154,7 @@ export default function FirstThingsPage() {
         </div>
       </section>
 
-      <p className="text-xs text-zinc-400 mt-8">
+      <p className="text-xs text-zinc-300 mt-8">
         Some links are affiliate links. We earn a small commission at no extra cost to you.
       </p>
     </article>

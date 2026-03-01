@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
   title: "Best Tesla Screen Protectors (2025-2026)",
@@ -17,99 +18,107 @@ const products = [
   {
     rank: 1,
     badge: "Best Overall",
-    badgeColor: "bg-blue-900/50 text-blue-400",
+    badgeColor: "bg-blue-900/50 text-blue-300",
     name: "Spigen EZ Fit Tempered Glass",
     brand: "Spigen",
     price: "$30–40",
-    description:
-      "Spigen's auto-alignment tray makes installation foolproof — place the tray, peel the backing, press down, done. Zero bubbles, perfectly centered every time. 9H hardness, oleophobic coating, full touch sensitivity. Available in clear and matte.",
+    description: "Foolproof alignment tray, strong 9H protection, and great clarity.",
     amazonSearch: "Spigen+EZ+Fit+Tesla+Model+Y+Juniper+screen+protector",
+    gradient: "from-zinc-800 via-indigo-800 to-blue-700",
   },
   {
     rank: 2,
     badge: "Premium Pick",
-    badgeColor: "bg-purple-900/50 text-purple-400",
+    badgeColor: "bg-purple-900/50 text-purple-300",
     name: "dbrand Prism 2.0",
     brand: "dbrand",
     price: "$40–50",
-    description:
-      "The best self-aligning installation tray in the business — even better than Spigen's. The glass itself is noticeably thinner and clearer than competitors. Premium price, premium product.",
+    description: "Top-tier install tray and premium glass quality.",
     amazonSearch: "dbrand+Prism+Tesla+Model+Y+Juniper",
+    gradient: "from-zinc-800 via-purple-800 to-indigo-700",
   },
   {
     rank: 3,
     badge: "Best Budget",
-    badgeColor: "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20",
+    badgeColor: "bg-emerald-500/10 text-emerald-300 border border-emerald-500/30",
     name: "TPARTS Tempered Glass",
     brand: "TPARTS",
     price: "$15–25",
-    description:
-      "No-frills 9H tempered glass at the lowest price. No alignment tray, but protection is comparable to premium options. 90% of the protection at 60% of the price if you're careful with installation.",
+    description: "Strong value if you can handle manual alignment during install.",
     amazonSearch: "TPARTS+Tesla+Model+Y+Juniper+screen+protector",
+    gradient: "from-zinc-800 via-emerald-800 to-teal-700",
   },
   {
     rank: 4,
     badge: "Best Anti-Glare",
-    badgeColor: "bg-amber-100 text-amber-400",
+    badgeColor: "bg-amber-500/10 text-amber-300 border border-amber-500/30",
     name: "Tesery Matte Screen Protector",
     brand: "Tesery",
     price: "$20–35",
-    description:
-      "The best anti-glare option we've tested. Also includes blue light filtering to reduce eye strain on long drives. If you park outdoors in a sunny area, this kills reflections that make the screen hard to read.",
+    description: "Excellent reflection control for sunny driving conditions.",
     amazonSearch: "Tesery+Tesla+Model+Y+screen+protector+matte",
+    gradient: "from-zinc-800 via-amber-700 to-orange-700",
   },
 ];
 
 export default function ScreenProtectorsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <div className="mb-2">
-        <Link href="/reviews" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">
+    <div className="max-w-5xl mx-auto px-4 py-20">
+      <div className="mb-4">
+        <Link href="/reviews" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">
           ← All Reviews
         </Link>
       </div>
-      <h1 className="text-3xl font-bold mb-2">Best Tesla Screen Protectors</h1>
-      <p className="text-zinc-300 mb-2">
-        The Juniper upgraded to a 15.4&quot; touchscreen — which means old Model Y screen protectors won&apos;t fit. Only buy protectors that explicitly say &quot;Juniper,&quot; &quot;2025,&quot; or &quot;2026.&quot;
+      <h1 className="text-4xl md:text-5xl font-black mb-3 text-white tracking-tight">Best Tesla Screen Protectors</h1>
+      <p className="text-base md:text-lg text-zinc-200 mb-8 leading-relaxed">
+        The Juniper uses a 15.4&quot; display. Older 15&quot; Model Y protectors will not fit.
       </p>
-      <Link
-        href="/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector"
-        className="inline-block text-sm text-blue-400 hover:text-blue-300 hover:underline mb-8"
-      >
-        → Full comparison: Spigen vs dbrand vs TPARTS vs Tesery (matte vs clear)
-      </Link>
 
-      <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-4 mb-8 text-sm text-red-400">
-        <strong>⚠️ Compatibility Warning:</strong> The Juniper screen is 15.4&quot;, up from 15&quot; on the previous Model Y. Screen protectors for 2020–2024 Model Y will NOT fit.
+      <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-5 mb-8 text-base text-red-200">
+        <strong>Compatibility warning:</strong> Only buy protectors that explicitly mention Juniper or 2025–2026 support.
       </div>
 
-      <div className="space-y-4">
+      <Link href="/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" className="inline-block text-base text-cyan-300 hover:text-cyan-200 hover:underline mb-10">
+        → Full comparison: Spigen vs dbrand vs TPARTS vs Tesery
+      </Link>
+
+      <div className="space-y-6">
         {products.map((p) => (
-          <div key={p.rank} className="border border-zinc-800 rounded-2xl p-6 hover:border-zinc-700 transition">
-            <div className="flex items-center gap-3 mb-2">
-              <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
-              <span className="text-xs text-zinc-400">#{p.rank}</span>
-            </div>
-            <h2 className="text-xl font-bold text-white">{p.name}</h2>
-            <p className="text-sm text-zinc-400 mb-1">{p.brand}</p>
-            <p className="text-white font-semibold mb-3">{p.price}</p>
-            <p className="text-zinc-400 text-sm mb-4">{p.description}</p>
-            <div className="flex items-center gap-3">
-              <a
-                href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition"
-              >
-                Check Price on Amazon
-              </a>
-              <Link href="/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">
-                Full review →
-              </Link>
+          <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-600 hover:-translate-y-1 transition-all duration-200">
+            <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
+              <CardVisual emoji="🛡️" label={p.brand} gradient={p.gradient} />
+              <div>
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
+                  <span className="text-base text-zinc-300">#{p.rank}</span>
+                </div>
+                <h2 className="text-2xl font-bold text-white">{p.name}</h2>
+                <p className="text-base text-zinc-200 mt-1">{p.brand}</p>
+                <p className="text-white font-semibold mt-2 mb-3">{p.price}</p>
+                <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
+                <div className="flex items-center gap-3 flex-wrap">
+                  <a
+                    href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200"
+                  >
+                    Check Price on Amazon
+                  </a>
+                  <Link href="/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">
+                    Full review →
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+      <section className="mt-12 bg-zinc-900 border border-zinc-700 rounded-2xl p-6">
+        <h2 className="text-xl font-bold text-white mb-2">More reviews coming soon</h2>
+        <p className="text-base text-zinc-200">Rear screen protector comparisons and install walkthroughs are in testing.</p>
+      </section>
     </div>
   );
 }

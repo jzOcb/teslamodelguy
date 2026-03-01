@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
+import GradientHero from "@/components/GradientHero";
 
 export const metadata: Metadata = {
   title: "Tesla Model Y Juniper vs Old Model Y: Every Difference Explained",
@@ -34,33 +34,35 @@ const differences = [
 
 export default function JuniperVsOldPage() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <div className="relative h-[40vh] min-h-[300px] -mx-4 md:mx-0 md:rounded-2xl overflow-hidden mb-8">
-        <Image src="/images/tesla-hero-global.jpg" alt="Tesla Model Y" fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-      </div>
+    <article className="max-w-4xl mx-auto px-4 py-16">
+      <GradientHero
+        emoji="⚖️"
+        title="Juniper vs Previous Model Y"
+        subtitle="A side-by-side breakdown of design, comfort, features, and ownership impact."
+        gradient="from-zinc-800 via-purple-800 to-indigo-700"
+      />
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Tesla Model Y Juniper vs Old Model Y: Every Difference
         </h1>
-        <p className="text-lg text-zinc-300">
+        <p className="text-lg text-zinc-200 leading-relaxed">
           The &quot;Juniper&quot; refresh is the biggest Model Y update since launch. But is it worth upgrading
           from a 2020-2024 Model Y? Here&apos;s every change, explained honestly.
         </p>
-        <p className="text-sm text-zinc-400 mt-4">Last updated: March 2026 · 7 min read</p>
+        <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 7 min read</p>
       </header>
 
       {/* Quick Answer */}
-      <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 mb-10">
+      <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-white mb-3">⚡ The Short Answer</h2>
-        <p className="text-sm text-zinc-300 mb-2">
+        <p className="text-base text-zinc-200 mb-2">
           <strong>If you&apos;re buying new:</strong> Get the Juniper. It&apos;s better in every way — quieter, more comfortable, better tech.
         </p>
-        <p className="text-sm text-zinc-300 mb-2">
+        <p className="text-base text-zinc-200 mb-2">
           <strong>If you own a 2022-2024 Model Y:</strong> Not worth upgrading unless ventilated seats and the rear screen are must-haves for you. The driving experience improvement is noticeable but not dramatic.
         </p>
-        <p className="text-sm text-zinc-300">
+        <p className="text-base text-zinc-200 leading-relaxed">
           <strong>If you own a 2020-2021 Model Y:</strong> More compelling upgrade — 4-5 years of improvements in build quality, ride comfort, and features add up significantly.
         </p>
       </section>
@@ -69,7 +71,7 @@ export default function JuniperVsOldPage() {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Complete Comparison</h2>
         <div className="overflow-x-auto">
-          <table className="w-full text-sm border border-zinc-800 rounded-lg">
+          <table className="w-full text-sm border border-zinc-700 rounded-lg">
             <thead className="bg-zinc-900">
               <tr>
                 <th className="text-left p-3 font-semibold w-1/6">Area</th>
@@ -81,9 +83,9 @@ export default function JuniperVsOldPage() {
             <tbody className="divide-y divide-zinc-800">
               {differences.map((d, i) => (
                 <tr key={i}>
-                  <td className="p-3 text-zinc-400">{d.category}</td>
+                  <td className="p-3 text-zinc-300">{d.category}</td>
                   <td className="p-3 font-medium text-white">{d.feature}</td>
-                  <td className="p-3 text-zinc-400">{d.old}</td>
+                  <td className="p-3 text-zinc-300">{d.old}</td>
                   <td className="p-3 text-white">{d.juniper}</td>
                 </tr>
               ))}
@@ -112,7 +114,7 @@ export default function JuniperVsOldPage() {
       {/* The Honest Take */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">The Honest Take</h2>
-        <div className="space-y-4 text-zinc-400">
+        <div className="space-y-4 text-zinc-200 leading-relaxed">
           <p>
             <strong>What&apos;s genuinely great:</strong> Ventilated seats are a game-changer in summer.
             The quieter cabin is immediately noticeable. The rear screen is a nice touch for families.
@@ -140,15 +142,15 @@ export default function JuniperVsOldPage() {
         <div className="space-y-4">
           <div>
             <h3 className="font-semibold text-white">Is the Juniper a 2025 or 2026 model?</h3>
-            <p className="text-zinc-400 text-sm mt-1">Technically it&apos;s a 2026 model year, but deliveries started in 2025. You&apos;ll see it referred to as both. Same car.</p>
+            <p className="text-zinc-300 text-base mt-1">Technically it&apos;s a 2026 model year, but deliveries started in 2025. You&apos;ll see it referred to as both. Same car.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">Did the battery or range change?</h3>
-            <p className="text-zinc-400 text-sm mt-1">The battery is largely the same, but improved aerodynamics give the Juniper slightly better efficiency — roughly 3-5% more real-world range.</p>
+            <p className="text-zinc-300 text-base mt-1">The battery is largely the same, but improved aerodynamics give the Juniper slightly better efficiency — roughly 3-5% more real-world range.</p>
           </div>
           <div>
             <h3 className="font-semibold text-white">Can I retrofit Juniper features to my old Model Y?</h3>
-            <p className="text-zinc-400 text-sm mt-1">No. The ventilated seats, rear screen, and redesigned interior are hardware changes that can&apos;t be added after the fact. Software features like updated UI are shared via updates.</p>
+            <p className="text-zinc-300 text-base mt-1">No. The ventilated seats, rear screen, and redesigned interior are hardware changes that can&apos;t be added after the fact. Software features like updated UI are shared via updates.</p>
           </div>
         </div>
       </section>
@@ -162,7 +164,7 @@ export default function JuniperVsOldPage() {
         </div>
       </section>
 
-      <p className="text-xs text-zinc-400">Based on owner reports, community discussions, and official Tesla specifications.</p>
+      <p className="text-xs text-zinc-300">Based on owner reports, community discussions, and official Tesla specifications.</p>
     </article>
   );
 }
