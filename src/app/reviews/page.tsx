@@ -13,14 +13,14 @@ const reviews = [
     slug: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
     desc: "3D MAXpider vs WeatherTech vs Tesmanian vs Tuxmat — which one should you buy?",
     category: "Floor Mats",
-    image: "/images/tesla-hero-desktop.jpg",
+    image: "/images/floor-mats-card.jpg",
   },
   {
     title: "Best Screen Protector for Model Y Juniper (15.4\" Display)",
     slug: "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector",
     desc: "Spigen vs dbrand vs TPARTS vs Tesery — matte vs clear, full comparison.",
     category: "Screen Protectors",
-    image: "/images/tesla-interior.jpg",
+    image: "/images/screen-protector-card.jpg",
   },
 ];
 

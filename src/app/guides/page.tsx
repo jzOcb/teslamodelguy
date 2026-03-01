@@ -13,7 +13,7 @@ const guides = [
     slug: "/guides/tesla-model-y-juniper-delivery-checklist",
     desc: "Everything to inspect before you sign — panel gaps, paint, software, interior. Don't skip this.",
     tag: "ESSENTIAL",
-    image: "/images/tesla-hero-global.jpg",
+    image: "/images/tesla-model-y-hero.jpg",
   },
   {
     title: "First 7 Things to Do After Getting Your Model Y Juniper",
@@ -27,14 +27,14 @@ const guides = [
     slug: "/guides/tesla-model-y-juniper-vs-old-differences",
     desc: "Complete comparison — what changed, what improved, is it worth upgrading?",
     tag: null,
-    image: "/images/juniper-hero.jpg",
+    image: "/images/tesla-model-y-snow.jpg",
   },
   {
     title: "Best Ceramic Tint for Tesla Model Y — Complete Cost Guide",
     slug: "/guides/tesla-model-y-ceramic-tint-cost-guide",
     desc: "Ceramic vs carbon vs dyed, cost breakdown, legal limits by state, top brands, and DIY vs pro install.",
     tag: "POPULAR",
-    image: "/images/tesla-hero-desktop.jpg",
+    image: "/images/tesla-model-y-hero.jpg",
   },
 ];
 

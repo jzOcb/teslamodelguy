@@ -13,7 +13,7 @@ const articles = [
     slug: "/best/tesla-model-y-juniper-accessories",
     desc: "The definitive list — floor mats, screen protectors, organizers, and more.",
     tag: "MOST POPULAR",
-    image: "/images/juniper-hero.jpg",
+    image: "/images/tesla-model-y-hero.jpg",
   },
 ];
 
