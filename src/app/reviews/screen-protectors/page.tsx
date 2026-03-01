@@ -46,7 +46,6 @@ const products = [
     price: "$15–25",
     description: "Strong value if you can handle manual alignment during install.",
     amazonSearch: "TPARTS+Tesla+Model+Y+Juniper+screen+protector",
-    asin: "B0CPDLRCXX",
   },
   {
     rank: 4,
@@ -58,7 +57,6 @@ const products = [
     price: "$20–35",
     description: "Excellent reflection control for sunny driving conditions.",
     amazonSearch: "Tesery+Tesla+Model+Y+screen+protector+matte",
-    asin: "B0CPDLRCXX",
   },
 ];
 

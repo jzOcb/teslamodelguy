@@ -39,7 +39,6 @@ const products = [
     description:
       "Laser-measured for precise fit and excellent spill containment. Great choice for heavy snow and muddy climates.",
     amazonSearch: "WeatherTech+Tesla+Model+Y+Juniper+floor+mat",
-    asin: "B08XN3DFYM",
   },
   {
     rank: 3,
@@ -65,7 +64,7 @@ const products = [
     description:
       "Highest sidewall coverage in this category, ideal for owners in harsh winter climates.",
     amazonSearch: "Tuxmat+Tesla+Model+Y+floor+mats",
-    asin: "B096MW5VMS",
+    asin: "B0F4SWTMM8",
   },
 ];
 

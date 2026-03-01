@@ -61,7 +61,7 @@ const accessories = [
     priority: "Day 1",
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
     amazonSearch: "3D+MAXpider+Tesla+Model+Y+Juniper+2026",
-    asin: "B0CY3QD5BG",
+    asin: "B0F8PPNW49",
     why: "Your Juniper's carpet will get destroyed without protection. This is the single most important accessory you can buy.",
     detail:
       "Three-layer construction with a patented fiber backing that grips without damaging your carpet. Raised edges catch every drop of water, mud, and coffee you'll inevitably spill. Most Reddit owners who've tried both WeatherTech and MAXpider prefer the Kagu for its premium look.",
@@ -77,7 +77,6 @@ const accessories = [
     priority: "Day 1",
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
     amazonSearch: "Spigen+Tesla+Model+Y+Juniper+screen+protector",
-    asin: "B0CHV4WP2C",
     why: "The Juniper has a gorgeous 15.4-inch touchscreen. It will get scratched and covered in fingerprints.",
     detail:
       "Spigen's EZ Fit comes with an alignment tray that makes installation foolproof — no bubbles, perfectly centered. 9H hardness, oleophobic coating, full touch responsiveness. The matte version kills glare on sunny days.",
@@ -154,7 +153,6 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+rear+screen+protector",
-    asin: "B0CPDLRCXX",
     why: "The Juniper added an 8-inch rear screen — a first for Model Y. If you have kids, protect it from day one.",
     detail:
       "Spigen makes a matching rear protector that uses the same EZ Fit alignment system.",
