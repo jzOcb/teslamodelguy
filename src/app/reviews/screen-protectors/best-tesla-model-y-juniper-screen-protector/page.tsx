@@ -50,6 +50,25 @@ export default function ScreenProtectorPage() {
       </section>
 
       <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
+        <h2 className="font-bold text-white mb-3">🔍 How to Check Your Model Y Version</h2>
+        <p className="text-zinc-200 mb-3">
+          Not sure if you have the 15.4&quot; or 16&quot; screen? Here&apos;s how to tell:
+        </p>
+        <ul className="space-y-2 text-sm text-zinc-300">
+          <li><strong>Check VIN (10th character):</strong> S = 2025, T or later = 2026</li>
+          <li><strong>Tesla App:</strong> Open the app and check your vehicle info for the model year</li>
+          <li><strong>On the car:</strong> Controls → Software shows your vehicle name</li>
+          <li><strong>Rear screen:</strong> If you have a rear passenger screen, you have Premium or Performance (16&quot; front screen)</li>
+          <li><strong>No rear screen:</strong> You have Standard (15.4&quot; front screen)</li>
+        </ul>
+        <p className="text-zinc-200 mt-3 text-sm">
+          <strong>Why this matters:</strong> The 2026 Premium and Performance trims have a larger 16&quot; front
+          screen. A 15.4&quot; screen protector will NOT fit - it&apos;ll be too small and leave gaps around the edges.
+          Make sure you buy the right size for your trim.
+        </p>
+      </section>
+
+      <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-white mb-3">⚡ Quick Verdict</h2>
         <ul className="space-y-2 text-sm">
           <li><strong>Best Overall:</strong> Spigen EZ Fit — foolproof installation, great protection, fair price</li>
