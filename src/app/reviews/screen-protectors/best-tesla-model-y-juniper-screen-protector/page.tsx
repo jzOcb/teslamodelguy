@@ -183,8 +183,8 @@ export default function ScreenProtectorPage() {
         <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">Find rear screen protectors on Amazon →</a>
       </section>
 
-      {/* FAQ */}
-
+      <section className="space-y-6 mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">2026 Premium &amp; Performance (16&quot; Screen)</h2>
         <div className="border border-zinc-700 rounded-2xl p-6">
           <span className="bg-green-900/50 text-green-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST FOR 2026 PREMIUM</span>
               <h3 className="text-xl font-bold text-white mt-2 mb-2">Wigoo 16&quot; Matte Screen Protector</h3>
@@ -200,11 +200,12 @@ export default function ScreenProtectorPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">~$40</span>
-            <a href="https://www.amazon.com/dp/B0GFC9WTYB?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://www.amazon.com/dp/B0GFC9WTYB?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon \u2192</a>
           </div>
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">FAQ</h2>
         <div className="space-y-4">
