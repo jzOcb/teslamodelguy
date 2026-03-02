@@ -3,6 +3,6 @@ import { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/", disallow: "/api/" },
-    sitemap: "https://teslamodelguy.com/sitemap.xml",
+    sitemap: "https://www.teslamodelguy.com/sitemap.xml",
   };
 }
