@@ -138,7 +138,7 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$170–230</span>
             <a href="https://www.amazon.com/dp/B0F8PPNW49?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
-            <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
+            <a href="https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
             <a href="https://evbandit.com/products/3d-maxpider-floor-mats-tesla-model-y-2026-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$180–250</span>
             <a href="https://www.amazon.com/s?k=WeatherTech+Tesla+Model+Y+Juniper+floor+mat&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
-            <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
+            <a href="https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
 
@@ -190,7 +190,7 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">~$270 (full set)</span>
             <a href="https://www.amazon.com/dp/B0F2FFNT3X?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
-            <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
+            <a href="https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
 
@@ -217,7 +217,7 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$200–260</span>
             <a href="https://www.amazon.com/dp/B0F4SWTMM8?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
-            <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
+            <a href="https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
       </section>

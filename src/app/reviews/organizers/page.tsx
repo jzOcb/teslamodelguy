@@ -68,7 +68,8 @@ export default function OrganizersPage() {
                 <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                   Check Price on Amazon
                 </a>
-                <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-teal-500 hover:bg-teal-600 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Shop on Yeslak →</a>
+                <a href="https://www.yeslak.com/products/2025-tesla-model-y-juniper-rear-console-storage-organizer?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-teal-500 hover:bg-teal-600 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Shop on Yeslak →</a>
+                <a href="https://evbandit.com/products/spigen-non-slide-center-console-organizer-expanded-capacity-designed-for-new-tesla-model-y-juniper-2025-2026-refresh-and-tesla-model-3-highland-2024-2025-refresh-carbon-edition-non-slide-center-console-organizer-expanded?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Buy at EV Bandit →</a>
               </div>
             </div>
           </div>
