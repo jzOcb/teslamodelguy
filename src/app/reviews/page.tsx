@@ -11,7 +11,7 @@ const reviews = [
   {
     title: "Best Floor Mats for Tesla Model Y Juniper: 4 Options Compared",
     slug: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
-    desc: "3D MAXpider vs WeatherTech vs Tesmanian vs Tuxmat — which one should you buy?",
+    desc: "3D MAXpider vs WeatherTech vs 3W vs Tuxmat — which one should you buy?",
     category: "Floor Mats",
     image: "/images/floor-mats-card.jpg",
   },

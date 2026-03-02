@@ -5,7 +5,7 @@ import CardVisual from "@/components/CardVisual";
 export const metadata: Metadata = {
   title: "Best Tesla Floor Mats (2025-2026)",
   description:
-    "Top floor mat picks for the Tesla Model Y Juniper. 3D MAXpider Kagu, WeatherTech FloorLiner, Tesmanian, and Tuxmat — find the best fit for your budget.",
+    "Top floor mat picks for the Tesla Model Y Juniper. 3D MAXpider Kagu, WeatherTech FloorLiner, 3W, and Tuxmat — find the best fit for your budget.",
   keywords: [
     "tesla model y juniper floor mats",
     "best floor mats model y 2025",
@@ -44,13 +44,13 @@ const products = [
     rank: 3,
     badge: "Best Value",
     badgeColor: "bg-emerald-500/10 text-emerald-300 border border-emerald-500/30",
-    name: "Tesmanian All-Weather Mats",
-    brand: "Tesmanian",
-    image: "/images/tesmanian-product.jpg",
+    name: "3W All-Weather Floor Mats",
+    brand: "3W",
+    image: "/images/3w-product.jpg",
     price: "$120–160",
     description:
       "Around 30% cheaper than MAXpider with solid coverage and strong anti-slip hold. Great value option.",
-    amazonSearch: "Tesmanian+Tesla+Model+Y+floor+mats",
+    amazonSearch: "3W+Tesla+Model+Y+floor+mats",
   },
   {
     rank: 4,
@@ -84,7 +84,7 @@ export default function FloorMatsPage() {
         href="/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats"
         className="inline-block text-base text-cyan-300 hover:text-cyan-200 hover:underline mb-10"
       >
-        → Full comparison: 3D MAXpider vs WeatherTech vs Tesmanian vs Tuxmat
+        → Full comparison: 3D MAXpider vs WeatherTech vs 3W vs Tuxmat
       </Link>
 
       <div className="space-y-6">

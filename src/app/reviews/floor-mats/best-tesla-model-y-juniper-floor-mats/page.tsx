@@ -6,7 +6,7 @@ import GradientHero from "@/components/GradientHero";
 export const metadata: Metadata = {
   title: "Best Floor Mats for Tesla Model Y Juniper (2025-2026): 4 Options Compared",
   description:
-    "3D MAXpider vs WeatherTech vs Tesmanian vs Tuxmat — we compare the 4 best floor mats for your Tesla Model Y Juniper. Real owner insights, Reddit consensus, and honest recommendations.",
+    "3D MAXpider vs WeatherTech vs 3W vs Tuxmat — we compare the 4 best floor mats for your Tesla Model Y Juniper. Real owner insights, Reddit consensus, and honest recommendations.",
   keywords: [
     "tesla model y juniper floor mats",
     "best floor mats model y 2025",
@@ -41,7 +41,7 @@ export default function FloorMatsPage() {
         <h2 className="font-bold text-white mb-3">⚡ Quick Verdict</h2>
         <ul className="space-y-2 text-sm">
           <li><strong>Best Overall:</strong> 3D MAXpider Kagu — premium fit, looks great, most Reddit-recommended</li>
-          <li><strong>Best Value:</strong> Tesmanian — 30% cheaper, solid protection, velcro backing</li>
+          <li><strong>Best Value:</strong> 3W — 30% cheaper, solid protection, velcro backing</li>
           <li><strong>Best Brand Recognition:</strong> WeatherTech — you know the name, excellent containment</li>
           <li><strong>Best Coverage:</strong> Tuxmat — highest sidewall edges, maximum protection</li>
         </ul>
@@ -75,7 +75,7 @@ export default function FloorMatsPage() {
                 <th className="text-left p-3 font-semibold">Feature</th>
                 <th className="text-left p-3 font-semibold">3D MAXpider</th>
                 <th className="text-left p-3 font-semibold">WeatherTech</th>
-                <th className="text-left p-3 font-semibold">Tesmanian</th>
+                <th className="text-left p-3 font-semibold">3W</th>
                 <th className="text-left p-3 font-semibold">Tuxmat</th>
               </tr>
             </thead>
@@ -149,14 +149,14 @@ export default function FloorMatsPage() {
           </div>
         </div>
 
-        {/* Tesmanian */}
+        {/* 3W */}
         <div className="border border-zinc-700 rounded-2xl p-6 mb-6">
           <div className="flex items-center gap-2 mb-1">
             <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST VALUE</span>
           </div>
-          <h3 className="text-xl font-bold text-white mb-2">Tesmanian All-Weather Mats</h3>
+          <h3 className="text-xl font-bold text-white mb-2">3W All-Weather Floor Mats</h3>
           <p className="text-zinc-200 mb-3">
-            If you want solid protection without spending $200+, Tesmanian is the answer. At $120-160 for
+            If you want solid protection without spending $200+, 3W is the answer. At $120-160 for
             a full set, they&apos;re about 30% cheaper than MAXpider while still delivering good coverage
             and fit.
           </p>
@@ -171,7 +171,7 @@ export default function FloorMatsPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$120–160</span>
-            <a href="https://www.amazon.com/s?k=Tesmanian+Tesla+Model+Y+floor+mats&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+            <a href="https://www.amazon.com/dp/B0F2FFNT3X?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
           </div>
         </div>
 
@@ -233,7 +233,7 @@ export default function FloorMatsPage() {
           best-feeling mat with excellent protection. The Reddit consensus is overwhelming.
         </p>
         <p className="text-zinc-200 mb-3">
-          <strong>If you want to save money:</strong> Tesmanian gives you 80% of the protection at 65% of
+          <strong>If you want to save money:</strong> 3W gives you 80% of the protection at 65% of
           the price. That&apos;s a great deal.
         </p>
         <p className="text-zinc-200 leading-relaxed">

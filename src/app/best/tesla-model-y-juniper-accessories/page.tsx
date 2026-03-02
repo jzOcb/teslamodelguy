@@ -65,7 +65,7 @@ const accessories = [
     why: "Your Juniper's carpet will get destroyed without protection. This is the single most important accessory you can buy.",
     detail:
       "Three-layer construction with a patented fiber backing that grips without damaging your carpet. Raised edges catch every drop of water, mud, and coffee you'll inevitably spill. Most Reddit owners who've tried both WeatherTech and MAXpider prefer the Kagu for its premium look.",
-    tip: "Runner-up: Tesmanian mats — about 30% cheaper, still great coverage.",
+    tip: "Runner-up: 3W mats — about 30% cheaper, still great coverage.",
   },
   {
     rank: 2,

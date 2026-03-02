@@ -43,7 +43,7 @@ const steps = [
   {
     num: 5,
     title: "Add Floor Mats",
-    content: `The stock carpet mats are garbage. Get all-weather floor mats before your first rainy day. 3D MAXpider Kagu is the gold standard, or Tesmanian if you want to save money. Make sure they say "Juniper" or "2025-2026" — old Model Y mats don't fit the refreshed interior.`,
+    content: `The stock carpet mats are garbage. Get all-weather floor mats before your first rainy day. 3D MAXpider Kagu is the gold standard, or 3W if you want to save money. Make sure they say "Juniper" or "2025-2026" — old Model Y mats don't fit the refreshed interior.`,
     tip: null,
   },
   {
@@ -127,7 +127,7 @@ export default function FirstThingsPage() {
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="font-medium text-white">All-Weather Floor Mats</p>
-              <p className="text-base text-zinc-300">3D MAXpider Kagu or Tesmanian</p>
+              <p className="text-base text-zinc-300">3D MAXpider Kagu or 3W</p>
             </div>
             <a href="https://www.amazon.com/dp/B0F8PPNW49?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$170 on Amazon →</a>
           </div>
@@ -142,7 +142,7 @@ export default function FirstThingsPage() {
             → 10 Must-Have Accessories for Model Y Juniper
           </Link>
           <Link href="/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" className="text-blue-400 hover:text-blue-300 hover:underline block">
-            → Best Floor Mats Compared: MAXpider vs WeatherTech vs Tesmanian
+            → Best Floor Mats Compared: MAXpider vs WeatherTech vs 3W
           </Link>
           <Link href="/guides/tesla-model-y-juniper-delivery-checklist" className="text-blue-400 hover:text-blue-300 hover:underline block">
             → Tesla Model Y Juniper Delivery Checklist
