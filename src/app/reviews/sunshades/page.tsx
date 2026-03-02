@@ -3,6 +3,7 @@ import Link from "next/link";
 import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/sunshades" },
   title: "Best Tesla Sunshades (2025-2026)",
   description:
     "Keep your Model Y Juniper cool in summer. EVBASE Juniper-specific roof sunshade reviewed — drops cabin temperature by 10-15°F.",

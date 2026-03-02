@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guides" },
   title: "Guides - Tesla Owner Guides & Tips",
   description: "Practical guides for Tesla owners — setup tips, delivery checklists, comparisons, and how-tos.",
 };

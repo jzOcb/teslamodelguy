@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guides/tesla-model-y-juniper-vs-old-differences" },
   title: "Tesla Model Y Juniper vs Old Model Y: Every Difference Explained",
   description:
     "Complete comparison of the 2025-2026 Tesla Model Y Juniper refresh vs the pre-refresh Model Y. What changed, what improved, and is it worth the upgrade?",
@@ -32,8 +35,20 @@ const differences = [
   { category: "Safety", feature: "Structural Rigidity", old: "Standard", juniper: "Increased body stiffness", impact: "🛡️ Better crash performance" },
 ];
 
+
+const schemaData = generateArticleSchema({
+  title: "Tesla Model Y Juniper vs Old Model Y Differences",
+  description: "Complete comparison of new vs old Tesla Model Y",
+  url: "/guides/tesla-model-y-juniper-vs-old-differences",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "Juniper vs Old", url: "/guides/tesla-model-y-juniper-vs-old-differences" }],
+});
+
 export default function JuniperVsOldPage() {
   return (
+    <>
+      <StructuredData data={schemaData} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="⚖️"
@@ -165,5 +180,6 @@ export default function JuniperVsOldPage() {
 
       <p className="text-xs text-zinc-300">Based on owner reports, community discussions, and official Tesla specifications.</p>
     </article>
+      </>
   );
 }

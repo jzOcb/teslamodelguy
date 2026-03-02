@@ -2,8 +2,11 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" },
   title: "Best Screen Protector for Tesla Model Y Juniper 15.4\" (2025-2026)",
   description:
     "Spigen vs dbrand vs TPARTS vs Tesery — the best screen protectors for your Model Y Juniper's new 15.4-inch touchscreen. Matte vs clear, real comparisons.",
@@ -16,8 +19,21 @@ export const metadata: Metadata = {
   ],
 };
 
+
+const schemaData = generateArticleSchema({
+  title: "Best Screen Protector for Tesla Model Y Juniper",
+  description: "Spigen vs Wigoo vs dbrand vs TPARTS screen protector comparison",
+  url: "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Screen Protectors", url: "/reviews/screen-protectors" }, { name: "Best Screen Protectors", url: "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" }],
+});
+const faqSchema = generateFAQSchema([{ question: "Will a screen protector affect touch sensitivity?", answer: "No. All major options maintain full touch responsiveness." }, { question: "What size screen protector for 2026 Model Y Premium?", answer: "The 2026 Premium and Performance have a 16-inch screen, not 15.4 inches. Make sure to buy the 16-inch version." }]);
+
 export default function ScreenProtectorPage() {
   return (
+    <>
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="🛡️"
@@ -131,7 +147,7 @@ export default function ScreenProtectorPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <p className="text-xs text-yellow-400 mt-2 mb-2">⚠️ Fits: Model Y Standard (2025-2026), Model Y Premium (2025 only). NOT compatible with 2026 Premium/Performance 16&quot; screen.</p>
           <span className="font-semibold">$30–40</span>
-            <a href="https://www.amazon.com/dp/B0CHV4WP2C?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://www.amazon.com/dp/B0CHV4WP2C?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
           </div>
         </div>
 
@@ -151,7 +167,7 @@ export default function ScreenProtectorPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$40–50</span>
-            <a href="https://dbrand.com" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Buy from dbrand →</a>
+            <a href="https://dbrand.com" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Buy from dbrand →</a>
           </div>
         </div>
 
@@ -168,7 +184,7 @@ export default function ScreenProtectorPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$15–25</span>
-            <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
           </div>
         </div>
 
@@ -185,8 +201,8 @@ export default function ScreenProtectorPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$20–35</span>
-            <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
-            <a href="https://evbandit.com/products/tesla-model-y-juniper-2025-2026-model-3-highland-2024-2025-matte-screen-protector-2-pack-15-4-front-rear-9h-tempered-glass-anti-glare-fingerprint-dashboard-display-cover?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
+            <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://evbandit.com/products/tesla-model-y-juniper-2025-2026-model-3-highland-2024-2025-matte-screen-protector-2-pack-15-4-front-rear-9h-tempered-glass-anti-glare-fingerprint-dashboard-display-cover?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
           </div>
         </div>
       </section>
@@ -199,7 +215,7 @@ export default function ScreenProtectorPage() {
           If you have kids or regular backseat passengers, protect this too. Spigen makes a matching
           EZ Fit for the rear screen that uses the same easy alignment system.
         </p>
-        <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">Find rear screen protectors on Amazon →</a>
+        <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">Find rear screen protectors on Amazon →</a>
       </section>
 
       <section className="space-y-6 mb-10">
@@ -219,7 +235,7 @@ export default function ScreenProtectorPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">~$40</span>
-            <a href="https://www.amazon.com/dp/B0GFC9WTYB?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon \u2192</a>
+            <a href="https://www.amazon.com/dp/B0GFC9WTYB?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon \u2192</a>
           </div>
         </div>
       </section>
@@ -252,5 +268,6 @@ export default function ScreenProtectorPage() {
         <Link href="/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">Best Floor Mats →</Link>
       </div>
     </article>
+      </>
   );
 }

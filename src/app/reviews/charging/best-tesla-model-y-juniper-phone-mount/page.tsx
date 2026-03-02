@@ -2,6 +2,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Best Tesla Model Y Phone Mount (Juniper): Wireless Charger Comparison",
@@ -102,8 +104,20 @@ const products = [
   },
 ];
 
+
+const schemaData = generateArticleSchema({
+  title: "Best Tesla Model Y Juniper Phone Mount",
+  description: "Wireless charger and phone mount comparison for Model Y Juniper",
+  url: "/reviews/charging/best-tesla-model-y-juniper-phone-mount",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Charging", url: "/reviews/charging" }, { name: "Best Phone Mount", url: "/reviews/charging/best-tesla-model-y-juniper-phone-mount" }],
+});
+
 export default function BestModelYJuniperPhoneMountPage() {
   return (
+    <>
+      <StructuredData data={schemaData} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="📱"
@@ -276,5 +290,6 @@ export default function BestModelYJuniperPhoneMountPage() {
         </Link>
       </div>
     </article>
+      </>
   );
 }

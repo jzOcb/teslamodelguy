@@ -3,6 +3,7 @@ import Link from "next/link";
 import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/charging" },
   title: "Best Tesla Charging Accessories (2025-2026)",
   description:
     "Charging setup guides and accessory recommendations for the Tesla Model Y Juniper. Detailed reviews coming soon.",

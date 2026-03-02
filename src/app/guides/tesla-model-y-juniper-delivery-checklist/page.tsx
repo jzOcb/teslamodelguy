@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guides/tesla-model-y-juniper-delivery-checklist" },
   title: "Tesla Delivery Checklist 2025-2026 — Don't Miss These",
   description:
     "The complete Tesla delivery checklist for Model 3, Model Y, Model S, Model X, and Cybertruck. Inspect exterior, interior, software, and paperwork before you accept delivery.",
@@ -71,8 +74,20 @@ function CheckSection({ title, items }: { title: string; items: { item: string; 
   );
 }
 
+
+const schemaData = generateArticleSchema({
+  title: "Tesla Model Y Juniper Delivery Checklist",
+  description: "Complete delivery inspection checklist for your new Tesla",
+  url: "/guides/tesla-model-y-juniper-delivery-checklist",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "Delivery Checklist", url: "/guides/tesla-model-y-juniper-delivery-checklist" }],
+});
+
 export default function DeliveryChecklistPage() {
   return (
+    <>
+      <StructuredData data={schemaData} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="✅"
@@ -151,5 +166,6 @@ export default function DeliveryChecklistPage() {
 
       <p className="text-xs text-zinc-300">Last updated March 2026. Compiled from Tesla owner delivery reports across Model 3, Y, S, X, and Cybertruck communities.</p>
     </article>
+      </>
   );
 }

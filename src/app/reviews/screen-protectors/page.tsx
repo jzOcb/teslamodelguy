@@ -3,6 +3,7 @@ import Link from "next/link";
 import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/screen-protectors" },
   title: "Best Tesla Screen Protectors (2025-2026)",
   description:
     "Top screen protector picks for the Model Y Juniper's new 15.4-inch touchscreen. Spigen EZ Fit, dbrand Prism 2.0, TPARTS, and Tesery — matte vs clear.",

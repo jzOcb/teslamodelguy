@@ -3,6 +3,7 @@ import Link from "next/link";
 import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/floor-mats" },
   title: "Best Tesla Floor Mats (2025-2026)",
   description:
     "Top floor mat picks for the Tesla Model Y Juniper. 3D MAXpider Kagu, WeatherTech FloorLiner, 3W, and Tuxmat — find the best fit for your budget.",

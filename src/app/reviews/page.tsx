@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews" },
   title: "Reviews - Tesla Accessories Reviews & Comparisons",
   description: "In-depth reviews and comparisons of Tesla accessories — floor mats, screen protectors, organizers, and more.",
 };

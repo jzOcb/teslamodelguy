@@ -3,6 +3,7 @@ import Link from "next/link";
 import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/organizers" },
   title: "Best Tesla Organizers (2025-2026)",
   description:
     "Keep your Model Y Juniper's interior tidy. EVBASE center console organizer, Spigen console tray, and trunk cargo organizer — reviewed by a real owner.",

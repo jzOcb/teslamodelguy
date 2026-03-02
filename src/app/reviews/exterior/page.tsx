@@ -3,6 +3,7 @@ import Link from "next/link";
 import CardVisual from "@/components/CardVisual";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/exterior" },
   title: "Best Tesla Exterior Accessories (2025-2026)",
   description:
     "Protect your Model Y Juniper's paint and exterior. No-drill mud flaps reviewed — plus more exterior recommendations coming soon.",

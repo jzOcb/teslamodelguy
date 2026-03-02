@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guides/tesla-model-y-ceramic-tint-cost-guide" },
   title: "Best Ceramic Tint for Tesla Model Y — Complete Cost Guide (2025-2026)",
   description:
     "Everything you need to know about ceramic tint for Tesla Model Y — costs, brands, legal limits by state, ceramic vs carbon vs dyed, and DIY vs pro install. Real owner perspective.",
@@ -125,8 +128,20 @@ const costBreakdown = [
   { service: "Premium ceramic (Xpel/3M full)", range: "$800–$1,500+", note: "Top-tier brands, hot climate cities" },
 ];
 
+
+const schemaData = generateArticleSchema({
+  title: "Tesla Model Y Ceramic Tint Cost Guide",
+  description: "Complete guide to ceramic window tinting for Tesla Model Y",
+  url: "/guides/tesla-model-y-ceramic-tint-cost-guide",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "Ceramic Tint Guide", url: "/guides/tesla-model-y-ceramic-tint-cost-guide" }],
+});
+
 export default function CeramicTintGuidePage() {
   return (
+    <>
+      <StructuredData data={schemaData} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="🌤️"
@@ -415,5 +430,6 @@ export default function CeramicTintGuidePage() {
 
       <p className="text-xs text-zinc-500">Last updated March 2026. Prices based on community reports from r/TeslaModelY and real owner quotes. State tint laws are for reference — verify current regulations before installation.</p>
     </article>
+      </>
   );
 }

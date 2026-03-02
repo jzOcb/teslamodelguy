@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/best" },
   title: "Best Tesla Accessories - Top Picks & Recommendations",
   description: "Our top picks for the best Tesla accessories — tested and reviewed by a real owner.",
 };

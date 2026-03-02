@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guides/first-things-to-do-tesla-model-y-juniper" },
   title: "First 7 Things to Do After Getting Your Tesla Model Y Juniper",
   description:
     "Just picked up your Model Y Juniper? Here are the 7 things you should do on day one — from software setup to must-have accessories. A real owner's checklist.",
@@ -60,8 +63,20 @@ const steps = [
   },
 ];
 
+
+const schemaData = generateArticleSchema({
+  title: "First Things to Do with Your Tesla Model Y Juniper",
+  description: "Essential setup guide for new Tesla Model Y Juniper owners",
+  url: "/guides/first-things-to-do-tesla-model-y-juniper",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "First Things To Do", url: "/guides/first-things-to-do-tesla-model-y-juniper" }],
+});
+
 export default function FirstThingsPage() {
   return (
+    <>
+      <StructuredData data={schemaData} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="🚀"
@@ -157,5 +172,6 @@ export default function FirstThingsPage() {
         Some links are affiliate links. We earn a small commission at no extra cost to you.
       </p>
     </article>
+      </>
   );
 }

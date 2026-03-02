@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About",
   description: "Meet the guy behind Tesla Model Guy — a real Tesla owner sharing honest accessory reviews.",
 };

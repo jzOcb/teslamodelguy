@@ -2,8 +2,11 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" },
   title: "Best Floor Mats for Tesla Model Y Juniper (2025-2026): 4 Options Compared",
   description:
     "3D MAXpider vs WeatherTech vs 3W vs Tuxmat — we compare the 4 best floor mats for your Tesla Model Y Juniper. Real owner insights, Reddit consensus, and honest recommendations.",
@@ -16,8 +19,21 @@ export const metadata: Metadata = {
   ],
 };
 
+
+const schemaData = generateArticleSchema({
+  title: "Best Floor Mats for Tesla Model Y Juniper",
+  description: "3D MAXpider vs WeatherTech vs 3W vs Tuxmat floor mats comparison",
+  url: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
+  datePublished: "2026-02-28",
+  dateModified: "2026-03-01",
+  breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Floor Mats", url: "/reviews/floor-mats" }, { name: "Best Floor Mats", url: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" }],
+});
+const faqSchema = generateFAQSchema([{ question: "Are old Model Y floor mats compatible with Juniper?", answer: "No. The 2025-2026 Model Y Juniper has different floor dimensions. You need mats specifically designed for the Juniper refresh." }, { question: "What material is best for Tesla floor mats?", answer: "TPE (thermoplastic elastomer) is the most popular choice. It is durable, odorless, waterproof, and easy to clean." }]);
+
 export default function FloorMatsPage() {
   return (
+    <>
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="🛞"
@@ -121,8 +137,8 @@ export default function FloorMatsPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$170–230</span>
-            <a href="https://www.amazon.com/dp/B0F8PPNW49?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
-            <a href="https://evbandit.com/products/3d-maxpider-floor-mats-tesla-model-y-2026-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
+            <a href="https://www.amazon.com/dp/B0F8PPNW49?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+            <a href="https://evbandit.com/products/3d-maxpider-floor-mats-tesla-model-y-2026-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
           </div>
         </div>
 
@@ -145,7 +161,7 @@ export default function FloorMatsPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$180–250</span>
-            <a href="https://www.amazon.com/s?k=WeatherTech+Tesla+Model+Y+Juniper+floor+mat&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+            <a href="https://www.amazon.com/s?k=WeatherTech+Tesla+Model+Y+Juniper+floor+mat&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
           </div>
         </div>
 
@@ -171,7 +187,7 @@ export default function FloorMatsPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">~$270 (full set)</span>
-            <a href="https://www.amazon.com/dp/B0F2FFNT3X?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+            <a href="https://www.amazon.com/dp/B0F2FFNT3X?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
           </div>
         </div>
 
@@ -197,7 +213,7 @@ export default function FloorMatsPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$200–260</span>
-            <a href="https://www.amazon.com/dp/B0F4SWTMM8?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+            <a href="https://www.amazon.com/dp/B0F4SWTMM8?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
           </div>
         </div>
       </section>
@@ -257,5 +273,6 @@ export default function FloorMatsPage() {
         </Link>
       </div>
     </article>
+      </>
   );
 }
