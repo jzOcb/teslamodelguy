@@ -41,7 +41,7 @@ export default function FloorMatsPage() {
         <h2 className="font-bold text-white mb-3">⚡ Quick Verdict</h2>
         <ul className="space-y-2 text-sm">
           <li><strong>Best Overall:</strong> 3D MAXpider Kagu — premium fit, looks great, most Reddit-recommended</li>
-          <li><strong>Best Value:</strong> 3W — 30% cheaper, solid protection, velcro backing</li>
+          <li><strong>Best Value:</strong> 3W Vigormold — full set with cargo liners + seat protectors, great value</li>
           <li><strong>Best Brand Recognition:</strong> WeatherTech — you know the name, excellent containment</li>
           <li><strong>Best Coverage:</strong> Tuxmat — highest sidewall edges, maximum protection</li>
         </ul>
@@ -80,7 +80,7 @@ export default function FloorMatsPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-800">
-              <tr><td className="p-3 font-medium">Price (full set)</td><td className="p-3">$170–230</td><td className="p-3">$180–250</td><td className="p-3">$120–160</td><td className="p-3">$200–260</td></tr>
+              <tr><td className="p-3 font-medium">Price (full set)</td><td className="p-3">$170–230</td><td className="p-3">$180–250</td><td className="p-3">~$270 (full set)</td><td className="p-3">$200–260</td></tr>
               <tr><td className="p-3 font-medium">Material</td><td className="p-3">TPE + XPE foam</td><td className="p-3">TPE</td><td className="p-3">TPE</td><td className="p-3">TPE</td></tr>
               <tr><td className="p-3 font-medium">Edge Height</td><td className="p-3">High</td><td className="p-3">High</td><td className="p-3">Medium</td><td className="p-3">Highest</td></tr>
               <tr><td className="p-3 font-medium">Anti-Slip</td><td className="p-3">Fiber backing</td><td className="p-3">Nibs</td><td className="p-3">Velcro strips</td><td className="p-3">Rubber backing</td></tr>
@@ -154,23 +154,23 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-2 mb-1">
             <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST VALUE</span>
           </div>
-          <h3 className="text-xl font-bold text-white mb-2">3W All-Weather Floor Mats</h3>
+          <h3 className="text-xl font-bold text-white mb-2">3W Vigormold Floor Mats + Cargo Liners</h3>
           <p className="text-zinc-200 mb-3">
-            If you want solid protection without spending $200+, 3W is the answer. At $120-160 for
-            a full set, they&apos;re about 30% cheaper than MAXpider while still delivering good coverage
-            and fit.
+            3W offers a full 6-piece TPE set including floor mats, cargo liners, and seat back protectors
+            for the 2025-2026 Model Y Juniper. The Vigormold material is odorless and non-toxic, which is
+            a nice change from the chemical smell you get with some cheaper mats.
           </p>
           <p className="text-zinc-200 mb-3">
-            The velcro-like strips on the bottom keep them anchored well. Edge height is slightly lower
-            than MAXpider and WeatherTech, but still sufficient for normal use. Cleaning is straightforward
-            — pull out, hose down, dry, done.
+            The front mats have a clever built-in storage groove for umbrellas, and the rear mats extend
+            under the seats for extra coverage. Edge-to-edge custom fit with raised lips to catch spills.
+            4.5 stars on Amazon with solid reviews. Easy to clean - just hose them off.
           </p>
           <p className="text-zinc-200 mb-3">
-            <strong>Best for:</strong> Budget-conscious owners who want good protection without the premium
-            price tag.
+            <strong>Best for:</strong> Owners who want a complete protection kit (floor + cargo + seat backs)
+            in one purchase. At $270 for the full set, it&apos;s actually good value considering you get everything.
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
-            <span className="font-semibold">$120–160</span>
+            <span className="font-semibold">~$270 (full set)</span>
             <a href="https://www.amazon.com/dp/B0F2FFNT3X?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
           </div>
         </div>

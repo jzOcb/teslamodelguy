@@ -47,9 +47,9 @@ const products = [
     name: "3W All-Weather Floor Mats",
     brand: "3W",
     image: "/images/3w-product.jpg",
-    price: "$120–160",
+    price: "~$270 (full set)",
     description:
-      "Around 30% cheaper than MAXpider with solid coverage and strong anti-slip hold. Great value option.",
+      "Full TPE set with floor mats, cargo liners, and seat back protectors. Odorless Vigormold material, 4.5 stars.",
     amazonSearch: "3W+Tesla+Model+Y+floor+mats",
   },
   {
