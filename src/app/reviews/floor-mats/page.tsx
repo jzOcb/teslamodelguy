@@ -51,7 +51,6 @@ const products = [
     description:
       "Around 30% cheaper than MAXpider with solid coverage and strong anti-slip hold. Great value option.",
     amazonSearch: "Tesmanian+Tesla+Model+Y+floor+mats",
-    asin: "B0F2FFNT3X",
   },
   {
     rank: 4,

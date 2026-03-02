@@ -171,7 +171,7 @@ export default function FloorMatsPage() {
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$120–160</span>
-            <a href="https://www.amazon.com/dp/B0F2FFNT3X?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+            <a href="https://www.amazon.com/s?k=Tesmanian+Tesla+Model+Y+floor+mats&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
           </div>
         </div>
 

@@ -24,7 +24,7 @@ const products = [
     badge: "BEST OVERALL",
     badgeClass: "bg-blue-900/50 text-blue-400",
     name: "JOWUA MagSafe Wireless Car Charger",
-    asin: "B0FTQYXNQ3",
+    asin: "B0FTFZ5XJD",
     image: "/images/jowua-model-y-juniper-phone-mount.jpg",
     price: "$70-90",
     compatibility: "2026 Model 3 Highland / Model Y Juniper",
@@ -44,7 +44,7 @@ const products = [
     badge: "BEST VALUE",
     badgeClass: "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20",
     name: "EVBASE Wireless Charger Phone Mount",
-    asin: "B0FBVXH2MW",
+    asin: "B0FDGLLQYK",
     image: "/images/evbase-model-y-juniper-phone-mount.jpg",
     price: "$45-60",
     compatibility: "Model 3 Highland / Model Y Juniper",
@@ -64,7 +64,7 @@ const products = [
     badge: "BEST MOUNT STABILITY",
     badgeClass: "bg-purple-900/50 text-purple-400",
     name: "iOttie MagSafe Phone Mount for Model Y Juniper",
-    asin: "B0FDTPM5Q8",
+    asin: "B0C7LLK826",
     image: "/images/iottie-model-y-juniper-phone-mount.jpg",
     price: "$45-70",
     compatibility: "Tesla Model 3 Highland / Model Y Juniper",
@@ -84,7 +84,7 @@ const products = [
     badge: "BUDGET MAGSAFE PICK",
     badgeClass: "bg-amber-100 text-amber-400",
     name: "Generic MagSafe Charging Mount for Juniper",
-    asin: "B0F9KWV5X1",
+    asin: "B0D3FQ679M",
     image: "/images/generic-magsafe-model-y-juniper-phone-mount.jpg",
     price: "$30-45",
     compatibility: "2026 Tesla Model Y Juniper",
@@ -127,10 +127,10 @@ export default function BestModelYJuniperPhoneMountPage() {
       <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-white mb-3">⚡ Quick Verdict</h2>
         <ul className="space-y-2 text-sm text-zinc-200">
-          <li><strong>Best Overall:</strong> JOWUA (ASIN B0FTQYXNQ3)</li>
-          <li><strong>Best Value:</strong> EVBASE (ASIN B0FBVXH2MW)</li>
-          <li><strong>Best Stability:</strong> iOttie (ASIN B0FDTPM5Q8)</li>
-          <li><strong>Budget Pick:</strong> Generic MagSafe mount (ASIN B0F9KWV5X1)</li>
+          <li><strong>Best Overall:</strong> JOWUA (ASIN B0FTFZ5XJD)</li>
+          <li><strong>Best Value:</strong> EVBASE (ASIN B0FDGLLQYK)</li>
+          <li><strong>Best Stability:</strong> iOttie (ASIN B0C7LLK826)</li>
+          <li><strong>Budget Pick:</strong> Generic MagSafe mount (ASIN B0D3FQ679M)</li>
         </ul>
       </section>
 
@@ -155,10 +155,10 @@ export default function BestModelYJuniperPhoneMountPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-800 text-zinc-200">
-              <tr><td className="p-3">JOWUA MagSafe Wireless Charger</td><td className="p-3">$70-90</td><td className="p-3">Best overall daily setup</td><td className="p-3">B0FTQYXNQ3</td></tr>
-              <tr><td className="p-3">EVBASE Wireless Charger Mount</td><td className="p-3">$45-60</td><td className="p-3">Value for money</td><td className="p-3">B0FBVXH2MW</td></tr>
-              <tr><td className="p-3">iOttie MagSafe Mount</td><td className="p-3">$45-70</td><td className="p-3">Stable phone position</td><td className="p-3">B0FDTPM5Q8</td></tr>
-              <tr><td className="p-3">Generic MagSafe Charging Mount</td><td className="p-3">$30-45</td><td className="p-3">Lowest cost setup</td><td className="p-3">B0F9KWV5X1</td></tr>
+              <tr><td className="p-3">JOWUA MagSafe Wireless Charger</td><td className="p-3">$70-90</td><td className="p-3">Best overall daily setup</td><td className="p-3">B0FTFZ5XJD</td></tr>
+              <tr><td className="p-3">EVBASE Wireless Charger Mount</td><td className="p-3">$45-60</td><td className="p-3">Value for money</td><td className="p-3">B0FDGLLQYK</td></tr>
+              <tr><td className="p-3">iOttie MagSafe Mount</td><td className="p-3">$45-70</td><td className="p-3">Stable phone position</td><td className="p-3">B0C7LLK826</td></tr>
+              <tr><td className="p-3">Generic MagSafe Charging Mount</td><td className="p-3">$30-45</td><td className="p-3">Lowest cost setup</td><td className="p-3">B0D3FQ679M</td></tr>
             </tbody>
           </table>
         </div>
