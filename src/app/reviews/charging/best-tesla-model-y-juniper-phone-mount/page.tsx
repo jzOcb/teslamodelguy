@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "evbase model y juniper mount",
   ],
   alternates: {
-    canonical: "https://teslamodelguy.com/reviews/charging/best-tesla-model-y-juniper-phone-mount",
+    canonical: "https://www.teslamodelguy.com/reviews/charging/best-tesla-model-y-juniper-phone-mount",
   },
 };
 

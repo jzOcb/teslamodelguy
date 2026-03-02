@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const base = "https://teslamodelguy.com";
+const base = "https://www.teslamodelguy.com";
 const staticRoutes = [
   "/",
   "/about",
