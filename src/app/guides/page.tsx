@@ -31,6 +31,13 @@ const guides = [
     image: "/images/tesla-model-y-snow.jpg",
   },
   {
+    title: "Tesla Model Y Juniper: 10 Common Problems & How to Fix Them",
+    slug: "/guides/tesla-model-y-juniper-common-problems",
+    desc: "Real owner-reported issues with the Juniper and practical solutions — from suspension clunks to screen glare.",
+    tag: "NEW",
+    image: "/images/tesla-model-y-hero.jpg",
+  },
+  {
     title: "Best Ceramic Tint for Tesla Model Y — Complete Cost Guide",
     slug: "/guides/tesla-model-y-ceramic-tint-cost-guide",
     desc: "Ceramic vs carbon vs dyed, cost breakdown, legal limits by state, top brands, and DIY vs pro install.",
