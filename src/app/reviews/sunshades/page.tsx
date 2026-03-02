@@ -6,11 +6,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/reviews/sunshades" },
   title: "Best Tesla Sunshades (2025-2026)",
   description:
-    "Keep your Model Y Juniper cool in summer. EVBASE Juniper-specific roof sunshade reviewed — drops cabin temperature by 10-15°F.",
+    "Keep your Model Y Juniper cool in summer. Compare REEVAA, Wigoo, VION, and Jowua roof sunshade options with clip-in vs magnetic guidance.",
   keywords: [
     "tesla model y juniper sunshade",
     "model y juniper roof sunshade",
-    "evbase tesla model y juniper sunshade",
     "tesla model y glass roof shade",
   ],
 };
@@ -18,14 +17,14 @@ export const metadata: Metadata = {
 const products = [
   {
     rank: 1,
-    badge: "Best Fit",
+    badge: "Best Overall",
     badgeColor: "bg-blue-900/50 text-blue-300",
-    name: "EVBASE Juniper Roof Sunshade",
-    brand: "EVBASE",
-    price: "$50–80",
+    name: "Juniper Roof Sunshade Comparison",
+    brand: "REEVAA / Wigoo / VION / Jowua",
+    price: "$32-85",
     description:
-      "Juniper-specific fit and strong heat reduction for hot weather driving.",
-    amazonSearch: "EVBASE+Tesla+Model+Y+Juniper+sunshade+roof",
+      "Clip-in and slide-in designs generally outperform magnetic sunshades for long-term hold. Full comparison with owner-focused recommendations.",
+    amazonSearch: "Tesla+Model+Y+Juniper+roof+sunshade",
   },
 ];
 
@@ -36,9 +35,16 @@ export default function SunshadesPage() {
         <Link href="/reviews" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">← All Reviews</Link>
       </div>
       <h1 className="text-4xl md:text-5xl font-black mb-3 text-white tracking-tight">Best Tesla Sunshades</h1>
-      <p className="text-base md:text-lg text-zinc-200 mb-10 leading-relaxed">
+      <p className="text-base md:text-lg text-zinc-200 mb-6 leading-relaxed">
         A quality roof sunshade is one of the highest-ROI Juniper accessories.
       </p>
+
+      <Link
+        href="/reviews/sunshades/best-tesla-model-y-juniper-sunshade"
+        className="inline-block text-base text-cyan-300 hover:text-cyan-200 hover:underline mb-10"
+      >
+        → Full comparison: Best Tesla Model Y Juniper Roof Sunshade
+      </Link>
 
       <div className="space-y-6 mb-10">
         {products.map((p) => (
@@ -54,9 +60,14 @@ export default function SunshadesPage() {
                 <p className="text-base text-zinc-200 mt-1">{p.brand}</p>
                 <p className="text-white font-semibold mt-2 mb-3">{p.price}</p>
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
-                <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
-                  Check Price on Amazon
-                </a>
+                <div className="flex items-center gap-3 flex-wrap">
+                  <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+                    Check Price on Amazon
+                  </a>
+                  <Link href="/reviews/sunshades/best-tesla-model-y-juniper-sunshade" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">
+                    Full review →
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

@@ -15,12 +15,14 @@ const staticRoutes = [
   "/reviews/charging",
   "/reviews/charging/best-tesla-model-y-juniper-phone-mount",
   "/reviews/exterior",
+  "/reviews/exterior/best-tesla-model-y-juniper-mud-flaps",
   "/reviews/floor-mats",
   "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
   "/reviews/organizers",
   "/reviews/screen-protectors",
   "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector",
   "/reviews/sunshades",
+  "/reviews/sunshades/best-tesla-model-y-juniper-sunshade",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/reviews/exterior" },
   title: "Best Tesla Exterior Accessories (2025-2026)",
   description:
-    "Protect your Model Y Juniper's paint and exterior. No-drill mud flaps reviewed — plus more exterior recommendations coming soon.",
+    "Protect your Model Y Juniper's paint and exterior. No-drill mud flaps reviewed with a full REEVAA vs Basenor vs HALOBLK comparison.",
   keywords: [
     "tesla model y juniper exterior accessories",
     "model y juniper mud flaps",
@@ -20,10 +20,10 @@ const products = [
     badge: "Essential Protection",
     badgeColor: "bg-red-500/10 text-red-300 border border-red-500/30",
     name: "No-Drill Splash Guards (Mud Flaps)",
-    brand: "Various",
-    price: "$20–30",
+    brand: "REEVAA / Basenor / HALOBLK",
+    price: "$25-45",
     description:
-      "Low-cost protection against rock chips on Tesla's thin paint. No-drill options clip onto existing mounting points.",
+      "Low-cost protection against rock chips on Tesla's thin paint. No-drill options clip onto existing mounting points and install in about 20-35 minutes.",
     amazonSearch: "Tesla+Model+Y+Juniper+mud+flaps+no+drill",
   },
 ];
@@ -35,9 +35,16 @@ export default function ExteriorPage() {
         <Link href="/reviews" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">← All Reviews</Link>
       </div>
       <h1 className="text-4xl md:text-5xl font-black mb-3 text-white tracking-tight">Best Tesla Exterior Accessories</h1>
-      <p className="text-base md:text-lg text-zinc-200 mb-10 leading-relaxed">
+      <p className="text-base md:text-lg text-zinc-200 mb-6 leading-relaxed">
         Protect your Juniper&apos;s paint and body panels from day one.
       </p>
+
+      <Link
+        href="/reviews/exterior/best-tesla-model-y-juniper-mud-flaps"
+        className="inline-block text-base text-cyan-300 hover:text-cyan-200 hover:underline mb-10"
+      >
+        → Full comparison: Best Tesla Model Y Juniper Mud Flaps
+      </Link>
 
       <div className="space-y-6 mb-10">
         {products.map((p) => (
@@ -53,9 +60,14 @@ export default function ExteriorPage() {
                 <p className="text-base text-zinc-200 mt-1">{p.brand}</p>
                 <p className="text-white font-semibold mt-2 mb-3">{p.price}</p>
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
-                <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
-                  Check Price on Amazon
-                </a>
+                <div className="flex items-center gap-3 flex-wrap">
+                  <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+                    Check Price on Amazon
+                  </a>
+                  <Link href="/reviews/exterior/best-tesla-model-y-juniper-mud-flaps" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">
+                    Full review →
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
