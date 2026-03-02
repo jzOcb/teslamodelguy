@@ -38,10 +38,14 @@ export default function ScreenProtectorPage() {
 
       <section className="bg-red-500/5 border border-red-500/10 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-red-400 mb-2">⚠️ Compatibility Warning</h2>
-        <p className="text-sm text-red-400">
+        <p className="text-sm text-red-400 mb-2">
           The Juniper&apos;s screen is 15.4 inches, up from 15 inches on the previous Model Y.
           Screen protectors for the 2020-2024 Model Y will NOT fit. Only buy protectors that
           explicitly state &quot;Juniper,&quot; &quot;2025,&quot; or &quot;2026&quot; compatibility.
+        </p>
+        <p className="text-sm text-red-400 font-semibold">
+          🚨 2026 Model Y Premium &amp; Performance: Your front screen is 16&quot;, not 15.4&quot;.
+          Most protectors below fit the 15.4&quot; Standard screen. See our Wigoo 16&quot; pick below for Premium/Performance.
         </p>
       </section>
 
@@ -106,7 +110,8 @@ export default function ScreenProtectorPage() {
             the screen feel better to swipe — less sticky than bare glass.
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
-            <span className="font-semibold">$30–40</span>
+            <p className="text-xs text-yellow-400 mt-2 mb-2">⚠️ Fits: Model Y Standard (2025-2026), Model Y Premium (2025 only). NOT compatible with 2026 Premium/Performance 16&quot; screen.</p>
+          <span className="font-semibold">$30–40</span>
             <a href="https://www.amazon.com/dp/B0CHV4WP2C?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
           </div>
         </div>
@@ -179,6 +184,27 @@ export default function ScreenProtectorPage() {
       </section>
 
       {/* FAQ */}
+
+        <div className="border border-zinc-700 rounded-2xl p-6">
+          <span className="bg-green-900/50 text-green-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST FOR 2026 PREMIUM</span>
+              <h3 className="text-xl font-bold text-white mt-2 mb-2">Wigoo 16&quot; Matte Screen Protector</h3>
+          <p className="text-zinc-200 mb-3">
+            If you have a 2026 Model Y Premium or Performance, this is your pick. Wigoo makes this
+            specifically for the larger 16-inch screen on the 2026 Premium and Performance trims.
+            Matte finish with anti-glare and anti-fingerprint coating. Comes with an alignment kit
+            for easy, bubble-free installation.
+          </p>
+          <p className="text-zinc-200 mb-3">
+            Most other screen protectors on the market are sized for the 15.4&quot; Standard screen and
+            will NOT fit your 16&quot; Premium screen. This is one of the few options that gets the sizing right.
+          </p>
+          <div className="flex items-center gap-3 mt-4 flex-wrap">
+            <span className="font-semibold">~$40</span>
+            <a href="https://www.amazon.com/dp/B0GFC9WTYB?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+          </div>
+        </div>
+      </section>
+
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">FAQ</h2>
         <div className="space-y-4">

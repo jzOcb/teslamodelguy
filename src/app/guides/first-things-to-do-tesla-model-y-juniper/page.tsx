@@ -31,7 +31,7 @@ const steps = [
   {
     num: 3,
     title: "Install a Screen Protector Immediately",
-    content: `The Juniper's 15.4-inch touchscreen is the center of everything you do in this car. It will get scratched and smudged within days. Install a tempered glass screen protector before you start using it. The Spigen EZ Fit with alignment tray makes this foolproof. Also get one for the 8-inch rear screen if you have passengers.`,
+    content: `The Juniper's 15.4-inch touchscreen is the center of everything you do in this car. It will get scratched and smudged within days. Install a tempered glass screen protector before you start using it. The Spigen EZ Fit with alignment tray makes this foolproof (fits 15.4" Standard screen). If you have a 2026 Premium or Performance with the 16" screen, go with the Wigoo 16" protector instead. Also get one for the 8-inch rear screen if you have passengers.`,
     tip: "Do this BEFORE you start touching the screen. Clean it with the microfiber cloth that comes with the protector, apply in a dust-free environment (your garage with the doors closed works fine).",
   },
   {
