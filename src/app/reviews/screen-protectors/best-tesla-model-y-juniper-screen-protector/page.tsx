@@ -148,6 +148,7 @@ export default function ScreenProtectorPage() {
             <p className="text-xs text-yellow-400 mt-2 mb-2">⚠️ Fits: Model Y Standard (2025-2026), Model Y Premium (2025 only). NOT compatible with 2026 Premium/Performance 16&quot; screen.</p>
           <span className="font-semibold">$30–40</span>
             <a href="https://www.amazon.com/dp/B0CHV4WP2C?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
 
@@ -185,6 +186,7 @@ export default function ScreenProtectorPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$15–25</span>
             <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
 
@@ -202,6 +204,7 @@ export default function ScreenProtectorPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">$20–35</span>
             <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon →</a>
+            <a href="https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
             <a href="https://evbandit.com/products/tesla-model-y-juniper-2025-2026-model-3-highland-2024-2025-matte-screen-protector-2-pack-15-4-front-rear-9h-tempered-glass-anti-glare-fingerprint-dashboard-display-cover?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
           </div>
         </div>
@@ -216,6 +219,7 @@ export default function ScreenProtectorPage() {
           EZ Fit for the rear screen that uses the same easy alignment system.
         </p>
         <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+screen+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">Find rear screen protectors on Amazon →</a>
+        <a href="https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-teal-400 hover:text-teal-300 hover:underline">Browse screen protectors on Yeslak →</a>
       </section>
 
       <section className="space-y-6 mb-10">
@@ -236,6 +240,7 @@ export default function ScreenProtectorPage() {
           <div className="flex items-center gap-3 mt-4 flex-wrap">
             <span className="font-semibold">~$40</span>
             <a href="https://www.amazon.com/dp/B0GFC9WTYB?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Amazon \u2192</a>
+            <a href="https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
       </section>
