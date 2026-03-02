@@ -64,6 +64,7 @@ export default function SunshadesPage() {
                   <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                     Check Price on Amazon
                   </a>
+                  <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-teal-500 hover:bg-teal-600 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Shop on Yeslak →</a>
                   <Link href="/reviews/sunshades/best-tesla-model-y-juniper-sunshade" className="text-base text-cyan-300 hover:text-cyan-200 hover:underline">
                     Full review →
                   </Link>

@@ -229,6 +229,7 @@ export default function BestModelYJuniperPhoneMountPage() {
               >
                 Check Price on Amazon
               </a>
+              <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
             </div>
           </div>
         ))}

@@ -271,6 +271,7 @@ export default function BestAccessoriesPage() {
                   >
                     Check Price on Amazon →
                   </a>
+                  <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
                 </div>
               </div>
             </div>
@@ -309,6 +310,17 @@ export default function BestAccessoriesPage() {
           You don&apos;t need everything at once. Start with Day 1 essentials (screen protector +
           floor mats) and add the rest over time.
         </p>
+      </section>
+
+      {/* Yeslak Partner Banner */}
+      <section className="bg-gradient-to-r from-teal-900/40 to-teal-800/20 border border-teal-700/30 rounded-2xl p-6 mb-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h3 className="text-lg font-semibold text-white">🛒 Shop Tesla Accessories on Yeslak</h3>
+            <p className="text-sm text-zinc-400 mt-1">Screen protectors, floor mats, mud flaps, sunshades & more — all for Tesla.</p>
+          </div>
+          <a href="https://www.yeslak.com?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="shrink-0 bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition text-sm">Browse Yeslak →</a>
+        </div>
       </section>
 
       {/* Trust Section */}
