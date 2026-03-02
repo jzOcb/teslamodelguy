@@ -13,6 +13,7 @@ const staticRoutes = [
   "/guides/tesla-model-y-juniper-vs-old-differences",
   "/reviews",
   "/reviews/charging",
+  "/reviews/charging/best-tesla-model-y-juniper-phone-mount",
   "/reviews/exterior",
   "/reviews/floor-mats",
   "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
