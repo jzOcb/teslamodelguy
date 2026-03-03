@@ -95,7 +95,6 @@ export default function FirstThingsPage() {
         </p>
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 6 min read</p>
       </header>
-
       {/* Steps */}
       <div className="space-y-10">
         {steps.map((step) => (
