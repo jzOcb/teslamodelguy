@@ -51,6 +51,14 @@ export default function OrganizersPage() {
         Compatible with 2025–2026 Model Y Juniper. Double-check fitment before buying.
       </p>
 
+      <div className="bg-blue-900/20 border border-blue-500/30 rounded-2xl p-5 mb-8">
+        <p className="text-blue-300 text-sm font-medium mb-1">📖 IN-DEPTH GUIDE</p>
+        <Link href="/reviews/organizers/best-tesla-model-y-juniper-center-console-organizer" className="text-xl font-bold text-white hover:text-blue-300 transition">
+          Best Center Console Organizer for Model Y Juniper: 5 Options Compared →
+        </Link>
+        <p className="text-zinc-300 text-sm mt-1">Spigen vs Yeslak vs Tesla Official vs REEVAA vs Jowua — full comparison with Reddit consensus.</p>
+      </div>
+
       <div className="space-y-6">
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
