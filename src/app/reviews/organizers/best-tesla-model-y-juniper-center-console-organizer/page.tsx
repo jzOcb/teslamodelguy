@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -139,6 +140,9 @@ export default function CenterConsoleOrganizerPage() {
             <div className="flex items-center gap-2 mb-1">
               <span className="bg-blue-900/50 text-blue-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST OVERALL</span>
             </div>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+              <Image src="/images/products/console-organizers/spigen.jpg" alt="Spigen Center Console Organizer for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mb-2">Spigen Center Console Organizer</h3>
             <p className="text-zinc-200 mb-3">
               Spigen nailed it. The sliding mechanism is buttery smooth — no wobble, no catching. The matte
@@ -165,6 +169,9 @@ export default function CenterConsoleOrganizerPage() {
             <div className="flex items-center gap-2 mb-1">
               <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST VALUE</span>
             </div>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+              <Image src="/images/products/console-organizers/yeslak.jpg" alt="Yeslak Center Console Organizer for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mb-2">Yeslak Center Console Organizer</h3>
             <p className="text-zinc-200 mb-3">
               Yeslak&apos;s organizer punches above its price. The flocked lining is a standout feature — it
@@ -190,6 +197,9 @@ export default function CenterConsoleOrganizerPage() {
           <div className="border border-zinc-700 rounded-2xl p-6 mb-6">
             <div className="flex items-center gap-2 mb-1">
               <span className="bg-zinc-700 text-zinc-300 text-xs font-medium px-2 py-0.5 rounded-full">BEST OEM FIT</span>
+            </div>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+              <Image src="/images/products/console-organizers/tesla-official.jpg" alt="Tesla Official Center Console Trays for Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Tesla Official Center Console Trays</h3>
             <p className="text-zinc-200 mb-3">
@@ -218,6 +228,9 @@ export default function CenterConsoleOrganizerPage() {
             <div className="flex items-center gap-2 mb-1">
               <span className="bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST BUDGET</span>
             </div>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+              <Image src="/images/products/console-organizers/reevaa.jpg" alt="REEVAA 4-Piece Center Console Organizer Set for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mb-2">REEVAA 4-Piece Console Set</h3>
             <p className="text-zinc-200 mb-3">
               REEVAA&apos;s 4-piece set is the budget king. For under $30, you get a sliding console tray,
@@ -243,6 +256,9 @@ export default function CenterConsoleOrganizerPage() {
           <div className="border border-zinc-700 rounded-2xl p-6 mb-6">
             <div className="flex items-center gap-2 mb-1">
               <span className="bg-purple-900/50 text-purple-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST PREMIUM</span>
+            </div>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+              <Image src="/images/products/console-organizers/jowua.png" alt="Jowua LED Center Console Combo for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Jowua LED Center Console Combo</h3>
             <p className="text-zinc-200 mb-3">
