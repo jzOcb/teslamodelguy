@@ -313,12 +313,15 @@ export default function CenterConsoleOrganizerPage() {
           commission at no extra cost to you. This helps us keep testing and reviewing products.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <Link href="/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
             ← Best Floor Mats
           </Link>
           <Link href="/best/tesla-model-y-juniper-accessories" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
             10 Must-Have Accessories →
+          </Link>
+          <Link href="/guides/tesla-model-y-juniper-accessories-you-dont-need" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
+            Accessories You DON&apos;T Need →
           </Link>
         </div>
       </article>

@@ -110,6 +110,12 @@ export default function AccessoriesYouDontNeedPage() {
                 </Link>{" "}
                 — that&apos;s where the Juniper actually needs help.
               </p>
+              <p className="text-zinc-400 text-xs mt-2">
+                Still want one?{" "}
+                <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+cup+holder+insert&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-zinc-400 underline hover:text-zinc-300">
+                  See cup holder inserts on Amazon →
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -142,6 +148,12 @@ export default function AccessoriesYouDontNeedPage() {
                 <strong>💡 Buy this instead:</strong> A $10 collapsible grocery bag or a simple cargo net.
                 They fold flat when not in use and actually solve the real problem — keeping groceries
                 from sliding around.
+              </p>
+              <p className="text-zinc-400 text-xs mt-2">
+                Still want one?{" "}
+                <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+trunk+side+organizer&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-zinc-400 underline hover:text-zinc-300">
+                  See trunk organizers on Amazon →
+                </a>
               </p>
             </div>
           </div>
@@ -180,6 +192,12 @@ export default function AccessoriesYouDontNeedPage() {
                 </Link>{" "}
                 for details.
               </p>
+              <p className="text-zinc-400 text-xs mt-2">
+                Want to compare tint options?{" "}
+                <a href="https://www.amazon.com/s?k=Tesla+Model+Y+ceramic+window+tint+film&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-zinc-400 underline hover:text-zinc-300">
+                  See ceramic tint kits on Amazon →
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -211,6 +229,12 @@ export default function AccessoriesYouDontNeedPage() {
                 <strong>💡 Buy this instead:</strong> Just learn to park carefully. If you do curb your
                 wheels (it happens), a $50 wheel repair kit or a $100 professional touch-up fixes
                 it better than any protector ring ever could.
+              </p>
+              <p className="text-zinc-400 text-xs mt-2">
+                Still want rim protection?{" "}
+                <a href="https://www.amazon.com/s?k=Tesla+Model+Y+wheel+rim+protector&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-zinc-400 underline hover:text-zinc-300">
+                  See rim protectors on Amazon →
+                </a>
               </p>
             </div>
           </div>
@@ -247,6 +271,12 @@ export default function AccessoriesYouDontNeedPage() {
                 keeps the entire interior cooler, including the steering wheel. Way more effective
                 than a cover.
               </p>
+              <p className="text-zinc-400 text-xs mt-2">
+                Still want a cover?{" "}
+                <a href="https://www.amazon.com/s?k=Tesla+Model+Y+steering+wheel+cover&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-zinc-400 underline hover:text-zinc-300">
+                  See steering wheel covers on Amazon →
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -280,6 +310,12 @@ export default function AccessoriesYouDontNeedPage() {
                 </Link>{" "}
                 for the 15.4&quot; display is actually worth it. The screen is the one part that
                 benefits from protection — it faces you, reflects glare, and is prone to fingerprints.
+              </p>
+              <p className="text-zinc-400 text-xs mt-2">
+                Still want a dash mat?{" "}
+                <a href="https://www.amazon.com/s?k=Tesla+Model+Y+dashboard+sunshade+mat&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-zinc-400 underline hover:text-zinc-300">
+                  See dashboard mats on Amazon →
+                </a>
               </p>
             </div>
           </div>

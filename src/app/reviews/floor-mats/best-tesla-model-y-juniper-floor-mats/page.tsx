@@ -268,12 +268,15 @@ export default function FloorMatsPage() {
         commission at no extra cost to you. This helps us keep testing and reviewing products.
       </p>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap">
         <Link href="/best/tesla-model-y-juniper-accessories" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
           ← 10 Must-Have Accessories
         </Link>
-        <Link href="/reviews" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
-          All Reviews →
+        <Link href="/reviews/organizers/best-tesla-model-y-juniper-center-console-organizer" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
+          Best Console Organizers →
+        </Link>
+        <Link href="/guides/tesla-model-y-juniper-accessories-you-dont-need" className="text-blue-400 hover:text-blue-300 hover:underline text-sm">
+          Accessories You DON&apos;T Need →
         </Link>
       </div>
     </article>
