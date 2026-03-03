@@ -37,6 +37,13 @@ const guides = [
     tag: "POPULAR",
     image: "/images/tesla-model-y-hero.jpg",
   },
+  {
+    title: "6 Tesla Model Y Juniper Accessories You Don't Need (Save Your Money)",
+    slug: "/guides/tesla-model-y-juniper-accessories-you-dont-need",
+    desc: "Stop wasting money. We break down 6 popular accessories that aren't worth it — and what to buy instead.",
+    tag: "NEW",
+    image: "/images/tesla-model-y-hero.jpg",
+  },
 ];
 
 export default function GuidesPage() {

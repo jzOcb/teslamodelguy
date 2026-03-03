@@ -23,6 +23,13 @@ const reviews = [
     category: "Screen Protectors",
     image: "/images/screen-protector-card.jpg",
   },
+  {
+    title: "Best Center Console Organizer for Model Y Juniper: 5 Options Compared",
+    slug: "/reviews/organizers/best-tesla-model-y-juniper-center-console-organizer",
+    desc: "Spigen vs Yeslak vs Tesla Official vs REEVAA vs Jowua — tame the bottomless pit.",
+    category: "Organizers",
+    image: "/images/tesla-interior.jpg",
+  },
 ];
 
 export default function ReviewsPage() {
