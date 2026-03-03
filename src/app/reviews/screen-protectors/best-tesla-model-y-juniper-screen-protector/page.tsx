@@ -133,7 +133,13 @@ export default function ScreenProtectorPage() {
           <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-white">
                 <Image src="/images/spigen-product.jpg" alt="Spigen EZ Fit Tempered Glass" fill className="object-contain p-4" sizes="(min-width: 768px) 600px, 100vw" />
               </div>
-              <h3 className="text-xl font-bold text-white mt-2 mb-2">Spigen EZ Fit Tempered Glass</h3>
+
+              <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+                <Image src="/images/products/screen-protectors/spigen.jpg" alt="Spigen EZ Fit Tempered Glass for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+              </div>
+<h3 className="text-xl font-bold text-white mt-2 mb-2">Spigen EZ Fit Tempered Glass</h3>
           <p className="text-zinc-200 mb-3">
             Spigen&apos;s auto-alignment tray is the killer feature. You place the tray on the screen,
             peel the backing, press down, and remove the tray — perfect placement every time with
@@ -157,7 +163,13 @@ export default function ScreenProtectorPage() {
           <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-white">
                 <Image src="/images/dbrand-product.jpg" alt="dbrand Prism 2.0" fill className="object-contain p-4" sizes="(min-width: 768px) 600px, 100vw" />
               </div>
-              <h3 className="text-xl font-bold text-white mt-2 mb-2">dbrand Prism 2.0</h3>
+
+              <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+                <Image src="/images/products/screen-protectors/dbrand.jpg" alt="dbrand Prism 2.0 for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+              </div>
+<h3 className="text-xl font-bold text-white mt-2 mb-2">dbrand Prism 2.0</h3>
           <p className="text-zinc-200 mb-3">
             dbrand calls this &quot;idiot-proof&quot; and they&apos;re not wrong. The self-aligning
             installation tray is the best in the business — even better than Spigen&apos;s. The glass
@@ -177,7 +189,13 @@ export default function ScreenProtectorPage() {
           <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-white">
                 <Image src="/images/tparts-product.jpg" alt="TPARTS Tempered Glass" fill className="object-contain p-4" sizes="(min-width: 768px) 600px, 100vw" />
               </div>
-              <h3 className="text-xl font-bold text-white mt-2 mb-2">TPARTS Tempered Glass</h3>
+
+              <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+                <Image src="/images/products/screen-protectors/tparts.jpg" alt="TPARTS Tempered Glass for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+              </div>
+<h3 className="text-xl font-bold text-white mt-2 mb-2">TPARTS Tempered Glass</h3>
           <p className="text-zinc-200 mb-3">
             No-frills 9H tempered glass at a budget price. Installation isn&apos;t as easy as Spigen
             or dbrand (no alignment tray), but the protection is comparable. If you&apos;re careful
@@ -195,7 +213,13 @@ export default function ScreenProtectorPage() {
           <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-white">
                 <Image src="/images/tesery-product.jpg" alt="Tesery Matte Screen Protector" fill className="object-contain p-4" sizes="(min-width: 768px) 600px, 100vw" />
               </div>
-              <h3 className="text-xl font-bold text-white mt-2 mb-2">Tesery Matte Screen Protector</h3>
+
+              <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+                <Image src="/images/products/screen-protectors/tesery.jpg" alt="Tesery Matte Screen Protector for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+              </div>
+<h3 className="text-xl font-bold text-white mt-2 mb-2">Tesery Matte Screen Protector</h3>
           <p className="text-zinc-200 mb-3">
             If anti-glare is your top priority, Tesery&apos;s matte protector does the best job of
             any option we&apos;ve seen. Also includes blue light filtering, which reduces eye strain
@@ -226,7 +250,13 @@ export default function ScreenProtectorPage() {
         <h2 className="text-2xl font-bold text-white mb-4">2026 Premium &amp; Performance (16&quot; Screen)</h2>
         <div className="border border-zinc-700 rounded-2xl p-6">
           <span className="bg-green-900/50 text-green-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST FOR 2026 PREMIUM</span>
-              <h3 className="text-xl font-bold text-white mt-2 mb-2">Wigoo 16&quot; Matte Screen Protector</h3>
+
+              <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+                <Image src="/images/products/screen-protectors/wigoo.jpg" alt="Wigoo 16&quot; Matte Screen Protector for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+              </div>
+<h3 className="text-xl font-bold text-white mt-2 mb-2">Wigoo 16&quot; Matte Screen Protector</h3>
           <p className="text-zinc-200 mb-3">
             If you have a 2026 Model Y Premium or Performance, this is your pick. Wigoo makes this
             specifically for the larger 16-inch screen on the 2026 Premium and Performance trims.

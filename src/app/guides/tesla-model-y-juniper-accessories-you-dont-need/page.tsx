@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -90,6 +91,12 @@ export default function AccessoriesYouDontNeedPage() {
               <span className="text-2xl">❌</span>
               <span className="text-red-400 text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/20">SKIP IT</span>
             </div>
+            <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/dont-need/cup-holder-insert.jpg" alt="#1: Cup Holder Inserts / Stabilizers" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+
             <h2 className="text-xl font-bold text-white mb-3">#1: Cup Holder Inserts / Stabilizers</h2>
             <p className="text-zinc-200 mb-3">
               This was a legitimate problem on the pre-refresh Model Y — the cup holders were too wide and
@@ -127,6 +134,12 @@ export default function AccessoriesYouDontNeedPage() {
               <span className="text-2xl">❌</span>
               <span className="text-red-400 text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/20">SKIP IT</span>
             </div>
+            <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/dont-need/trunk-organizer.jpg" alt="#2: Trunk Side Storage Organizers" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+
             <h2 className="text-xl font-bold text-white mb-3">#2: Trunk Side Storage Organizers</h2>
             <p className="text-zinc-200 mb-3">
               Those molded plastic bins that clip into the trunk side compartments? They look great in
@@ -166,6 +179,12 @@ export default function AccessoriesYouDontNeedPage() {
               <span className="text-2xl">⚠️</span>
               <span className="text-amber-400 text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20">DEPENDS</span>
             </div>
+            <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/tesla-model-y-hero.jpg" alt="#3: Full-Car Window Tint / Roof Tint" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+
             <h2 className="text-xl font-bold text-white mb-3">#3: Full-Car Window Tint / Roof Tint</h2>
             <p className="text-zinc-200 mb-3">
               Tint shops love Tesla owners. A full ceramic tint package on a Model Y runs $500-1,200
@@ -209,6 +228,12 @@ export default function AccessoriesYouDontNeedPage() {
               <span className="text-2xl">❌</span>
               <span className="text-red-400 text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/20">SKIP IT</span>
             </div>
+            <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/dont-need/rim-protector.jpg" alt="#4: Wheel Rim Protector Rings" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+
             <h2 className="text-xl font-bold text-white mb-3">#4: Wheel Rim Protector Rings</h2>
             <p className="text-zinc-200 mb-3">
               Those colorful rubber rings that snap around your wheel rims to prevent curb rash?
@@ -247,6 +272,12 @@ export default function AccessoriesYouDontNeedPage() {
               <span className="text-2xl">❌</span>
               <span className="text-red-400 text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/20">SKIP IT</span>
             </div>
+            <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/dont-need/steering-wheel-cover.jpg" alt="#5: Steering Wheel Covers" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+
             <h2 className="text-xl font-bold text-white mb-3">#5: Steering Wheel Covers</h2>
             <p className="text-zinc-200 mb-3">
               The Juniper&apos;s steering wheel is one of its best interior upgrades. The grip texture
@@ -288,6 +319,12 @@ export default function AccessoriesYouDontNeedPage() {
               <span className="text-2xl">❌</span>
               <span className="text-red-400 text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/10 border border-red-500/20">SKIP IT</span>
             </div>
+            <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/dont-need/dashboard-mat.jpg" alt="#6: Dashboard Sunshade Mats" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+
             <h2 className="text-xl font-bold text-white mb-3">#6: Dashboard Sunshade Mats</h2>
             <p className="text-zinc-200 mb-3">
               Those felt or suede pads that cover your entire dashboard to &quot;prevent sun

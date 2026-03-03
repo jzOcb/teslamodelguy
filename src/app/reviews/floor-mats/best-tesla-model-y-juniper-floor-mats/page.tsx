@@ -118,6 +118,12 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-2 mb-1">
             <span className="bg-blue-900/50 text-blue-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST OVERALL</span>
           </div>
+          <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+            <Image src="/images/products/floor-mats/3d-maxpider.jpg" alt="3D MAXpider Kagu Series for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+          </div>
+
           <h3 className="text-xl font-bold text-white mb-2">3D MAXpider Kagu Series</h3>
           <p className="text-zinc-200 mb-3">
             The MAXpider Kagu is the most recommended floor mat in the Tesla community, and for good reason.
@@ -145,6 +151,12 @@ export default function FloorMatsPage() {
 
         {/* WeatherTech */}
         <div className="border border-zinc-700 rounded-2xl p-6 mb-6">
+          <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+            <Image src="/images/products/floor-mats/weathertech.jpg" alt="WeatherTech FloorLiner for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+          </div>
+
           <h3 className="text-xl font-bold text-white mb-2">WeatherTech FloorLiner</h3>
           <p className="text-zinc-200 mb-3">
             WeatherTech is the brand your dad trusts, and they&apos;ve earned that reputation. Laser-measured
@@ -172,6 +184,12 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-2 mb-1">
             <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST VALUE</span>
           </div>
+          <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+            <Image src="/images/products/floor-mats/3w-vigormold.jpg" alt="3W Vigormold Floor Mats + Cargo Liners for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+          </div>
+
           <h3 className="text-xl font-bold text-white mb-2">3W Vigormold Floor Mats + Cargo Liners</h3>
           <p className="text-zinc-200 mb-3">
             3W offers a full 6-piece TPE set including floor mats, cargo liners, and seat back protectors
@@ -199,6 +217,12 @@ export default function FloorMatsPage() {
           <div className="flex items-center gap-2 mb-1">
             <span className="bg-purple-900/50 text-purple-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST COVERAGE</span>
           </div>
+          <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+            <Image src="/images/products/floor-mats/tuxmat.jpg" alt="Tuxmat Custom Fit Mats for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+          </div>
+
           <h3 className="text-xl font-bold text-white mb-2">Tuxmat Custom Fit Mats</h3>
           <p className="text-zinc-200 mb-3">
             Tuxmat goes for maximum coverage. Their sidewall edges are the tallest of any option here,

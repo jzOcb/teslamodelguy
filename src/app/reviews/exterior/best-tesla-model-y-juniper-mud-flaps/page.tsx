@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -122,7 +123,13 @@ export default function BestJuniperMudFlapsPage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-blue-900/50 text-blue-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST OVERALL</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">REEVAA Model Y Juniper Mud Flaps</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/mud-flaps/reevaa.jpg" alt="REEVAA Model Y Juniper Mud Flaps for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">REEVAA Model Y Juniper Mud Flaps</h3>
             <p className="text-zinc-200 mb-3">
               REEVAA has one of the cleanest OEM-like silhouettes. The front and rear pieces sit flush enough that
               they do not look like an afterthought. Hardware quality is above average for this price range.
@@ -140,7 +147,13 @@ export default function BestJuniperMudFlapsPage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST VALUE</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">Basenor Splash Guards for Model Y Juniper</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/mud-flaps/basenor.jpg" alt="Basenor Splash Guards for Model Y Juniper for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">Basenor Splash Guards for Model Y Juniper</h3>
             <p className="text-zinc-200 mb-3">
               Basenor usually lands in the sweet spot for cost versus fit. You still get no-drill installation and
               decent contour matching around the wheel arch without moving into premium pricing.
@@ -157,7 +170,13 @@ export default function BestJuniperMudFlapsPage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-purple-900/50 text-purple-300 text-xs font-medium px-2 py-0.5 rounded-full">BEST COVERAGE</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">HALOBLK No-Drill Mud Flaps</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/mud-flaps/haloblk.jpg" alt="HALOBLK No-Drill Mud Flaps for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">HALOBLK No-Drill Mud Flaps</h3>
             <p className="text-zinc-200 mb-3">
               HALOBLK tends to use a slightly larger flap footprint, which helps if you drive in slush, gravel, or
               construction zones. Coverage is strong for the lower doors and rear bumper corner area.
@@ -174,7 +193,13 @@ export default function BestJuniperMudFlapsPage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-zinc-700 text-zinc-100 text-xs font-medium px-2 py-0.5 rounded-full">BUDGET BACKUP</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">Generic No-Drill Model Y Juniper Splash Guards</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/mud-flaps/generic.jpg" alt="Generic No-Drill Model Y Juniper Splash Guards for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">Generic No-Drill Model Y Juniper Splash Guards</h3>
             <p className="text-zinc-200 mb-3">
               Generic sets can still work if you confirm Juniper 2025-2026 fitment and inspect user photos. The
               key weak point is usually clip quality, not flap material.

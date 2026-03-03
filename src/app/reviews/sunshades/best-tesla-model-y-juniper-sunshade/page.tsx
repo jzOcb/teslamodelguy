@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -124,7 +125,13 @@ export default function BestJuniperSunshadePage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-blue-900/50 text-blue-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST OVERALL</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">REEVAA Model Y Juniper Roof Sunshade</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/sunshades/reevaa.jpg" alt="REEVAA Model Y Juniper Roof Sunshade for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">REEVAA Model Y Juniper Roof Sunshade</h3>
             <p className="text-zinc-200 mb-3">
               REEVAA is the safest all-around recommendation for most owners. The clip-in design generally stays
               stable even when the cabin gets hot, and it folds down without much hassle.
@@ -142,7 +149,13 @@ export default function BestJuniperSunshadePage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-purple-900/50 text-purple-300 text-xs font-medium px-2 py-0.5 rounded-full">BEST BLACKOUT</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">Wigoo Juniper Roof Shade Blackout</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/sunshades/wigoo.jpg" alt="Wigoo Juniper Roof Shade Blackout for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">Wigoo Juniper Roof Shade Blackout</h3>
             <p className="text-zinc-200 mb-3">
               Wigoo is a strong pick if your main goal is reducing overhead glare and heat. The slide-in plus clip
               system usually keeps better alignment than magnetic alternatives over rough pavement.
@@ -160,7 +173,13 @@ export default function BestJuniperSunshadePage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-medium px-2 py-0.5 rounded-full">BEST VALUE</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">VION Clip-In Sunshade for Model Y Juniper</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/sunshades/vion.jpg" alt="VION Clip-In Sunshade for Model Y Juniper for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">VION Clip-In Sunshade for Model Y Juniper</h3>
             <p className="text-zinc-200 mb-3">
               VION gives you reliable clip-in retention at a lower price. It is a straightforward option for owners
               who want better comfort in summer without spending premium money.
@@ -178,7 +197,13 @@ export default function BestJuniperSunshadePage() {
 
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-zinc-700 text-zinc-100 text-xs font-medium px-2 py-0.5 rounded-full">PREMIUM PICK</span>
-            <h3 className="text-xl font-bold text-white mt-3 mb-2">Jowua Roof Sunshade (Official Site)</h3>
+
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800">
+
+              <Image src="/images/products/sunshades/jowua.jpg" alt="Jowua Roof Sunshade (Official Site) for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+
+            </div>
+<h3 className="text-xl font-bold text-white mt-3 mb-2">Jowua Roof Sunshade (Official Site)</h3>
             <p className="text-zinc-200 mb-3">
               Jowua remains a premium choice focused on fit-and-finish. For Juniper-specific stock and latest versions,
               the official store is the most reliable source.
