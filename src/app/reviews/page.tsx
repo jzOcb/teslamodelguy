@@ -30,6 +30,27 @@ const reviews = [
     category: "Organizers",
     image: "/images/tesla-interior.jpg",
   },
+  {
+    title: "Best Sunshade for Tesla Model Y Juniper",
+    slug: "/reviews/sunshades/best-tesla-model-y-juniper-sunshade",
+    desc: "Keep your interior cool without tinting every window. Top sunshade picks compared.",
+    category: "Sunshades",
+    image: "/images/tesla-model-y-hero.jpg",
+  },
+  {
+    title: "Best Phone Mount for Tesla Model Y Juniper",
+    slug: "/reviews/charging/best-tesla-model-y-juniper-phone-mount",
+    desc: "MagSafe, vent clip, or screen mount — which phone holder works best in the Juniper?",
+    category: "Charging & Mounts",
+    image: "/images/tesla-interior.jpg",
+  },
+  {
+    title: "Best Mud Flaps for Tesla Model Y Juniper",
+    slug: "/reviews/exterior/best-tesla-model-y-juniper-mud-flaps",
+    desc: "Protect your paint from road debris. Top mud flap options for the refreshed Model Y.",
+    category: "Exterior",
+    image: "/images/tesla-model-y-snow.jpg",
+  },
 ];
 
 export default function ReviewsPage() {
