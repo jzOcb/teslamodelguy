@@ -9,19 +9,25 @@
 | 类型 | Tesla 配件 affiliate 内容站 |
 | 变现 | Amazon Associate + EV Bandit (10% 佣金) |
 | 技术栈 | Next.js + Vercel + Tailwind |
-| 文章数 | 8篇（产品对比 + 购买指南 + 车主教程） |
+| 文章数 | 13篇（产品对比 + 购买指南 + 车主教程 + 长尾对比页） |
 | Google Search Console | 已验证，sitemap 已提交 |
 | Google Analytics | GA4 已接入 |
-| 当前排名 | Google 搜索完全找不到我们 |
+| 当前排名 | Floor mats 主文章已被 Google 索引，其余页面陆续收录中 |
 
 ---
 
 ## 📂 现有内容
 
 ### 产品测评
-1. Best Tesla Model Y Juniper Floor Mats — 四款对比（MAXpider/WeatherTech/3W/Tuxmat）
+1. Best Tesla Model Y Juniper Floor Mats — 五款对比（MAXpider/WeatherTech/3W/Tuxmat/LASFIT）✨更新
 2. Best Screen Protector — 含15.4" vs 16"兼容性指南
 3. Best Phone Mount / Wireless Charger — 四款对比
+4. Best Center Console Organizer — 五款对比 ✨新增
+5. Best Mud Flaps — 四款对比 ✨新增
+
+### 长尾对比页 ✨新增
+6. 3D MAXpider vs WeatherTech for Tesla Model Y Juniper
+7. Do Old Model Y Floor Mats Fit Juniper?
 
 ### 车主指南
 4. First Things to Do with Your Model Y Juniper
@@ -52,6 +58,10 @@
 - 3d maxpider tesla model y juniper
 - spigen ez fit tesla model y
 - tuxmat tesla model y juniper review
+- 3d maxpider vs weathertech tesla model y juniper ✨新增
+- do old model y floor mats fit juniper ✨新增
+- lasfit tesla model y juniper floor mats ✨新增
+- tesla model y juniper floor mat comparison ✨新增
 
 ---
 
@@ -59,7 +69,7 @@
 
 - [x] robots.txt + XML sitemap
 - [x] Google Search Console + sitemap 提交
-- [x] GA4
+- [x] GA4（两站均已接入）
 - [x] 所有 affiliate 链接 rel="sponsored"
 - [x] Article + Breadcrumb + FAQ schema (JSON-LD)
 - [x] 每个页面 canonical URL
@@ -67,6 +77,13 @@
 - [x] Next.js Image 优化
 - [x] HTTPS
 - [x] Pinterest Business 账号 + 6 Pins
+- [x] llms.txt — AI 爬虫友好文件 ✨3/3新增
+- [x] robots.txt 添加 AI 爬虫规则（GPTBot, Google-Extended 等）✨3/3新增
+- [x] Quick Answer 格式 — 文章开头加直接答案框（AEO优化）✨3/3新增
+- [x] 长尾关键词矩阵 — 2个专门对比页面 ✨3/3新增
+- [x] Floor mats 文章扩充 — 4→5产品, FAQ 2→8个, 加 Juniper vs 老款段落 ✨3/3新增
+- [x] GSC 手动提交 3个 URL 索引请求 ✨3/3新增
+- [x] Reddit 评论种草 — 3条评论（r/10s × 2, r/TeslaModelY × 1）✨3/3新增
 
 ## ❌ 还没做的
 
@@ -74,9 +91,10 @@
 - [ ] About 页面作者照片（E-E-A-T）
 - [ ] 真实产品照片（已下单，3/3-3/9 到货）
 - [ ] YouTube 频道
-- [ ] 外链建设（仅1条 Reddit 评论）
-- [ ] 内链优化
+- [ ] 更多外链建设（Reddit 自然帖 + Pinterest）
+- [ ] 内链优化（新页面之间互链）
 - [ ] IndexNow
+- [ ] Reddit 自然发帖带链接（草稿已写好，待发布）
 
 ---
 
@@ -128,6 +146,17 @@ Pinterest/Reddit/YouTube对Google排名有直接帮助吗？
 
 **Q10: 时间预期**
 3个月/6个月应该设什么目标？
+
+### 🤖 AI / AEO（Agent Engine Optimization）
+
+**Q13: AEO 优先级**
+我们已经加了 llms.txt 和 Quick Answer 格式。对新站来说，AEO 现在值得投入多少精力？还是先专注传统 SEO？
+
+**Q14: AI 引用来源**
+ChatGPT / Perplexity / Gemini 倾向引用什么样的内容？Reddit 讨论 vs 独立站文章，哪个更容易被 AI 引用？
+
+**Q15: llms.txt 标准**
+llms.txt 是新标准，你见过实际效果吗？还有其他 AI 友好的技术优化建议吗？
 
 ### 💡 开放性
 
