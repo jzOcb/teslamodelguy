@@ -26,6 +26,7 @@ const products = [
     price: "$30–40",
     description: "Foolproof alignment tray, strong 9H protection, and great clarity.",
     amazonSearch: "Spigen+EZ+Fit+Tesla+Model+Y+Juniper+screen+protector",
+    asin: "B0CHV4WP2C",
   },
   {
     rank: 2,

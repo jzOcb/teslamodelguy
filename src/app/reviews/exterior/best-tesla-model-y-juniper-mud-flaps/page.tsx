@@ -209,7 +209,7 @@ export default function BestJuniperMudFlapsPage() {
             </p>
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">$25-33</span>
-              <a href="https://www.amazon.com/s?k=Tesla+Model+Y+Juniper+no+drill+mud+flaps&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+              <a href="https://www.amazon.com/dp/B0DZXLG3FD?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
               <a href="https://www.yeslak.com/products/mud-flaps-for-2025-tesla-model-y-juniper?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
             </div>
           </div>

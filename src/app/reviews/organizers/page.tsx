@@ -26,6 +26,7 @@ const products = [
     description:
       "Simple, high-impact upgrade for center console organization with better access to daily carry items.",
     amazonSearch: "Tesla+Model+Y+Juniper+center+console+organizer",
+    asin: "B0D19WTR58",
   },
   {
     rank: 2,
@@ -37,6 +38,7 @@ const products = [
     description:
       "Keeps groceries and tools from sliding around in the large Model Y trunk.",
     amazonSearch: "Tesla+Model+Y+trunk+organizer+collapsible",
+    asin: "B09YXYSSLL",
   },
 ];
 
@@ -73,7 +75,7 @@ export default function OrganizersPage() {
                 <p className="text-base text-zinc-200 mt-1">{p.brand}</p>
                 <p className="text-white font-semibold mt-2 mb-3">{p.price}</p>
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
-                <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+                <a href={(p as any).asin ? `https://www.amazon.com/dp/${(p as any).asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                   Check Price on Amazon
                 </a>
                 <a href="https://www.yeslak.com/products/2025-tesla-model-y-juniper-rear-console-storage-organizer?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-teal-500 hover:bg-teal-600 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Shop on Yeslak →</a>

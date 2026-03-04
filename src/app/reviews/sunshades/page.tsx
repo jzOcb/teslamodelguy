@@ -25,6 +25,7 @@ const products = [
     description:
       "Clip-in and slide-in designs generally outperform magnetic sunshades for long-term hold. Full comparison with owner-focused recommendations.",
     amazonSearch: "Tesla+Model+Y+Juniper+roof+sunshade",
+    asin: "B0DXDWW9N8",
   },
 ];
 
@@ -61,7 +62,7 @@ export default function SunshadesPage() {
                 <p className="text-white font-semibold mt-2 mb-3">{p.price}</p>
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
                 <div className="flex items-center gap-3 flex-wrap">
-                  <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+                  <a href={(p as any).asin ? `https://www.amazon.com/dp/${(p as any).asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                     Check Price on Amazon
                   </a>
                   <a href="https://www.yeslak.com/products/tesla-model-y-model-3-windshield-glass-sunshade?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-teal-500 hover:bg-teal-600 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Shop on Yeslak →</a>

@@ -28,6 +28,7 @@ const products = [
     description:
       "The most recommended floor mat in the Tesla community. Three-layer construction with a patented fiber backing that grips without damaging carpet, raised edges that contain every spill, and a premium OEM look.",
     amazonSearch: "3D+MAXpider+Kagu+Tesla+Model+Y+Juniper+2026",
+    asin: "B0F8PPNW49",
   },
   {
     rank: 2,

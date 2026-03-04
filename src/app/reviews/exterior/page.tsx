@@ -25,6 +25,7 @@ const products = [
     description:
       "Low-cost protection against rock chips on Tesla's thin paint. No-drill options clip onto existing mounting points and install in about 20-35 minutes.",
     amazonSearch: "Tesla+Model+Y+Juniper+mud+flaps+no+drill",
+    asin: "B0DZXLG3FD",
   },
 ];
 
@@ -61,7 +62,7 @@ export default function ExteriorPage() {
                 <p className="text-white font-semibold mt-2 mb-3">{p.price}</p>
                 <p className="text-base text-zinc-200 mb-4 leading-relaxed">{p.description}</p>
                 <div className="flex items-center gap-3 flex-wrap">
-                  <a href={`https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+                  <a href={(p as any).asin ? `https://www.amazon.com/dp/${(p as any).asin}?tag=teslamodelguy-20` : `https://www.amazon.com/s?k=${p.amazonSearch}&tag=teslamodelguy-20`} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-orange-400 hover:bg-orange-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                     Check Price on Amazon
                   </a>
                   <a href="https://www.yeslak.com/products/mud-flaps-for-2025-tesla-model-y-juniper?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-teal-500 hover:bg-teal-600 text-white text-base font-semibold px-6 py-3 rounded-lg transition-all duration-200">Shop on Yeslak →</a>
