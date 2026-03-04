@@ -23,6 +23,7 @@ const products = [
     name: "EVBASE / Spigen Console Tray",
     brand: "EVBASE / Spigen",
     price: "$20–35",
+    image: "/images/products/console-organizers/spigen.jpg",
     description:
       "Simple, high-impact upgrade for center console organization with better access to daily carry items.",
     amazonSearch: "Tesla+Model+Y+Juniper+center+console+organizer",
@@ -35,6 +36,7 @@ const products = [
     name: "Collapsible Cargo Organizer",
     brand: "Various",
     price: "$30–40",
+    image: "/images/trunk-organizer-product.jpg",
     description:
       "Keeps groceries and tools from sliding around in the large Model Y trunk.",
     amazonSearch: "Tesla+Model+Y+trunk+organizer+collapsible",
@@ -65,7 +67,7 @@ export default function OrganizersPage() {
         {products.map((p) => (
           <div key={p.rank} className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 md:p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
             <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5">
-              <CardVisual emoji="📦" label={p.brand} />
+              <CardVisual emoji="📦" label={p.brand} image={p.image} />
               <div>
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.badgeColor}`}>{p.badge}</span>
