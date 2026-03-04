@@ -24,6 +24,7 @@ const staticRoutes = [
   "/reviews/sunshades",
   "/reviews/sunshades/best-tesla-model-y-juniper-sunshade",
   "/guides/tesla-model-y-juniper-24000-mile-review",
+  "/guides/new-model-y-juniper-worth-upgrade-4-month-review",
   "/tools",
   "/tools/delivery-checklist",
   "/tools/new-owner-setup",
