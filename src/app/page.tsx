@@ -44,7 +44,7 @@ const categories = [
     name: "Charging & Tech",
     slug: "charging",
     desc: "USB hubs, wireless chargers, and SSDs",
-    image: "/images/tesla-hero-desktop.jpg",
+    image: "/images/tesla-wall-connector.png",
   },
   {
     name: "Exterior",
