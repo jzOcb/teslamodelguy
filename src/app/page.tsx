@@ -26,7 +26,7 @@ const categories = [
     name: "Center Console",
     slug: "organizers",
     desc: "Organizers, trays, and storage solutions",
-    image: "/images/console-organizer-product.jpg",
+    image: "/images/tesla-interior-console.png",
   },
   {
     name: "Screen Protectors",

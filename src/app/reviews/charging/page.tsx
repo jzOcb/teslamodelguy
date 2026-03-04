@@ -27,7 +27,7 @@ export default function ChargingPage() {
 
       <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 hover:border-zinc-500 hover:-translate-y-1 transition-all duration-200">
         <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-5 items-start">
-          <CardVisual emoji="🔌" label="Charging" />
+          <CardVisual emoji="🔌" label="Charging" image="/images/tesla-wall-connector.png" />
           <div>
             <h2 className="text-2xl font-bold text-white mb-2">Reviews in Progress</h2>
             <p className="text-base text-zinc-200 leading-relaxed mb-4">
