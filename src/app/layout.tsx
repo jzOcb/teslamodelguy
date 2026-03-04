@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -89,7 +86,7 @@ export default function RootLayout({
           gtag('config', 'G-59P9VFSDM8');
         `}
       </Script>
-      <body className={`${inter.className} antialiased bg-zinc-950 text-zinc-100`}>
+      <body className="font-sans antialiased bg-zinc-950 text-zinc-100">
         <StructuredData data={websiteJsonLd} />
         <Header />
         <main className="min-h-screen">{children}</main>
