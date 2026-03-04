@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Link from "next/link";
 
 /* ───────────────── step data ───────────────── */
@@ -204,9 +204,13 @@ export default function NewOwnerSetupPage() {
     persist({ ...state, completed });
   };
 
+  const stepRef = useRef<HTMLDivElement>(null);
+
   const goTo = (idx: number) => {
     persist({ ...state, currentStep: idx });
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    requestAnimationFrame(() => {
+      stepRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   };
 
   const completedCount = Object.values(state.completed).filter(Boolean).length;
@@ -268,7 +272,7 @@ export default function NewOwnerSetupPage() {
         </div>
 
         {/* ── current step detail ── */}
-        <div className="border border-zinc-700 rounded-2xl p-6 sm:p-8 mb-6">
+        <div ref={stepRef} className="border border-zinc-700 rounded-2xl p-6 sm:p-8 mb-6 scroll-mt-4">
           <div className="flex items-center gap-3 mb-1">
             <span className="text-xs text-zinc-500 uppercase tracking-wider">
               Step {current.num} of {steps.length}
