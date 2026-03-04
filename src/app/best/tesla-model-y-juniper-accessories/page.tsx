@@ -62,6 +62,8 @@ const accessories = [
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
     amazonSearch: "3D+MAXpider+Tesla+Model+Y+Juniper+2026",
     asin: "B0F8PPNW49",
+    yeslakUrl: "https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
+    evbanditUrl: "https://evbandit.com/products/3d-maxpider-floor-mats-tesla-model-y-2026-juniper?sca_ref=10733634.pROAnZ9F8x",
     why: "Your Juniper's carpet will get destroyed without protection. This is the single most important accessory you can buy.",
     detail:
       "Three-layer construction with a patented fiber backing that grips without damaging your carpet. Raised edges catch every drop of water, mud, and coffee you'll inevitably spill. Most Reddit owners who've tried both WeatherTech and MAXpider prefer the Kagu for its premium look.",
@@ -77,6 +79,9 @@ const accessories = [
     priority: "Day 1",
     priorityColor: "bg-red-500/5 text-red-400 border border-red-500/20",
     amazonSearch: "Spigen+Tesla+Model+Y+Juniper+screen+protector",
+    asin: "B0CHV4WP2C",
+    yeslakUrl: "https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
+    evbanditUrl: "https://evbandit.com/products/tesla-model-y-juniper-2025-2026-model-3-highland-2024-2025-matte-screen-protector-2-pack-15-4-front-rear-9h-tempered-glass-anti-glare-fingerprint-dashboard-display-cover?sca_ref=10733634.pROAnZ9F8x",
     why: "The Juniper has a gorgeous 15.4-inch touchscreen. It will get scratched and covered in fingerprints.",
     detail:
       "Spigen's EZ Fit comes with an alignment tray that makes installation foolproof — no bubbles, perfectly centered. 9H hardness, oleophobic coating, full touch responsiveness. The matte version kills glare on sunny days.",
@@ -92,6 +97,8 @@ const accessories = [
     priority: "Week 1",
     priorityColor: "bg-amber-500/10 text-amber-400 border border-amber-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+center+console+organizer",
+    yeslakUrl: "https://www.yeslak.com/products/2025-tesla-model-y-juniper-rear-console-storage-organizer?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
+    evbanditUrl: "https://evbandit.com/products/spigen-non-slide-center-console-organizer-expanded-capacity-designed-for-new-tesla-model-y-juniper-2025-2026-refresh-and-tesla-model-3-highland-2024-2025-refresh-carbon-edition-non-slide-center-console-organizer-expanded?sca_ref=10733634.pROAnZ9F8x",
     why: "Without an organizer, small items disappear into a black hole. Keys, sunglasses, cables — gone.",
     detail:
       "Look for one with multiple compartments and a rubber/silicone lining so nothing rattles. EVBASE makes one with a built-in USB charging port — worth the extra $5.",
@@ -107,6 +114,8 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+sunshade+roof",
+    yeslakUrl: "https://www.yeslak.com/products/tesla-model-y-model-3-windshield-glass-sunshade?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
+    evbanditUrl: "https://evbandit.com/products/tesla-model-y-windshield-sunshade-2026-juniper-full-size-folding-front-window-uv-heat-insulation-umbrella-shade-interior-sunshade-visor-accessory?sca_ref=10733634.pROAnZ9F8x",
     why: "The glass roof turns your car into a greenhouse in summer. A sunshade drops cabin temp by 10-15°F.",
     detail:
       "EVBASE makes a Juniper-specific sunshade with improved heat rejection designed for the exact dimensions of the refreshed roof.",
@@ -122,6 +131,7 @@ const accessories = [
     priority: "Week 1",
     priorityColor: "bg-amber-500/10 text-amber-400 border border-amber-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+mud+flaps",
+    yeslakUrl: "https://www.yeslak.com/products/mud-flaps-for-2025-tesla-model-y-juniper?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
     why: "Tesla's paint is famously thin. Without mud flaps, road debris will chip your rear panels within months.",
     detail:
       "This is $20 insurance against hundreds in paint repair. No-drill options clip directly onto existing mounting points.",
@@ -153,6 +163,8 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+rear+screen+protector",
+    asin: "B0CS1DQPR9",
+    yeslakUrl: "https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
     why: "The Juniper added an 8-inch rear screen — a first for Model Y. If you have kids, protect it from day one.",
     detail:
       "Spigen makes a matching rear protector that uses the same EZ Fit alignment system.",
@@ -280,8 +292,8 @@ export default function BestAccessoriesPage() {
                   >
                     Check Price on Amazon →
                   </a>
-                  <a href="https://www.yeslak.com/collections/tesla-model-y-juniper-accessories?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
-                  <a href="https://evbandit.com/collections/tesla-model-y-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>
+                  {(a as any).yeslakUrl && <a href={(a as any).yeslakUrl} target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>}
+                  {(a as any).evbanditUrl && <a href={(a as any).evbanditUrl} target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">Buy at EV Bandit →</a>}
                 </div>
               </div>
             </div>

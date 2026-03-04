@@ -189,7 +189,7 @@ export default function CenterConsoleOrganizerPage() {
             </p>
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">$30–35</span>
-              <a href="https://www.yeslak.com/collections/model-y-center-console-accessories?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
+              <a href="https://www.yeslak.com/products/2025-tesla-model-y-juniper-rear-console-storage-organizer?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
             </div>
           </div>
 
@@ -219,7 +219,7 @@ export default function CenterConsoleOrganizerPage() {
             </p>
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">$45–50</span>
-              <a href="https://shop.tesla.com/product/model-y-center-console-trays" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Shop at Tesla →</a>
+              <a href="https://shop.tesla.com" target="_blank" rel="noopener noreferrer" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Shop at Tesla →</a>
             </div>
           </div>
 

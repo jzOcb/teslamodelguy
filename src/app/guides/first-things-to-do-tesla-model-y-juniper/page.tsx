@@ -130,8 +130,8 @@ export default function FirstThingsPage() {
               <p className="text-base text-zinc-300">15.4&quot; front + 8&quot; rear</p>
             </div>
             <a href="https://www.amazon.com/dp/B0CHV4WP2C?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$35 on Amazon →</a>
-            <a href="https://www.yeslak.com/collections/tesla-model-y-juniper-accessories?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-teal-400 hover:text-teal-300 hover:underline">Also on Yeslak →</a>
-            <a href="https://evbandit.com/collections/tesla-model-y-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-emerald-400 hover:text-emerald-300 hover:underline">Also on EV Bandit →</a>
+            <a href="https://www.yeslak.com/products/tempered-glass-screen-protector-for-new-model-3-model-y-2025?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-teal-400 hover:text-teal-300 hover:underline">Also on Yeslak →</a>
+            <a href="https://evbandit.com/products/tesla-model-y-juniper-2025-2026-model-3-highland-2024-2025-matte-screen-protector-2-pack-15-4-front-rear-9h-tempered-glass-anti-glare-fingerprint-dashboard-display-cover?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-emerald-400 hover:text-emerald-300 hover:underline">Also on EV Bandit →</a>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
@@ -139,8 +139,6 @@ export default function FirstThingsPage() {
               <p className="text-base text-zinc-300">500GB, format as exFAT</p>
             </div>
             <a href="https://www.amazon.com/dp/B0874XN4D8?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$70 on Amazon →</a>
-            <a href="https://www.yeslak.com/collections/tesla-model-y-juniper-accessories?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-teal-400 hover:text-teal-300 hover:underline">Also on Yeslak →</a>
-            <a href="https://evbandit.com/collections/tesla-model-y-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-emerald-400 hover:text-emerald-300 hover:underline">Also on EV Bandit →</a>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div>
@@ -148,8 +146,8 @@ export default function FirstThingsPage() {
               <p className="text-base text-zinc-300">3D MAXpider Kagu or 3W</p>
             </div>
             <a href="https://www.amazon.com/dp/B0F8PPNW49?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-blue-400 hover:text-blue-300 hover:underline">~$170 on Amazon →</a>
-            <a href="https://www.yeslak.com/collections/tesla-model-y-juniper-accessories?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-teal-400 hover:text-teal-300 hover:underline">Also on Yeslak →</a>
-            <a href="https://evbandit.com/collections/tesla-model-y-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-emerald-400 hover:text-emerald-300 hover:underline">Also on EV Bandit →</a>
+            <a href="https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-teal-400 hover:text-teal-300 hover:underline">Also on Yeslak →</a>
+            <a href="https://evbandit.com/products/3d-maxpider-floor-mats-tesla-model-y-2026-juniper?sca_ref=10733634.pROAnZ9F8x" target="_blank" rel="noopener noreferrer sponsored" className="text-sm text-emerald-400 hover:text-emerald-300 hover:underline">Also on EV Bandit →</a>
           </div>
         </div>
       </section>
