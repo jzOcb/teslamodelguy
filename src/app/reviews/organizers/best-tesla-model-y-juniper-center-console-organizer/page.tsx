@@ -160,7 +160,7 @@ export default function CenterConsoleOrganizerPage() {
             </p>
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">$35–40</span>
-              <a href="https://www.amazon.com/s?k=Spigen+center+console+organizer+Tesla+Model+Y+Juniper&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+              <a href="https://www.amazon.com/dp/B0D19WTR58?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
             </div>
           </div>
 

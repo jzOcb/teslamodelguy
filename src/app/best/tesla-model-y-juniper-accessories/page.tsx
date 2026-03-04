@@ -97,6 +97,7 @@ const accessories = [
     priority: "Week 1",
     priorityColor: "bg-amber-500/10 text-amber-400 border border-amber-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+center+console+organizer",
+    asin: "B0D19WTR58",
     yeslakUrl: "https://www.yeslak.com/products/2025-tesla-model-y-juniper-rear-console-storage-organizer?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
     evbanditUrl: "https://evbandit.com/products/spigen-non-slide-center-console-organizer-expanded-capacity-designed-for-new-tesla-model-y-juniper-2025-2026-refresh-and-tesla-model-3-highland-2024-2025-refresh-carbon-edition-non-slide-center-console-organizer-expanded?sca_ref=10733634.pROAnZ9F8x",
     why: "Without an organizer, small items disappear into a black hole. Keys, sunglasses, cables — gone.",
@@ -114,6 +115,7 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+sunshade+roof",
+    asin: "B0DXDWW9N8",
     yeslakUrl: "https://www.yeslak.com/products/tesla-model-y-model-3-windshield-glass-sunshade?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
     evbanditUrl: "https://evbandit.com/products/tesla-model-y-windshield-sunshade-2026-juniper-full-size-folding-front-window-uv-heat-insulation-umbrella-shade-interior-sunshade-visor-accessory?sca_ref=10733634.pROAnZ9F8x",
     why: "The glass roof turns your car into a greenhouse in summer. A sunshade drops cabin temp by 10-15°F.",
@@ -131,6 +133,7 @@ const accessories = [
     priority: "Week 1",
     priorityColor: "bg-amber-500/10 text-amber-400 border border-amber-500/20",
     amazonSearch: "Tesla+Model+Y+Juniper+mud+flaps",
+    asin: "B0DZXLG3FD",
     yeslakUrl: "https://www.yeslak.com/products/mud-flaps-for-2025-tesla-model-y-juniper?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate",
     why: "Tesla's paint is famously thin. Without mud flaps, road debris will chip your rear panels within months.",
     detail:
@@ -180,6 +183,7 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "Tesla+Model+Y+performance+pedal+covers",
+    asin: "B0B5JT9L7F",
     why: "Gives your Juniper a sportier feel, similar to the Performance model.",
     detail: "Purely aesthetic but makes the interior feel more premium. Easy snap-on install, no drilling.",
     tip: null,
@@ -194,6 +198,7 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "Tesla+Model+Y+trunk+organizer",
+    asin: "B09YXYSSLL",
     why: "The Model Y trunk is massive but has zero organization. Groceries slide everywhere.",
     detail:
       "A collapsible organizer with dividers keeps everything in place and folds flat when not needed.",
@@ -209,6 +214,7 @@ const accessories = [
     priority: "Month 1",
     priorityColor: "bg-zinc-500/10 text-zinc-300 border border-zinc-500/20",
     amazonSearch: "portable+tire+inflator+car",
+    asin: "B07QR4Q42L",
     why: "The Model Y doesn't come with a spare tire. This is safety equipment, not optional.",
     detail:
       "Compact enough to live in your sub-trunk permanently. If you get a flat on the highway, you'll be glad you have it.",
