@@ -31,7 +31,7 @@ const tools = [
     description:
       "Find out how much you'd save switching from gas to a Tesla Model Y. Enter your commute, gas price, and electricity rate for a personalized comparison.",
     href: "/tools/savings-calculator",
-    status: "coming" as const,
+    status: "live" as const,
   },
 ];
 
