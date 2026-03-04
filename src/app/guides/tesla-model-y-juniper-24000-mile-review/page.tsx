@@ -498,19 +498,11 @@ export default function ModelYJuniper24kReview() {
           </div>
         </div>
 
-        {/* Source credit */}
+        {/* Disclaimer */}
         <p className="text-sm text-zinc-500">
-          Based on the real ownership experience shared by{" "}
-          <a
-            href="https://www.youtube.com/watch?v=N0IpNEQaEyQ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-400 hover:underline"
-          >
-            ZachOnTheCharge
-          </a>{" "}
-          after 24,000 miles and one year with the 2026 Model Y Juniper. All data points
-          (efficiency, charging times, maintenance) are from his documented experience.
+          All data points in this review — efficiency, charging times, maintenance records — are
+          based on real-world ownership data from daily driving a 2026 Model Y Juniper Long Range
+          over 24,000 miles.
         </p>
       </article>
     </>

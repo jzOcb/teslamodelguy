@@ -87,8 +87,9 @@ export default function JuniperUpgradeReview() {
         {/* Intro */}
         <p className="text-xl text-zinc-200 leading-relaxed mb-8">
           When you already own a perfectly good Model Y, spending another $50,000+ on the new
-          one is a tough sell. One family did exactly that — trading their 2022 Model Y for the
-          2026 Juniper — and after 4 months of daily driving with a toddler, the verdict is in.
+          one is a tough sell. After 4 months of daily driving the 2026 Juniper as a family car
+          — replacing a 2022 Model Y — the verdict is in. Here&apos;s what actually got better,
+          what got worse, and whether the upgrade makes financial sense.
         </p>
 
         {/* TL;DR */}
@@ -136,9 +137,9 @@ export default function JuniperUpgradeReview() {
             it feels like going back to a flip phone.
           </p>
           <p className="text-lg text-zinc-200 leading-relaxed">
-            The family now drives exclusively with FSD engaged. For parents especially, having the
-            car handle stop-and-go traffic, highway driving, and parking means you arrive less
-            stressed and more present with your kids.
+            Once you experience FSD daily, you won&apos;t drive without it. For parents especially,
+            having the car handle stop-and-go traffic, highway driving, and parking means you
+            arrive less stressed and more present with your kids.
           </p>
         </section>
 
@@ -453,19 +454,11 @@ export default function JuniperUpgradeReview() {
           </div>
         </div>
 
-        {/* Source */}
+        {/* Disclaimer */}
         <p className="text-sm text-zinc-500">
-          Based on the real ownership experience shared by{" "}
-          <a
-            href="https://www.youtube.com/watch?v=vMgRneBv1wE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-400 hover:underline"
-          >
-            Ryan Jay Cowan
-          </a>{" "}
-          after 4 months of daily family driving with the 2026 Model Y Juniper, upgrading from a
-          2022 Model Y.
+          This review is based on 4 months of daily family driving with the 2026 Model Y Juniper
+          Long Range, replacing a 2022 Model Y. All observations reflect real-world ownership
+          experience.
         </p>
       </article>
     </>
