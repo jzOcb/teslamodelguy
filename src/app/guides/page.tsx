@@ -41,8 +41,22 @@ const guides = [
     title: "6 Tesla Model Y Juniper Accessories You Don't Need (Save Your Money)",
     slug: "/guides/tesla-model-y-juniper-accessories-you-dont-need",
     desc: "Stop wasting money. We break down 6 popular accessories that aren't worth it — and what to buy instead.",
+    tag: null,
+    image: "/images/tesla-model-y-hero.jpg",
+  },
+  {
+    title: "24,000 Miles in a Tesla Model Y Juniper: One Year Later",
+    slug: "/guides/tesla-model-y-juniper-24000-mile-review",
+    desc: "One year, 24,000 miles, zero service visits. Real-world efficiency, charging, maintenance, FSD, and the honest downsides.",
     tag: "NEW",
     image: "/images/tesla-model-y-hero.jpg",
+  },
+  {
+    title: "Is the New Model Y Juniper Worth the Upgrade?",
+    slug: "/guides/new-model-y-juniper-worth-upgrade-4-month-review",
+    desc: "Traded a 2022 Model Y for the Juniper. After 4 months of daily family driving, here's what's better, what's worse, and the one feature that makes it worth it.",
+    tag: "NEW",
+    image: "/images/tesla-model-y-snow.jpg",
   },
 ];
 
