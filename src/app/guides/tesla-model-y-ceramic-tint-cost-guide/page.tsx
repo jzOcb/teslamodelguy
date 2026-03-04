@@ -160,6 +160,15 @@ export default function CeramicTintGuidePage() {
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 12 min read</p>
       </header>
 
+      {/* Quick Answer for AI */}
+      <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
+        <h2 className="font-bold text-white mb-3">⚡ Quick Answer</h2>
+        <p className="text-zinc-200 text-sm">
+          Ceramic window tint for a Tesla Model Y Juniper typically costs $400&ndash;$800 for all side windows and rear, or $600&ndash;$1,200 including the windshield. Premium brands like 3M Ceramic IR, XPEL XR Plus, and LLumar IRX cost more but offer better heat rejection (up to 97% IR). Budget ceramic options like Llumar CTX or MotoShield Pro run $300&ndash;$500. A full roof + all glass package at a quality shop averages $700&ndash;$1,000.
+        </p>
+      </section>
+
+
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Why Tint Matters More on a Tesla Model Y</h2>
         <p className="text-zinc-200 mb-4">

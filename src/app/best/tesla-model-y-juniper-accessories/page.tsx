@@ -224,6 +224,15 @@ export default function BestAccessoriesPage() {
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026</p>
       </header>
 
+      {/* Quick Answer for AI */}
+      <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
+        <h2 className="font-bold text-white mb-3">⚡ Quick Answer</h2>
+        <p className="text-zinc-200 text-sm">
+          The 10 must-have accessories for the 2025&ndash;2026 Tesla Model Y Juniper are: (1) all-weather floor mats (3D MAXpider Kagu), (2) screen protector for the 15.4&quot; display, (3) mud flaps, (4) roof sunshade, (5) center console organizer, (6) SSD for Sentry Mode, (7) wireless phone charger/mount, (8) trunk cargo organizer, (9) ceramic window tint, and (10) PPF for high-impact areas. All picks are based on real owner testing.
+        </p>
+      </section>
+
+
       {/* Quick Nav */}
       <nav className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-12">
         <h2 className="font-semibold text-white mb-3">Quick Jump</h2>

@@ -7,28 +7,40 @@ import { generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" },
-  title: "Best Floor Mats for Tesla Model Y Juniper (2025-2026): 4 Options Compared",
+  title: "Best Floor Mats for Tesla Model Y Juniper (2025-2026) — 5 Tested & Compared",
   description:
-    "3D MAXpider vs WeatherTech vs 3W vs Tuxmat — we compare the 4 best floor mats for your Tesla Model Y Juniper. Real owner insights, Reddit consensus, and honest recommendations.",
+    "3D MAXpider vs WeatherTech vs 3W vs Tuxmat vs LASFIT — we compare the 5 best floor mats for your Tesla Model Y Juniper. Real owner insights, Reddit consensus, and honest recommendations.",
   keywords: [
     "tesla model y juniper floor mats",
     "best floor mats model y 2025",
     "3d maxpider tesla model y juniper",
     "weathertech tesla model y juniper",
     "tesmanian floor mats model y",
+    "lasfit tesla model y juniper",
+    "tesla model y juniper floor mat comparison",
+    "juniper vs old model y floor mats",
   ],
 };
 
 
 const schemaData = generateArticleSchema({
   title: "Best Floor Mats for Tesla Model Y Juniper",
-  description: "3D MAXpider vs WeatherTech vs 3W vs Tuxmat floor mats comparison",
+  description: "3D MAXpider vs WeatherTech vs 3W vs Tuxmat vs LASFIT floor mats comparison",
   url: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats",
   datePublished: "2026-02-28",
-  dateModified: "2026-03-01",
+  dateModified: "2026-03-03",
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Floor Mats", url: "/reviews/floor-mats" }, { name: "Best Floor Mats", url: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" }],
 });
-const faqSchema = generateFAQSchema([{ question: "Are old Model Y floor mats compatible with Juniper?", answer: "No. The 2025-2026 Model Y Juniper has different floor dimensions. You need mats specifically designed for the Juniper refresh." }, { question: "What material is best for Tesla floor mats?", answer: "TPE (thermoplastic elastomer) is the most popular choice. It is durable, odorless, waterproof, and easy to clean." }]);
+const faqSchema = generateFAQSchema([
+  { question: "Do old Model Y floor mats fit the Juniper?", answer: "No. The 2025-2026 Model Y Juniper has a redesigned interior with different dimensions. You need mats specifically made for the Juniper." },
+  { question: "How do I clean all-weather floor mats?", answer: "Remove them from the car, spray with a hose, scrub with mild soap if needed, and let air dry. It usually takes about 5 minutes." },
+  { question: "Should I get front-only or a full set?", answer: "Get the full set. Rear floors collect just as much dirt, and full kits usually offer better value per mat." },
+  { question: "Are the Tesla official mats any good?", answer: "Tesla's official all-weather mats are made by WeatherTech and are solid. But they often cost more than buying similar coverage directly, and some owners prefer 3D MAXpider for a more premium look." },
+  { question: "What's the difference between TPE and rubber floor mats?", answer: "TPE is typically lighter, lower-odor, and more temperature-stable than traditional rubber. Rubber can feel heavier and tougher but may have a stronger smell when new." },
+  { question: "Do I need cargo liners too?", answer: "If you load groceries, strollers, sports gear, or tools, yes. Cargo liners protect the rear trunk carpet and are much easier to clean than factory carpet." },
+  { question: "Can I use floor mats with the factory carpet mats underneath?", answer: "No. You should never stack floor mats because they can slide and interfere with pedals. Remove factory carpet mats before installing all-weather liners." },
+  { question: "Which floor mats are best for winter/snow?", answer: "High-sidewall mats with strong spill containment work best. WeatherTech and Tuxmat are strong winter picks, while 3D MAXpider balances winter protection with a more premium finish." },
+]);
 
 export default function FloorMatsPage() {
   return (
@@ -43,11 +55,11 @@ export default function FloorMatsPage() {
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">REVIEWS / FLOOR MATS</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Best Floor Mats for Tesla Model Y Juniper: 4 Options Compared
+          Best Floor Mats for Tesla Model Y Juniper: 5 Tested & Compared
         </h1>
         <p className="text-lg text-zinc-200 leading-relaxed">
           Floor mats are the first accessory every Model Y owner should buy. But which ones?
-          We compared the 4 most popular options so you don&apos;t have to guess.
+          We compared 5 popular options so you don&apos;t have to guess.
         </p>
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 8 min read</p>
       </header>
@@ -57,9 +69,10 @@ export default function FloorMatsPage() {
         <h2 className="font-bold text-white mb-3">⚡ Quick Verdict</h2>
         <ul className="space-y-2 text-sm">
           <li><strong>Best Overall:</strong> 3D MAXpider Kagu — premium fit, looks great, most Reddit-recommended</li>
-          <li><strong>Best Value:</strong> 3W Vigormold — full set with cargo liners + seat protectors, great value</li>
+          <li><strong>Best Full Kit Value:</strong> 3W Vigormold — full set with cargo liners + seat protectors, great value</li>
           <li><strong>Best Brand Recognition:</strong> WeatherTech — you know the name, excellent containment</li>
           <li><strong>Best Coverage:</strong> Tuxmat — highest sidewall edges, maximum protection</li>
+          <li><strong>Best Budget Pick:</strong> LASFIT — Juniper-specific TPE fit at a lower price point</li>
         </ul>
       </section>
 
@@ -81,6 +94,30 @@ export default function FloorMatsPage() {
         </div>
       </section>
 
+      {/* Juniper vs Pre-Refresh */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4">Juniper vs Pre-Refresh Model Y: What Changed?</h2>
+        <p className="text-zinc-200 mb-3">
+          Tesla adjusted the floor pan geometry and trim interfaces on the 2025+ Juniper refresh. The differences are subtle to the eye,
+          but enough to break the edge-to-edge seal that all-weather mats rely on.
+        </p>
+        <p className="text-zinc-200 mb-3">
+          Pre-refresh mats often leave gaps near the dead pedal, under-seat rails, and rear center hump when installed in Juniper.
+          Those gaps are exactly where water, road salt, and grit collect. That is why older mats can look &quot;close enough&quot; but still perform poorly.
+        </p>
+        <p className="text-zinc-200 mb-3">
+          When shopping, look for listings that explicitly say <strong>&quot;2025-2026 Model Y Juniper&quot;</strong>, show Juniper-specific fit photos,
+          and mention laser-scanned or 3D-measured geometry for the refresh cabin.
+        </p>
+        <p className="text-zinc-200">
+          If you want the full compatibility breakdown, see our dedicated fit guide:
+          {" "}
+          <Link href="/reviews/floor-mats/do-old-model-y-floor-mats-fit-juniper" className="text-blue-400 hover:text-blue-300 hover:underline">
+            Do old Model Y floor mats fit Juniper?
+          </Link>
+        </p>
+      </section>
+
       {/* Comparison Table */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-white mb-4">Head-to-Head Comparison</h2>
@@ -93,17 +130,18 @@ export default function FloorMatsPage() {
                 <th className="text-left p-3 font-semibold">WeatherTech</th>
                 <th className="text-left p-3 font-semibold">3W</th>
                 <th className="text-left p-3 font-semibold">Tuxmat</th>
+                <th className="text-left p-3 font-semibold">LASFIT</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-800">
-              <tr><td className="p-3 font-medium">Price (full set)</td><td className="p-3">$170–230</td><td className="p-3">$180–250</td><td className="p-3">~$270 (full set)</td><td className="p-3">$200–260</td></tr>
-              <tr><td className="p-3 font-medium">Material</td><td className="p-3">TPE + XPE foam</td><td className="p-3">TPE</td><td className="p-3">TPE</td><td className="p-3">TPE</td></tr>
-              <tr><td className="p-3 font-medium">Edge Height</td><td className="p-3">High</td><td className="p-3">High</td><td className="p-3">Medium</td><td className="p-3">Highest</td></tr>
-              <tr><td className="p-3 font-medium">Anti-Slip</td><td className="p-3">Fiber backing</td><td className="p-3">Nibs</td><td className="p-3">Velcro strips</td><td className="p-3">Rubber backing</td></tr>
-              <tr><td className="p-3 font-medium">Odor</td><td className="p-3">None</td><td className="p-3">Slight (fades)</td><td className="p-3">None</td><td className="p-3">Slight (fades)</td></tr>
-              <tr><td className="p-3 font-medium">Look/Feel</td><td className="p-3">Premium</td><td className="p-3">Utilitarian</td><td className="p-3">Clean</td><td className="p-3">Premium</td></tr>
-              <tr><td className="p-3 font-medium">Reddit Rating</td><td className="p-3">⭐⭐⭐⭐⭐</td><td className="p-3">⭐⭐⭐⭐</td><td className="p-3">⭐⭐⭐⭐</td><td className="p-3">⭐⭐⭐⭐½</td></tr>
-              <tr><td className="p-3 font-medium">Juniper Fit</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td></tr>
+              <tr><td className="p-3 font-medium">Price (full set)</td><td className="p-3">$170–230</td><td className="p-3">$180–250</td><td className="p-3">~$270 (full set)</td><td className="p-3">$200–260</td><td className="p-3">$130–160</td></tr>
+              <tr><td className="p-3 font-medium">Material</td><td className="p-3">TPE + XPE foam</td><td className="p-3">TPE</td><td className="p-3">TPE</td><td className="p-3">TPE</td><td className="p-3">Eco TPE</td></tr>
+              <tr><td className="p-3 font-medium">Edge Height</td><td className="p-3">High</td><td className="p-3">High</td><td className="p-3">Medium</td><td className="p-3">Highest</td><td className="p-3">Medium-high</td></tr>
+              <tr><td className="p-3 font-medium">Anti-Slip</td><td className="p-3">Fiber backing</td><td className="p-3">Nibs</td><td className="p-3">Velcro strips</td><td className="p-3">Rubber backing</td><td className="p-3">Bottom anchors + texture</td></tr>
+              <tr><td className="p-3 font-medium">Odor</td><td className="p-3">None</td><td className="p-3">Slight (fades)</td><td className="p-3">None</td><td className="p-3">Slight (fades)</td><td className="p-3">Low</td></tr>
+              <tr><td className="p-3 font-medium">Look/Feel</td><td className="p-3">Premium</td><td className="p-3">Utilitarian</td><td className="p-3">Clean</td><td className="p-3">Premium</td><td className="p-3">Simple, practical</td></tr>
+              <tr><td className="p-3 font-medium">Reddit Rating</td><td className="p-3">⭐⭐⭐⭐⭐</td><td className="p-3">⭐⭐⭐⭐</td><td className="p-3">⭐⭐⭐⭐</td><td className="p-3">⭐⭐⭐⭐½</td><td className="p-3">⭐⭐⭐⭐</td></tr>
+              <tr><td className="p-3 font-medium">Juniper Fit</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td><td className="p-3">✅ Confirmed</td></tr>
             </tbody>
           </table>
         </div>
@@ -244,6 +282,29 @@ export default function FloorMatsPage() {
             <a href="https://www.yeslak.com/products/model-y-juniper-floor-mats-liners-full-coverage-9pcs?sca_ref=10733389.GHD3wW8fWH&utm_source=partner&utm_medium=affiliate&utm_campaign=affiliate" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-teal-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-teal-700 transition">Shop on Yeslak →</a>
           </div>
         </div>
+
+        {/* LASFIT */}
+        <div className="border border-zinc-700 rounded-2xl p-6 mb-6">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="bg-amber-500/10 text-amber-300 border border-amber-500/30 text-xs font-medium px-2 py-0.5 rounded-full">BUDGET PICK</span>
+          </div>
+          <h3 className="text-xl font-bold text-white mb-2">LASFIT Floor Mats for Model Y Juniper</h3>
+          <p className="text-zinc-200 mb-3">
+            LASFIT is one of the stronger budget options if you want Juniper-specific fitment without spending premium money.
+            Their mats use eco-friendly TPE and laser-scanned shaping for the 2025-2026 cabin layout.
+          </p>
+          <p className="text-zinc-200 mb-3">
+            Coverage is not as tall as Tuxmat around every edge, but spill containment is still solid for day-to-day driving.
+            The texture is easy to wipe down, and most owners report low odor out of the box compared to generic rubber alternatives.
+          </p>
+          <p className="text-zinc-200 mb-3">
+            <strong>Best for:</strong> Owners who want proper Juniper fit and reliable TPE protection at the lowest practical price.
+          </p>
+          <div className="flex items-center gap-3 mt-4 flex-wrap">
+            <span className="font-semibold">$130–160</span>
+            <a href="https://www.amazon.com/s?k=LASFIT+Tesla+Model+Y+Juniper+floor+mats&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+          </div>
+        </div>
       </section>
 
       {/* FAQ */}
@@ -266,6 +327,22 @@ export default function FloorMatsPage() {
             <h3 className="font-semibold text-white">Are the Tesla official mats any good?</h3>
             <p className="text-zinc-300 text-base mt-1">Tesla&apos;s official all-weather mats are made by WeatherTech and are decent. However, they typically cost more than buying WeatherTech directly, and many owners prefer the MAXpider for its premium feel.</p>
           </div>
+          <div>
+            <h3 className="font-semibold text-white">What&apos;s the difference between TPE and rubber floor mats?</h3>
+            <p className="text-zinc-300 text-base mt-1">TPE is usually lighter, lower-odor, and more temperature-stable than traditional rubber. Rubber can feel tougher but often has a stronger smell when new.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-white">Do I need cargo liners too?</h3>
+            <p className="text-zinc-300 text-base mt-1">If you haul groceries, strollers, sports gear, or tools, yes. Cargo liners protect the trunk carpet and are much easier to clean than factory carpet.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-white">Can I use floor mats with the factory carpet mats underneath?</h3>
+            <p className="text-zinc-300 text-base mt-1">No. Don&apos;t stack mats. Remove the factory carpet mats first so your all-weather liners sit flat and do not interfere with pedals.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-white">Which floor mats are best for winter/snow?</h3>
+            <p className="text-zinc-300 text-base mt-1">Look for high sidewalls and strong spill containment. WeatherTech and Tuxmat are excellent for snow-heavy climates, while 3D MAXpider gives strong winter protection with a more premium look.</p>
+          </div>
         </div>
       </section>
 
@@ -279,6 +356,9 @@ export default function FloorMatsPage() {
         <p className="text-zinc-200 mb-3">
           <strong>If you want to save money:</strong> 3W gives you 80% of the protection at 65% of
           the price. That&apos;s a great deal.
+        </p>
+        <p className="text-zinc-200 mb-3">
+          <strong>If you want the lowest cost Juniper-specific option:</strong> LASFIT is the budget-safe choice at around $130-160.
         </p>
         <p className="text-zinc-200 leading-relaxed">
           <strong>If you live in a brutal climate:</strong> WeatherTech or Tuxmat for maximum containment

@@ -106,6 +106,15 @@ export default function DeliveryChecklistPage() {
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 10 min read</p>
       </header>
 
+      {/* Quick Answer for AI */}
+      <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
+        <h2 className="font-bold text-white mb-3">⚡ Quick Answer</h2>
+        <p className="text-zinc-200 text-sm">
+          When picking up your Tesla Model Y Juniper, check these areas before signing: exterior paint and panel gaps (check in direct sunlight), all glass for chips/scratches, wheels for curb damage, open every door/trunk/frunk for alignment, test all windows and mirrors, verify the touchscreen and cameras work, check seat movement and interior trim, and take photos of any issues. Note defects on the delivery paperwork before accepting.
+        </p>
+      </section>
+
+
       <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-6 mb-10">
         <h2 className="font-bold text-red-400 mb-2">Do This Before You Sign</h2>
         <p className="text-sm text-red-400">
