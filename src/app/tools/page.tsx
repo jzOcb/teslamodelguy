@@ -23,7 +23,7 @@ const tools = [
     description:
       "Step-by-step guide for your first week with a new Tesla. From app setup to must-have accessories — complete each step at your own pace.",
     href: "/tools/new-owner-setup",
-    status: "coming" as const,
+    status: "live" as const,
   },
   {
     title: "Tesla vs Gas Savings Calculator",
