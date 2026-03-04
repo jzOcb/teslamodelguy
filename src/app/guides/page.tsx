@@ -45,9 +45,9 @@ const guides = [
     image: "/images/tesla-model-y-hero.jpg",
   },
   {
-    title: "24,000 Miles in a Tesla Model Y Juniper: One Year Later",
+    title: "What It Actually Costs to Own a Tesla Model Y Juniper (24,000 Miles of Data)",
     slug: "/guides/tesla-model-y-juniper-24000-mile-review",
-    desc: "One year, 24,000 miles, zero service visits. Real-world efficiency, charging, maintenance, FSD, and the honest downsides.",
+    desc: "4.25¢/mile electricity, $0 maintenance, brakes that may never need replacing. Every real cost after 24,000 miles of daily driving.",
     tag: "NEW",
     image: "/images/tesla-model-y-hero.jpg",
   },
