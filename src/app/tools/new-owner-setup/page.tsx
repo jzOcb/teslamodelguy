@@ -249,7 +249,7 @@ export default function NewOwnerSetupPage() {
         </div>
 
         {/* ── step navigation (pills) ── */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div ref={stepRef} className="flex flex-wrap gap-2 mb-8 scroll-mt-4">
           {steps.map((s, i) => {
             const done = !!state.completed[s.id];
             const active = i === state.currentStep;
@@ -272,7 +272,7 @@ export default function NewOwnerSetupPage() {
         </div>
 
         {/* ── current step detail ── */}
-        <div ref={stepRef} className="border border-zinc-700 rounded-2xl p-6 sm:p-8 mb-6 scroll-mt-4">
+        <div className="border border-zinc-700 rounded-2xl p-6 sm:p-8 mb-6">
           <div className="flex items-center gap-3 mb-1">
             <span className="text-xs text-zinc-500 uppercase tracking-wider">
               Step {current.num} of {steps.length}
