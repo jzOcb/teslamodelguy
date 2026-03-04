@@ -34,6 +34,7 @@ const products = [
     badgeColor: "bg-purple-900/50 text-purple-300",
     name: "dbrand Prism 2.0",
     brand: "dbrand",
+    image: "/images/dbrand-product.jpg",
     price: "$40–50",
     description: "Top-tier install tray and premium glass quality.",
     amazonSearch: "dbrand+Prism+Tesla+Model+Y+Juniper",
