@@ -129,6 +129,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          <div className="rounded-2xl border border-zinc-700 bg-gradient-to-r from-zinc-900 to-zinc-800 p-8 md:p-10">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <h2 className="text-2xl font-black text-white mb-2">Free Tesla Tools</h2>
+                <p className="text-zinc-300">
+                  Interactive delivery checklist, new owner setup guide, and EV savings calculator — built for Tesla owners.
+                </p>
+              </div>
+              <Link
+                href="/tools"
+                className="inline-block whitespace-nowrap rounded-xl bg-cyan-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-cyan-700"
+              >
+                Explore Tools →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="px-4 py-20">
         <div className="mx-auto max-w-5xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-700 bg-zinc-900/80 px-6 py-3">

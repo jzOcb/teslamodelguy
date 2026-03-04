@@ -4,6 +4,7 @@ const navLinks = [
   { href: "/reviews", label: "Reviews" },
   { href: "/guides", label: "Guides" },
   { href: "/best", label: "Best Picks" },
+  { href: "/tools", label: "Free Tools" },
   { href: "/about", label: "About" },
 ];
 
