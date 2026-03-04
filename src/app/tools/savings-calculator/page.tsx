@@ -3,15 +3,54 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 
+/* ───────────────── car tiers ───────────────── */
+
+type CarTier = "economy" | "midrange" | "premium" | "luxury";
+
+const CAR_TIERS: Record<CarTier, {
+  label: string;
+  examples: string;
+  mpg: number;
+  annualMaint: number;
+  maintBreakdown: string;
+}> = {
+  economy: {
+    label: "Economy",
+    examples: "Civic, Corolla, Mazda3",
+    mpg: 32,
+    annualMaint: 850,
+    maintBreakdown: "oil changes, brakes, basic upkeep",
+  },
+  midrange: {
+    label: "Mid-Range",
+    examples: "Camry, Accord, RAV4",
+    mpg: 28,
+    annualMaint: 1200,
+    maintBreakdown: "oil changes, brakes, transmission fluid, filters",
+  },
+  premium: {
+    label: "Premium",
+    examples: "BMW 3 Series, Audi A4, Lexus",
+    mpg: 24,
+    annualMaint: 1800,
+    maintBreakdown: "synthetic oil, premium brakes, dealer service intervals",
+  },
+  luxury: {
+    label: "Luxury / Sport",
+    examples: "Porsche, Mercedes S-Class, BMW M",
+    mpg: 20,
+    annualMaint: 3200,
+    maintBreakdown: "specialized service, premium parts, frequent brake/tire wear",
+  },
+};
+
 /* ───────────────── defaults ───────────────── */
 
 const DEFAULTS = {
   dailyMiles: 30,
-  gasMpg: 28,
   gasPrice: 3.5,       // $/gal
   electricityRate: 0.16, // $/kWh
   teslaEfficiency: 28,  // kWh/100mi (Model Y)
-  annualMaintGas: 1200, // $/year gas car maintenance
   annualMaintEV: 400,   // $/year Tesla maintenance
   federalCredit: 7500,
 };
@@ -19,19 +58,21 @@ const DEFAULTS = {
 /* ───────────────── component ───────────────── */
 
 export default function SavingsCalculatorPage() {
+  const [carTier, setCarTier] = useState<CarTier>("midrange");
   const [dailyMiles, setDailyMiles] = useState(DEFAULTS.dailyMiles);
-  const [gasMpg, setGasMpg] = useState(DEFAULTS.gasMpg);
   const [gasPrice, setGasPrice] = useState(DEFAULTS.gasPrice);
   const [electricityRate, setElectricityRate] = useState(DEFAULTS.electricityRate);
   const [includeTaxCredit, setIncludeTaxCredit] = useState(true);
+
+  const tier = CAR_TIERS[carTier];
 
   const results = useMemo(() => {
     const annualMiles = dailyMiles * 365;
 
     // Gas costs
-    const annualGasGallons = annualMiles / gasMpg;
+    const annualGasGallons = annualMiles / tier.mpg;
     const annualGasFuel = annualGasGallons * gasPrice;
-    const annualGasTotal = annualGasFuel + DEFAULTS.annualMaintGas;
+    const annualGasTotal = annualGasFuel + tier.annualMaint;
 
     // Tesla costs
     const annualTeslaKwh = (annualMiles / 100) * DEFAULTS.teslaEfficiency;
@@ -42,6 +83,9 @@ export default function SavingsCalculatorPage() {
     const annualSavings = annualGasTotal - annualTeslaTotal;
     const monthlySavings = annualSavings / 12;
     const fiveYearSavings = annualSavings * 5 + (includeTaxCredit ? DEFAULTS.federalCredit : 0);
+
+    // Maintenance savings alone
+    const annualMaintSavings = tier.annualMaint - DEFAULTS.annualMaintEV;
 
     // CO2 (EPA avg: 8,887 grams CO2 per gallon of gasoline)
     const annualCO2Saved = (annualGasGallons * 8887) / 1000; // kg
@@ -55,9 +99,10 @@ export default function SavingsCalculatorPage() {
       annualSavings: Math.round(annualSavings),
       monthlySavings: Math.round(monthlySavings),
       fiveYearSavings: Math.round(fiveYearSavings),
+      annualMaintSavings: Math.round(annualMaintSavings),
       annualCO2Saved: Math.round(annualCO2Saved),
     };
-  }, [dailyMiles, gasMpg, gasPrice, electricityRate, includeTaxCredit]);
+  }, [dailyMiles, tier, gasPrice, electricityRate, includeTaxCredit]);
 
   const maxBar = Math.max(results.annualGasTotal, results.annualTeslaTotal);
 
@@ -75,8 +120,40 @@ export default function SavingsCalculatorPage() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 py-8">
+        {/* ── car tier selector ── */}
+        <div className="mb-8">
+          <label className="text-sm text-zinc-400 block mb-3">What kind of car are you comparing?</label>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {(Object.keys(CAR_TIERS) as CarTier[]).map((key) => {
+              const t = CAR_TIERS[key];
+              const active = carTier === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => setCarTier(key)}
+                  className={`rounded-xl border p-3 text-left transition-all ${
+                    active
+                      ? "border-blue-500 bg-blue-500/10 ring-1 ring-blue-500/40"
+                      : "border-zinc-700 bg-zinc-800/50 hover:border-zinc-600"
+                  }`}
+                >
+                  <p className={`text-sm font-semibold ${active ? "text-blue-400" : "text-white"}`}>
+                    {t.label}
+                  </p>
+                  <p className="text-xs text-zinc-500 mt-0.5">{t.examples}</p>
+                  <div className="flex items-baseline gap-2 mt-2">
+                    <span className="text-xs text-zinc-400">{t.mpg} mpg</span>
+                    <span className="text-xs text-zinc-600">·</span>
+                    <span className="text-xs text-zinc-400">${t.annualMaint.toLocaleString()}/yr</span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* ── inputs ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
           <InputCard
             label="Daily Commute"
             value={dailyMiles}
@@ -85,15 +162,6 @@ export default function SavingsCalculatorPage() {
             min={1}
             max={200}
             step={5}
-          />
-          <InputCard
-            label="Current Car MPG"
-            value={gasMpg}
-            onChange={setGasMpg}
-            unit="mpg"
-            min={10}
-            max={60}
-            step={1}
           />
           <InputCard
             label="Gas Price"
@@ -151,8 +219,8 @@ export default function SavingsCalculatorPage() {
           {/* comparison bars */}
           <div className="space-y-4 mb-8">
             <BarRow
-              label="Gas Car"
-              sublabel={`$${results.annualGasFuel}/yr fuel + $${DEFAULTS.annualMaintGas}/yr maintenance`}
+              label={`${tier.label} Gas Car`}
+              sublabel={`$${results.annualGasFuel}/yr fuel + $${tier.annualMaint.toLocaleString()}/yr maintenance`}
               value={results.annualGasTotal}
               max={maxBar}
               color="bg-red-500"
@@ -164,6 +232,28 @@ export default function SavingsCalculatorPage() {
               max={maxBar}
               color="bg-green-500"
             />
+          </div>
+
+          {/* maintenance breakdown */}
+          <div className="bg-zinc-800/60 border border-zinc-700/50 rounded-xl p-5 mb-8">
+            <h3 className="text-sm font-semibold text-white mb-3">🔧 Maintenance Cost Breakdown</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <p className="text-xs text-zinc-500 uppercase tracking-wide mb-1">{tier.label} Gas Car</p>
+                <p className="text-xl font-bold text-red-400">${tier.annualMaint.toLocaleString()}<span className="text-sm text-zinc-500 font-normal">/yr</span></p>
+                <p className="text-xs text-zinc-500 mt-1">{tier.maintBreakdown}</p>
+              </div>
+              <div>
+                <p className="text-xs text-zinc-500 uppercase tracking-wide mb-1">Tesla Model Y</p>
+                <p className="text-xl font-bold text-green-400">${DEFAULTS.annualMaintEV}<span className="text-sm text-zinc-500 font-normal">/yr</span></p>
+                <p className="text-xs text-zinc-500 mt-1">tire rotation, cabin air filter, washer fluid</p>
+              </div>
+            </div>
+            <div className="mt-4 pt-3 border-t border-zinc-700/50">
+              <p className="text-sm text-zinc-300">
+                You save <span className="text-green-400 font-semibold">${results.annualMaintSavings.toLocaleString()}/yr</span> on maintenance alone — that&apos;s <span className="text-green-400 font-semibold">${Math.round(results.annualMaintSavings / 12)}/mo</span> back in your pocket.
+              </p>
+            </div>
           </div>
 
           {/* stats grid */}
@@ -208,8 +298,16 @@ export default function SavingsCalculatorPage() {
           <h2>How We Calculate</h2>
           <ul>
             <li><strong>Tesla efficiency:</strong> {DEFAULTS.teslaEfficiency} kWh per 100 miles (EPA-rated Model Y Long Range)</li>
-            <li><strong>Gas car maintenance:</strong> ${DEFAULTS.annualMaintGas}/year avg (oil changes, brakes, transmission fluid, etc.)</li>
-            <li><strong>Tesla maintenance:</strong> ${DEFAULTS.annualMaintEV}/year avg (tire rotation, cabin air filter, washer fluid)</li>
+            <li><strong>Gas car maintenance</strong> varies by tier:
+              <ul>
+                <li>Economy (Civic, Corolla): ~$850/yr</li>
+                <li>Mid-Range (Camry, RAV4): ~$1,200/yr</li>
+                <li>Premium (BMW 3, Audi A4): ~$1,800/yr</li>
+                <li>Luxury/Sport (Porsche, Mercedes S): ~$3,200/yr</li>
+              </ul>
+              Based on AAA and RepairPal average annual ownership cost data.
+            </li>
+            <li><strong>Tesla maintenance:</strong> ${DEFAULTS.annualMaintEV}/year avg (tire rotation, cabin air filter, washer fluid — no oil, no transmission, no exhaust system)</li>
             <li><strong>Federal tax credit:</strong> ${DEFAULTS.federalCredit.toLocaleString()} (subject to eligibility and income limits)</li>
             <li><strong>CO₂ calculation:</strong> EPA average of 8,887 grams CO₂ per gallon of gasoline burned</li>
           </ul>
