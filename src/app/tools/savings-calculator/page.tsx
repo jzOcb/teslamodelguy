@@ -274,19 +274,19 @@ export default function SavingsCalculatorPage() {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/tools/delivery-checklist"
-              className="text-sm bg-zinc-700 text-white px-4 py-2 rounded-lg hover:bg-zinc-600 transition"
+              className="text-sm bg-cyan-600 text-white px-4 py-2.5 rounded-lg hover:bg-cyan-700 transition font-medium"
             >
               📋 Delivery Checklist
             </Link>
             <Link
               href="/tools/new-owner-setup"
-              className="text-sm bg-zinc-700 text-white px-4 py-2 rounded-lg hover:bg-zinc-600 transition"
+              className="text-sm bg-cyan-600 text-white px-4 py-2.5 rounded-lg hover:bg-cyan-700 transition font-medium"
             >
               🧙 Setup Guide
             </Link>
             <Link
               href="/best/tesla-model-y-juniper-accessories"
-              className="text-sm bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+              className="text-sm bg-cyan-600 text-white px-4 py-2.5 rounded-lg hover:bg-cyan-700 transition font-medium"
             >
               🛒 Must-Have Accessories
             </Link>
