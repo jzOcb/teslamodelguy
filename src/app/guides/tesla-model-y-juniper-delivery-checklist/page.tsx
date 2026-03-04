@@ -104,6 +104,12 @@ export default function DeliveryChecklistPage() {
         </p>
         <EmailCapture source="delivery-checklist-hero" compact />
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 10 min read</p>
+        <Link
+          href="/tools/delivery-checklist"
+          className="mt-4 inline-flex items-center gap-2 bg-green-600 text-white px-5 py-3 rounded-xl font-medium hover:bg-green-700 transition"
+        >
+          📋 Try the Interactive Checklist Tool →
+        </Link>
       </header>
 
       {/* Quick Answer for AI */}

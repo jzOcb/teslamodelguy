@@ -23,6 +23,10 @@ const staticRoutes = [
   "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector",
   "/reviews/sunshades",
   "/reviews/sunshades/best-tesla-model-y-juniper-sunshade",
+  "/tools",
+  "/tools/delivery-checklist",
+  "/tools/new-owner-setup",
+  "/tools/savings-calculator",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -34,9 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       path === "/best" ||
       path === "/guides" ||
       path === "/reviews" ||
+      path === "/tools" ||
       path.startsWith("/best/") ||
       path.startsWith("/guides/") ||
-      path.startsWith("/reviews/");
+      path.startsWith("/reviews/") ||
+      path.startsWith("/tools/");
 
     return {
       url: `${base}${path === "/" ? "" : path}`,

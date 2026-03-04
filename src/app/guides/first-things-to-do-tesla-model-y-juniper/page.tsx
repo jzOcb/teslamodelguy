@@ -94,6 +94,12 @@ export default function FirstThingsPage() {
           I wish I had.
         </p>
         <p className="text-base text-zinc-300 mt-4">Last updated: March 2026 · 6 min read</p>
+        <Link
+          href="/tools/new-owner-setup"
+          className="mt-4 inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
+        >
+          🧙 Try the Interactive Setup Wizard →
+        </Link>
       </header>
       {/* Steps */}
       <div className="space-y-10">
