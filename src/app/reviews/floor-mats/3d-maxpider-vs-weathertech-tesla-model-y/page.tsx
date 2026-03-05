@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
@@ -86,6 +87,34 @@ export default function MaxpiderVsWeatherTechPage() {
           </p>
           <p className="text-base text-zinc-300 mt-4">Last updated: March 3, 2026 · 7 min read</p>
         </header>
+
+        {/* Product images side by side */}
+        <div className="grid grid-cols-2 gap-4 mb-10">
+          <div className="bg-white rounded-xl overflow-hidden">
+            <div className="relative aspect-square">
+              <Image
+                src="/images/products/floor-mats/3d-maxpider.jpg"
+                alt="3D MAXpider floor mats for Tesla Model Y Juniper"
+                fill
+                className="object-contain p-3"
+                sizes="(max-width: 640px) 50vw, 300px"
+              />
+            </div>
+            <p className="text-center text-sm font-semibold text-zinc-800 py-2">3D MAXpider</p>
+          </div>
+          <div className="bg-white rounded-xl overflow-hidden">
+            <div className="relative aspect-square">
+              <Image
+                src="/images/products/floor-mats/weathertech.jpg"
+                alt="WeatherTech floor mats for Tesla Model Y Juniper"
+                fill
+                className="object-contain p-3"
+                sizes="(max-width: 640px) 50vw, 300px"
+              />
+            </div>
+            <p className="text-center text-sm font-semibold text-zinc-800 py-2">WeatherTech</p>
+          </div>
+        </div>
 
         <section className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 mb-10">
           <h2 className="font-bold text-white mb-3">⚡ Quick Verdict</h2>

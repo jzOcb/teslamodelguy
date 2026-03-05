@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
@@ -101,6 +102,20 @@ export default function OldMatsFitJuniperPage() {
             Good all-weather protection depends on edge-to-edge contouring. If the edges are off by even a little, containment performance drops fast.
           </p>
         </section>
+
+        {/* Example of proper Juniper-fit mat */}
+        <div className="mb-10 bg-white rounded-xl overflow-hidden max-w-sm mx-auto">
+          <div className="relative aspect-square">
+            <Image
+              src="/images/products/floor-mats/3d-maxpider.jpg"
+              alt="3D MAXpider floor mat showing proper Juniper-specific fit with raised edges"
+              fill
+              className="object-contain p-3"
+              sizes="(max-width: 640px) 100vw, 384px"
+            />
+          </div>
+          <p className="text-center text-xs text-zinc-500 py-2">Example: 3D MAXpider Juniper-specific mat with proper edge contouring</p>
+        </div>
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-white mb-4">What To Look For in Juniper-Compatible Mats</h2>
