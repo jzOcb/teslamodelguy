@@ -38,6 +38,13 @@ const guides = [
     image: "/images/tesla-model-y-hero.jpg",
   },
   {
+    title: "Tesla Model Y Home Charging: Wall Connector vs NEMA 14-50",
+    slug: "/guides/tesla-model-y-home-charging-wall-connector-vs-nema-14-50",
+    desc: "Wall Connector gives 44 mi/hr. NEMA 14-50 gives 30 mi/hr. Real installation costs, electrician tips, and which setup is right for you.",
+    tag: "NEW",
+    image: "/images/tesla-wall-connector.png",
+  },
+  {
     title: "Model Y Juniper Suspension Rattle: Causes, Fixes & What Tesla Is Doing",
     slug: "/guides/tesla-model-y-juniper-suspension-rattle-fix",
     desc: "Thousands of owners affected. The complete guide to the front suspension clunk — what causes it, Tesla's fix, and what to do if your car has it.",

@@ -15,6 +15,7 @@ const staticRoutes = [
   "/guides/tesla-model-y-juniper-vs-old-differences",
   "/guides/new-model-y-juniper-worth-upgrade-4-month-review",
   "/guides/tesla-model-y-juniper-suspension-rattle-fix",
+  "/guides/tesla-model-y-home-charging-wall-connector-vs-nema-14-50",
   "/reviews",
   "/reviews/charging",
   "/reviews/charging/best-tesla-model-y-juniper-phone-mount",
