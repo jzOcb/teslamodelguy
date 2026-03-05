@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 
@@ -92,6 +93,8 @@ interface Product {
   asin?: string;
   shopUrl?: string;
   emoji: string;
+  image: string;
+  imageAlt: string;
 }
 
 const products: Product[] = [
@@ -128,6 +131,8 @@ const products: Product[] = [
       "The go-to recommendation on Reddit and EV forums. Biggest review count gives you confidence, and the adjustable current means it works safely with any outlet from a standard 120V to a full 240V/50A circuit.",
     asin: "B0DKF7Q2GB",
     emoji: "🏆",
+    image: "/images/products/charging/lectron.jpg",
+    imageAlt: "Lectron Level 1/2 NACS Portable EV Charger for Tesla",
   },
   {
     rank: 2,
@@ -162,6 +167,8 @@ const products: Product[] = [
       "If you have a 240V/NEMA 14-50 outlet at home (or wherever you charge), this is the best bang for your buck. Same 40A as the Lectron at half the price. The only tradeoff is fewer reviews and no Level 1 fallback.",
     asin: "B0FV8J9BGM",
     emoji: "💰",
+    image: "/images/products/charging/taranasa.jpg",
+    imageAlt: "Taranasa Level 2 NACS Portable Charger for Tesla Model Y",
   },
   {
     rank: 3,
@@ -197,6 +204,8 @@ const products: Product[] = [
       "The safest option, period. Those temperature sensors are a real safety advantage — especially if you're plugging into older outlets or using extension cords (which you shouldn't, but people do). If peace of mind matters most, buy this one.",
     shopUrl: "https://shop.tesla.com/product/mobile-connector",
     emoji: "🛡️",
+    image: "/images/products/charging/tesla-mobile-connector.jpg",
+    imageAlt: "Tesla Mobile Connector NACS Portable Charger",
   },
 ];
 
@@ -372,6 +381,17 @@ export default function ChargingPage() {
               {p.price} · {p.maxAmps} · {p.level}
               {p.rating !== "N/A" && ` · ${p.rating}★ (${p.reviews} reviews)`}
             </p>
+
+            {/* Product image */}
+            <div className="relative w-full max-w-sm mx-auto mb-6 aspect-square rounded-xl overflow-hidden bg-white">
+              <Image
+                src={p.image}
+                alt={p.imageAlt}
+                fill
+                className="object-contain p-4"
+                sizes="(max-width: 640px) 100vw, 384px"
+              />
+            </div>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-4">
               <div className="rounded-lg border border-zinc-700 bg-zinc-800/50 p-4">
