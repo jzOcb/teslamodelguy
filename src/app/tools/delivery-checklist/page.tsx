@@ -189,6 +189,18 @@ export default function DeliveryChecklistPage() {
     }
   };
 
+  const checkAllInCategory = (cat: CheckCategory) => {
+    const next = { ...state, checked: { ...state.checked } };
+    cat.items.forEach((item) => { next.checked[item.id] = true; });
+    persist(next);
+  };
+
+  const uncheckAllInCategory = (cat: CheckCategory) => {
+    const next = { ...state, checked: { ...state.checked } };
+    cat.items.forEach((item) => { next.checked[item.id] = false; });
+    persist(next);
+  };
+
   const checkedCount = Object.values(state.checked).filter(Boolean).length;
   const issueCount = Object.keys(state.issues).length;
   const pct = totalItems > 0 ? Math.round((checkedCount / totalItems) * 100) : 0;
@@ -227,10 +239,14 @@ export default function DeliveryChecklistPage() {
               style={{ width: `${pct}%` }}
             />
           </div>
-          {mounted && checkedCount > 0 && (
-            <button onClick={reset} className="text-xs text-zinc-500 hover:text-zinc-300 mt-1">
-              Reset checklist
-            </button>
+          {mounted && (
+            <div className="flex items-center gap-3 mt-1">
+              {checkedCount > 0 && (
+                <button onClick={reset} className="text-xs text-red-500 hover:text-red-400 transition">
+                  ✕ Clear All Progress
+                </button>
+              )}
+            </div>
           )}
         </div>
 
@@ -239,13 +255,31 @@ export default function DeliveryChecklistPage() {
           const catChecked = cat.items.filter((i) => state.checked[i.id]).length;
           return (
             <section key={cat.title} className="mb-8">
-              <h2 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                <span>{cat.emoji}</span>
-                <span>{cat.title}</span>
-                <span className="text-sm font-normal text-zinc-500 ml-auto">
+              <div className="flex items-center gap-2 mb-3">
+                <h2 className="text-xl font-bold text-white flex items-center gap-2 flex-1">
+                  <span>{cat.emoji}</span>
+                  <span>{cat.title}</span>
+                </h2>
+                <span className="text-sm font-normal text-zinc-500">
                   {catChecked}/{cat.items.length}
                 </span>
-              </h2>
+                {mounted && (
+                  <button
+                    onClick={() =>
+                      catChecked === cat.items.length
+                        ? uncheckAllInCategory(cat)
+                        : checkAllInCategory(cat)
+                    }
+                    className={`text-xs px-2.5 py-1 rounded-md transition-colors print:hidden ${
+                      catChecked === cat.items.length
+                        ? "bg-zinc-700 text-zinc-400 hover:bg-zinc-600 hover:text-zinc-200"
+                        : "bg-green-800/50 text-green-400 hover:bg-green-700/50"
+                    }`}
+                  >
+                    {catChecked === cat.items.length ? "Uncheck All" : "✓ Check All"}
+                  </button>
+                )}
+              </div>
               <div className="space-y-2">
                 {cat.items.map((item) => {
                   const checked = !!state.checked[item.id];
