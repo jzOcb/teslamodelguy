@@ -237,7 +237,7 @@ export default function SpareTireKitPage() {
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">~$490</span>
               <a href="https://modernspare.com/product/2020-2026-tesla-model-y-spare-tire-kit-options/" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Shop Modern Spare →</a>
-              <a href="https://www.amazon.com/s?k=Modern+Spare+Tesla+Model+Y&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Find on Amazon →</a>
+              <a href="https://www.amazon.com/dp/B0F4Z2R9BH?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Find on Amazon →</a>
             </div>
           </div>
 
@@ -280,7 +280,7 @@ export default function SpareTireKitPage() {
             </p>
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">~$390</span>
-              <a href="https://www.amazon.com/s?k=StanceMagic+spare+tire+Tesla+Model+Y&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
+              <a href="https://www.amazon.com/dp/B0BV16HTPN?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Check Price on Amazon →</a>
             </div>
           </div>
 
@@ -341,7 +341,7 @@ export default function SpareTireKitPage() {
             a plug kit for quick fixes and a spare for worst-case scenarios.
           </p>
           <div className="flex items-center gap-3 mt-4 flex-wrap">
-            <a href="https://www.amazon.com/s?k=tire+plug+kit+portable+compressor+car&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Tire Plug Kits on Amazon →</a>
+            <a href="https://www.amazon.com/s?k=tire+plug+kit+portable+air+compressor&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Tire Plug Kits on Amazon →</a>
           </div>
         </section>
 

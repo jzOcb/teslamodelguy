@@ -72,6 +72,13 @@ const guides = [
     tag: null,
     image: "/images/tesla-model-y-hero.jpg",
   },
+  {
+    title: "Best Spare Tire Kit for Tesla Model Y — Is It Worth $400+?",
+    slug: "/guides/tesla-model-y-spare-tire-kit",
+    desc: "Modern Spare vs StanceMagic vs EZ Spare. Why Tesla doesn't include one, and whether you actually need it.",
+    tag: "NEW",
+    image: "/images/tesla-model-y-snow.jpg",
+  },
 ];
 
 export default function GuidesPage() {

@@ -51,6 +51,20 @@ const reviews = [
     category: "Exterior",
     image: "/images/tesla-model-y-snow.jpg",
   },
+  {
+    title: "Best Frunk Organizer for Tesla Model Y Juniper: 4 Options Compared",
+    slug: "/reviews/frunk/best-tesla-model-y-juniper-frunk-organizer",
+    desc: "Spigen vs Teslarati vs Yeslak vs budget Amazon — organize the deeper Juniper frunk.",
+    category: "Frunk",
+    image: "/images/tesla-interior.jpg",
+  },
+  {
+    title: "S3XY Knob & Buttons Review — Best Steering Wheel Upgrade",
+    slug: "/reviews/steering-wheel/s3xy-knob-buttons-review",
+    desc: "130+ programmable shortcuts for your Tesla. Physical controls the touchscreen doesn't give you.",
+    category: "Steering Wheel",
+    image: "/images/tesla-interior.jpg",
+  },
 ];
 
 export default function ReviewsPage() {

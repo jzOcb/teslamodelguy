@@ -174,7 +174,7 @@ export default function BestJuniperFrunkOrganizerPage() {
             <div className="flex items-center gap-3 mt-4 flex-wrap">
               <span className="font-semibold">~$80</span>
               <a href="https://www.spigen.com/products/tesla-series-frunk-divider-to229j" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-white text-zinc-900 px-6 py-3 rounded-lg font-medium hover:bg-zinc-200 transition">Shop on Spigen →</a>
-              <a href="https://www.amazon.com/s?k=Spigen+frunk+divider+Tesla+Model+Y+Juniper&tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Find on Amazon →</a>
+              <a href="https://www.amazon.com/dp/B0FVJW98P7?tag=teslamodelguy-20" target="_blank" rel="noopener noreferrer sponsored" className="text-sm bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition">Find on Amazon →</a>
             </div>
           </div>
 
