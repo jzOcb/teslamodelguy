@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -137,6 +138,9 @@ export default function BestJuniperFrunkOrganizerPage() {
           {/* Spigen */}
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-blue-900/50 text-blue-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST OVERALL</span>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800 mt-3">
+              <Image src="/images/products/frunk-organizers/spigen.jpg" alt="Spigen Frunk Divider TO229J for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mt-3 mb-2">Spigen Frunk Divider (TO229J)</h3>
             <p className="text-zinc-200 mb-3">
               Spigen is a name most people know from phone cases, and they bring that same build quality to Tesla accessories.
@@ -181,6 +185,9 @@ export default function BestJuniperFrunkOrganizerPage() {
           {/* Teslarati */}
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-purple-900/50 text-purple-300 text-xs font-medium px-2 py-0.5 rounded-full">BEST FULL ORGANIZER</span>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800 mt-3">
+              <Image src="/images/products/frunk-organizers/teslarati.jpg" alt="Teslarati Frunk Organizer for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mt-3 mb-2">Teslarati Frunk Organizer</h3>
             <p className="text-zinc-200 mb-3">
               If you want actual compartments — not just dividers — Teslarati&apos;s ABS organizer is the move.
@@ -223,6 +230,9 @@ export default function BestJuniperFrunkOrganizerPage() {
           {/* Yeslak */}
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-zinc-700 text-zinc-100 text-xs font-medium px-2 py-0.5 rounded-full">PREMIUM PICK</span>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800 mt-3">
+              <Image src="/images/products/frunk-organizers/yeslak.jpg" alt="Yeslak Front Trunk Organizer for Tesla Model Y Juniper" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mt-3 mb-2">Yeslak Front Trunk Organizer</h3>
             <p className="text-zinc-200 mb-3">
               Yeslak&apos;s organizer is the premium option here. Made from durable PP material, it clips into

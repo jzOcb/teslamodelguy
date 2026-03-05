@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -197,6 +198,9 @@ export default function SpareTireKitPage() {
           {/* Modern Spare */}
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-blue-900/50 text-blue-400 text-xs font-medium px-2 py-0.5 rounded-full">BEST OVERALL</span>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800 mt-3">
+              <Image src="/images/products/spare-tire/modern-spare.jpg" alt="Modern Spare Complete Kit for Tesla Model Y" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mt-3 mb-2">Modern Spare Complete Kit</h3>
             <p className="text-zinc-200 mb-3">
               Modern Spare is the gold standard in aftermarket Tesla spare tires, and for good reason.
@@ -287,6 +291,9 @@ export default function SpareTireKitPage() {
           {/* EZ Spare */}
           <div className="border border-zinc-700 rounded-2xl p-6">
             <span className="bg-purple-900/50 text-purple-300 text-xs font-medium px-2 py-0.5 rounded-full">BEST FOR PERFORMANCE</span>
+            <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden bg-zinc-800 mt-3">
+              <Image src="/images/products/spare-tire/ez-spare.webp" alt="EZ Spare Wheel for Tesla Model Y" fill className="object-contain" sizes="(min-width: 768px) 600px, 100vw" />
+            </div>
             <h3 className="text-xl font-bold text-white mt-3 mb-2">EZ Spare Wheel</h3>
             <p className="text-zinc-200 mb-3">
               EZ Spare stands out because they offer a 20&quot; option specifically engineered for the Model Y

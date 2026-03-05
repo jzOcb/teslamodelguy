@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
@@ -124,6 +125,9 @@ export default function S3XYKnobButtonsReviewPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-zinc-800 border border-zinc-700 rounded-xl p-5">
+              <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-900">
+                <Image src="/images/products/steering-wheel/s3xy-knob.jpg" alt="S3XY Knob for Tesla Model Y" fill className="object-contain" sizes="(min-width: 768px) 400px, 100vw" />
+              </div>
               <h3 className="font-semibold text-white mb-2">🎛️ S3XY Knob</h3>
               <p className="text-sm text-zinc-300 mb-2">
                 A rotary dial with OLED display that mounts on your center console. Rotate for volume/climate,
@@ -137,6 +141,9 @@ export default function S3XYKnobButtonsReviewPage() {
               </ul>
             </div>
             <div className="bg-zinc-800 border border-zinc-700 rounded-xl p-5">
+              <div className="relative w-full h-40 mb-4 rounded-xl overflow-hidden bg-zinc-900">
+                <Image src="/images/products/steering-wheel/s3xy-buttons.jpg" alt="S3XY Buttons for Tesla Model Y" fill className="object-contain" sizes="(min-width: 768px) 400px, 100vw" />
+              </div>
               <h3 className="font-semibold text-white mb-2">🔘 S3XY Buttons</h3>
               <p className="text-sm text-zinc-300 mb-2">
                 Self-adhesive Bluetooth buttons you stick anywhere — steering column, console, door panel.
