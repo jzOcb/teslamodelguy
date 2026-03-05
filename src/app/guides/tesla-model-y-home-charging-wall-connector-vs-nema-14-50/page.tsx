@@ -223,6 +223,19 @@ export default function HomeChargingGuidePage() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
             Tesla Wall Connector: What You Get
           </h2>
+
+          {/* Product image */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-64 h-64 rounded-2xl overflow-hidden bg-white/5 border border-zinc-700/50">
+              <Image
+                src="/images/tesla-wall-connector.png"
+                alt="Tesla Wall Connector — official product photo from Tesla Shop"
+                fill
+                className="object-contain p-4"
+              />
+            </div>
+          </div>
+
           <p className="text-lg text-zinc-200 leading-relaxed mb-6">
             The Wall Connector is Tesla&apos;s dedicated home charging solution. It&apos;s
             hardwired directly into your electrical panel — no plug, no outlet, just a
@@ -262,6 +275,33 @@ export default function HomeChargingGuidePage() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
             NEMA 14-50 Outlet: What You Get
           </h2>
+
+          {/* Product images — Mobile Connector + Adapter */}
+          <div className="flex justify-center gap-6 mb-8">
+            <div className="text-center">
+              <div className="relative w-48 h-48 rounded-2xl overflow-hidden bg-white/5 border border-zinc-700/50 mb-2">
+                <Image
+                  src="/images/tesla-mobile-connector.png"
+                  alt="Tesla Mobile Connector — official product photo"
+                  fill
+                  className="object-contain p-3"
+                />
+              </div>
+              <p className="text-xs text-zinc-500">Mobile Connector ($300)</p>
+            </div>
+            <div className="text-center">
+              <div className="relative w-48 h-48 rounded-2xl overflow-hidden bg-white/5 border border-zinc-700/50 mb-2">
+                <Image
+                  src="/images/tesla-nema-14-50-adapter.png"
+                  alt="Tesla NEMA 14-50 Adapter — included with Mobile Connector"
+                  fill
+                  className="object-contain p-3"
+                />
+              </div>
+              <p className="text-xs text-zinc-500">NEMA 14-50 Adapter (included)</p>
+            </div>
+          </div>
+
           <p className="text-lg text-zinc-200 leading-relaxed mb-6">
             A NEMA 14-50 is a 240V, 50-amp outlet — the same type used for electric stoves and
             RVs. You plug in the Tesla Mobile Connector (with the 14-50 adapter), and it charges
