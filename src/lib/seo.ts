@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_NAME = "Tesla Model Guy";
-export const SITE_URL = "https://teslamodelguy.com";
+export const SITE_URL = "https://www.teslamodelguy.com";
 export const DEFAULT_OG_IMAGE = "/images/tesla-hero-global.jpg";
 
 type MetadataInput = {

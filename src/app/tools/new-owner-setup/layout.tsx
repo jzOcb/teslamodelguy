@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "New Tesla Owner Setup Guide — 12 Steps for Your First Week",
     description: "Interactive step-by-step wizard for new Tesla Model Y owners. Track your progress from day one.",
-    url: "https://teslamodelguy.com/tools/new-owner-setup",
+    url: "https://www.teslamodelguy.com/tools/new-owner-setup",
     type: "website",
   },
 };

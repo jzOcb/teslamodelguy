@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Best Portable Tesla NACS Charger 2025-2026",
     description:
       "Honest comparison: Lectron, Taranasa, and Tesla Mobile Connector. Which portable NACS charger is worth your money?",
-    url: "https://teslamodelguy.com/reviews/charging",
+    url: "https://www.teslamodelguy.com/reviews/charging",
     type: "article",
   },
 };

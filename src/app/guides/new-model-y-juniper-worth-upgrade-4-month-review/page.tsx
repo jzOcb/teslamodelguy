@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Is the New Model Y Juniper Worth the Upgrade? 4-Month Family Review",
     description:
       "Traded a 2022 Model Y for the Juniper. After 4 months with a toddler, here's the honest verdict.",
-    url: "https://teslamodelguy.com/guides/new-model-y-juniper-worth-upgrade-4-month-review",
+    url: "https://www.teslamodelguy.com/guides/new-model-y-juniper-worth-upgrade-4-month-review",
     type: "article",
   },
 };

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tesla Model Y Delivery Day Checklist — Free Interactive Tool",
     description: "56-item interactive inspection checklist for your Tesla Model Y delivery. Saves progress, flags issues, works on your phone.",
-    url: "https://teslamodelguy.com/tools/delivery-checklist",
+    url: "https://www.teslamodelguy.com/tools/delivery-checklist",
     type: "website",
   },
 };

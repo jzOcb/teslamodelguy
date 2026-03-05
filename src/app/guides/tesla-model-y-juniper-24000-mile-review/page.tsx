@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Tesla Model Y Juniper: What It Actually Costs to Own After 24,000 Miles",
     description:
       "4.25¢/mile electricity. $0 maintenance. Original brakes at 90K miles. Here's every real cost of owning a Model Y Juniper.",
-    url: "https://teslamodelguy.com/guides/tesla-model-y-juniper-24000-mile-review",
+    url: "https://www.teslamodelguy.com/guides/tesla-model-y-juniper-24000-mile-review",
     type: "article",
   },
 };

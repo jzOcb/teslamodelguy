@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tesla vs Gas Savings Calculator — How Much Will You Save?",
     description: "Personalized 5-year cost comparison: Tesla Model Y vs your current gas car. Free calculator.",
-    url: "https://teslamodelguy.com/tools/savings-calculator",
+    url: "https://www.teslamodelguy.com/tools/savings-calculator",
     type: "website",
   },
 };
