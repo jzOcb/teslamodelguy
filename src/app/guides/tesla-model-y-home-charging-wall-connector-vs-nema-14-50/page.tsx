@@ -674,7 +674,7 @@ export default function HomeChargingGuidePage() {
               href="https://shop.tesla.com/product/mobile-connector"
               target="_blank"
               rel="noopener sponsored"
-              className="border border-zinc-600 text-zinc-200 px-6 py-3 rounded-xl hover:bg-zinc-800 transition font-medium"
+              className="bg-cyan-600 text-white px-6 py-3 rounded-xl hover:bg-cyan-700 transition font-medium"
             >
               🔌 Tesla Mobile Connector ($200)
             </a>
@@ -682,7 +682,7 @@ export default function HomeChargingGuidePage() {
               href="https://www.amazon.com/dp/B0FCS5SQT2?tag=teslamodelguy-20"
               target="_blank"
               rel="noopener sponsored"
-              className="border border-zinc-600 text-zinc-200 px-6 py-3 rounded-xl hover:bg-zinc-800 transition font-medium"
+              className="bg-cyan-600 text-white px-6 py-3 rounded-xl hover:bg-cyan-700 transition font-medium"
             >
               🔧 Commercial NEMA 14-50 Outlet
             </a>

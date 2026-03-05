@@ -83,7 +83,7 @@
 - [ ] **每篇文章必须有**: 全幅 hero 图 OR GradientHero + 文章内至少 1 张 divider 图
 - [ ] **数据必须可视化**: 有数字对比 → 用 grid 卡片/表格/进度条，不要纯文字列数据
 - [ ] **长文章必须有目录 (TOC)**: 6+ sections 的文章要有目录框
-- [ ] **CTA 按钮颜色统一**: 主 CTA `bg-cyan-600`，次 CTA `border border-zinc-600`
+- [ ] **CTA 按钮颜色统一 — 全部 cyan**: `bg-cyan-600 text-white hover:bg-cyan-700`。**禁止**灰色/白色边框按钮（`border border-zinc-600`）用作 CTA — 这个错误已经犯了 3 次
 - [ ] **重要信息用高亮框**: 警告=amber border，正面=green border，负面=red border，信息=cyan border
 
 ### 四、内容标准

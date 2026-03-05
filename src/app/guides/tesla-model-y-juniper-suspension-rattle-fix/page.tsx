@@ -456,7 +456,7 @@ export default function SuspensionRattlePage() {
             </Link>
             <Link
               href="/tools/savings-calculator"
-              className="border border-zinc-600 text-zinc-200 px-6 py-3 rounded-xl hover:bg-zinc-800 transition font-medium"
+              className="bg-cyan-600 text-white px-6 py-3 rounded-xl hover:bg-cyan-700 transition font-medium"
             >
               ⚡ Savings Calculator
             </Link>
