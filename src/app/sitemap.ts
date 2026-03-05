@@ -14,6 +14,7 @@ const staticRoutes = [
   "/guides/tesla-model-y-juniper-delivery-checklist",
   "/guides/tesla-model-y-juniper-vs-old-differences",
   "/guides/new-model-y-juniper-worth-upgrade-4-month-review",
+  "/guides/tesla-model-y-juniper-suspension-rattle-fix",
   "/reviews",
   "/reviews/charging",
   "/reviews/charging/best-tesla-model-y-juniper-phone-mount",

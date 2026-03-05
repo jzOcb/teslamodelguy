@@ -45,6 +45,13 @@ const guides = [
     image: "/images/tesla-model-y-hero.jpg",
   },
   {
+    title: "Model Y Juniper Suspension Rattle: Causes, Fixes & What Tesla Is Doing",
+    slug: "/guides/tesla-model-y-juniper-suspension-rattle-fix",
+    desc: "Thousands of owners affected. The complete guide to the front suspension clunk — what causes it, Tesla's fix, and what to do if your car has it.",
+    tag: "NEW",
+    image: "/images/tesla-model-y-hero.jpg",
+  },
+  {
     title: "What It Actually Costs to Own a Tesla Model Y Juniper (24,000 Miles of Data)",
     slug: "/guides/tesla-model-y-juniper-24000-mile-review",
     desc: "4.25¢/mile electricity, $0 maintenance, brakes that may never need replacing. Every real cost after 24,000 miles of daily driving.",
