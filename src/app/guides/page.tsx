@@ -38,32 +38,32 @@ const guides = [
     image: "/images/tesla-model-y-hero.jpg",
   },
   {
-    title: "6 Tesla Model Y Juniper Accessories You Don't Need (Save Your Money)",
-    slug: "/guides/tesla-model-y-juniper-accessories-you-dont-need",
-    desc: "Stop wasting money. We break down 6 popular accessories that aren't worth it — and what to buy instead.",
-    tag: null,
-    image: "/images/tesla-model-y-hero.jpg",
-  },
-  {
     title: "Model Y Juniper Suspension Rattle: Causes, Fixes & What Tesla Is Doing",
     slug: "/guides/tesla-model-y-juniper-suspension-rattle-fix",
     desc: "Thousands of owners affected. The complete guide to the front suspension clunk — what causes it, Tesla's fix, and what to do if your car has it.",
-    tag: "NEW",
-    image: "/images/tesla-model-y-hero.jpg",
+    tag: "HOT",
+    image: "/images/tesla-model-y-snow.jpg",
   },
   {
     title: "What It Actually Costs to Own a Tesla Model Y Juniper (24,000 Miles of Data)",
     slug: "/guides/tesla-model-y-juniper-24000-mile-review",
     desc: "4.25¢/mile electricity, $0 maintenance, brakes that may never need replacing. Every real cost after 24,000 miles of daily driving.",
     tag: "NEW",
-    image: "/images/tesla-model-y-hero.jpg",
+    image: "/images/tesla-hero-desktop.jpg",
   },
   {
     title: "Is the New Model Y Juniper Worth the Upgrade?",
     slug: "/guides/new-model-y-juniper-worth-upgrade-4-month-review",
     desc: "Traded a 2022 Model Y for the Juniper. After 4 months of daily family driving, here's what's better, what's worse, and the one feature that makes it worth it.",
     tag: "NEW",
-    image: "/images/tesla-model-y-snow.jpg",
+    image: "/images/tesla-interior-console.png",
+  },
+  {
+    title: "6 Tesla Model Y Juniper Accessories You Don't Need (Save Your Money)",
+    slug: "/guides/tesla-model-y-juniper-accessories-you-dont-need",
+    desc: "Stop wasting money. We break down 6 popular accessories that aren't worth it — and what to buy instead.",
+    tag: null,
+    image: "/images/tesla-model-y-hero.jpg",
   },
 ];
 
@@ -99,7 +99,14 @@ export default function GuidesPage() {
               </div>
             </div>
             <div className="p-6">
-              {g.tag ? <span className="inline-block rounded-full border border-cyan-500/30 bg-cyan-500/10 px-2 py-0.5 text-xs font-semibold text-cyan-300">{g.tag}</span> : null}
+              {g.tag ? (
+                <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-semibold border ${
+                  g.tag === "HOT" ? "border-red-500/30 bg-red-500/10 text-red-300" :
+                  g.tag === "ESSENTIAL" ? "border-amber-500/30 bg-amber-500/10 text-amber-300" :
+                  g.tag === "POPULAR" ? "border-purple-500/30 bg-purple-500/10 text-purple-300" :
+                  "border-cyan-500/30 bg-cyan-500/10 text-cyan-300"
+                }`}>{g.tag === "HOT" ? "🔥 HOT" : g.tag}</span>
+              ) : null}
               <h2 className="mt-2 text-2xl font-bold text-white">{g.title}</h2>
               <p className="mt-2 text-base leading-relaxed text-zinc-200">{g.desc}</p>
             </div>
