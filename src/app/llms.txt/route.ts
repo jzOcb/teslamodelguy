@@ -15,6 +15,8 @@ const content = `# Tesla Model Guy
 - [Best Phone Mount / Wireless Charger for Tesla Model Y Juniper](https://www.teslamodelguy.com/reviews/charging/best-tesla-model-y-juniper-phone-mount): Wireless charger and phone mount comparison — JOWUA, EVBASE, iOttie, and generic MagSafe.
 - [Best Portable Tesla NACS Charger](https://www.teslamodelguy.com/reviews/charging): Comparison of portable NACS chargers — Lectron, Taranasa, and Tesla Mobile Connector. Pricing, specs, safety certifications, and buying guide.
 - [Best Center Console Organizer for Tesla Model Y Juniper](https://www.teslamodelguy.com/reviews/organizers/best-tesla-model-y-juniper-center-console-organizer): Console organizer comparison with fitment details for the redesigned Juniper center console.
+- [Best Frunk Organizer for Tesla Model Y Juniper](https://www.teslamodelguy.com/reviews/frunk/best-tesla-model-y-juniper-frunk-organizer): 4 frunk organizer options compared — Spigen dividers, Teslarati ABS box, Yeslak premium, and budget picks. The Juniper frunk is deeper.
+- [S3XY Knob & Buttons Review for Tesla Model Y](https://www.teslamodelguy.com/reviews/steering-wheel/s3xy-knob-buttons-review): In-depth review of Enhauto S3XY Knob and S3XY Buttons — 130+ shortcuts, physical controls, Juniper compatibility, and which one to choose.
 
 ## Guides
 
@@ -25,6 +27,10 @@ const content = `# Tesla Model Guy
 - [Tesla Model Y Juniper 24,000-Mile Review](https://www.teslamodelguy.com/guides/tesla-model-y-juniper-24000-mile-review): One-year, 24,000-mile long-term review — efficiency, maintenance, charging, and real ownership data.
 - [Is the New Model Y Juniper Worth the Upgrade?](https://www.teslamodelguy.com/guides/new-model-y-juniper-worth-upgrade-4-month-review): 4-month family review — traded 2022 Model Y for Juniper. What's better, what's worse, and is it worth it?
 - [Tesla Model Y Juniper Accessories You Don't Need](https://www.teslamodelguy.com/guides/tesla-model-y-juniper-accessories-you-dont-need): Honest list of overhyped accessories that aren't worth buying for the Juniper.
+- [Tesla Model Y Home Charging: Wall Connector vs NEMA 14-50](https://www.teslamodelguy.com/guides/tesla-model-y-home-charging-wall-connector-vs-nema-14-50): Which home charging setup is right for you? Cost, installation complexity, charging speed, and real-world comparison.
+- [Tesla Model Y Juniper Suspension Rattle: Causes & Fixes](https://www.teslamodelguy.com/guides/tesla-model-y-juniper-suspension-rattle-fix): Known suspension rattle issue — causes, DIY fixes, and what Tesla is doing about it.
+- [Best Spare Tire Kit for Tesla Model Y](https://www.teslamodelguy.com/guides/tesla-model-y-spare-tire-kit): Modern Spare vs StanceMagic vs EZ Spare Wheel — why Tesla doesn't include one, and whether you actually need it.
+- [20 Tesla Model Y Settings to Change After Delivery](https://www.teslamodelguy.com/guides/tesla-model-y-settings-after-delivery): The 20 most important settings to configure on day one — driving mode, Autopilot safety, dashcam, Sentry Mode, and hidden features.
 
 ## Free Tools
 
