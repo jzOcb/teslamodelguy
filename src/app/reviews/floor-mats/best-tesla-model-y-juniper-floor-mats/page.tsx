@@ -32,7 +32,7 @@ const schemaData = generateArticleSchema({
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Floor Mats", url: "/reviews/floor-mats" }, { name: "Best Floor Mats", url: "/reviews/floor-mats/best-tesla-model-y-juniper-floor-mats" }],
 });
 const faqSchema = generateFAQSchema([
-  { question: "Do old Model Y floor mats fit the Juniper?", answer: "No. The 2025-2026 Model Y Juniper has a redesigned interior with different dimensions. You need mats specifically made for the Juniper." },
+{ question: "Do old Model Y floor mats fit the Juniper?", answer: "No. The 2025-2026 Model Y Juniper has a redesigned interior with different dimensions. You need mats specifically made for the Juniper." },
   { question: "How do I clean all-weather floor mats?", answer: "Remove them from the car, spray with a hose, scrub with mild soap if needed, and let air dry. It usually takes about 5 minutes." },
   { question: "Should I get front-only or a full set?", answer: "Get the full set. Rear floors collect just as much dirt, and full kits usually offer better value per mat." },
   { question: "Are the Tesla official mats any good?", answer: "Tesla's official all-weather mats are made by WeatherTech and are solid. But they often cost more than buying similar coverage directly, and some owners prefer 3D MAXpider for a more premium look." },
@@ -40,6 +40,8 @@ const faqSchema = generateFAQSchema([
   { question: "Do I need cargo liners too?", answer: "If you load groceries, strollers, sports gear, or tools, yes. Cargo liners protect the rear trunk carpet and are much easier to clean than factory carpet." },
   { question: "Can I use floor mats with the factory carpet mats underneath?", answer: "No. You should never stack floor mats because they can slide and interfere with pedals. Remove factory carpet mats before installing all-weather liners." },
   { question: "Which floor mats are best for winter/snow?", answer: "High-sidewall mats with strong spill containment work best. WeatherTech and Tuxmat are strong winter picks, while 3D MAXpider balances winter protection with a more premium finish." },
+  { question: "Are Juniper-specific mats worth the premium?", answer: "Yes, proper generation fit is critical for edge sealing and spill control." },
+  { question: "What matters most when choosing mats?", answer: "Fitment, sidewall coverage, and ease of cleaning matter more than brand popularity alone." },
 ]);
 
 export default function FloorMatsPage() {
@@ -57,6 +59,11 @@ export default function FloorMatsPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Best Floor Mats for Tesla Model Y Juniper: 5 Tested & Compared
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            3D MAXpider is the top overall pick for most Juniper owners, with LASFIT and 3W as strong value alternatives. Always buy Juniper-specific mats because pre-refresh fitment leaves spill-prone gaps.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           Floor mats are the first accessory every Model Y owner should buy. But which ones?
           We compared 5 popular options so you don&apos;t have to guess.

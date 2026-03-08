@@ -33,7 +33,7 @@ const schemaData = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  {
+{
     question: "Does the Model Y Juniper need a cup holder insert?",
     answer: "No. Unlike earlier Model Y versions, the 2025-2026 Juniper comes with built-in cup holder stabilizers. Aftermarket inserts are unnecessary and may actually make the fit worse.",
   },
@@ -45,6 +45,8 @@ const faqSchema = generateFAQSchema([
     question: "Are Tesla Model Y trunk organizers worth it?",
     answer: "For most people, no. The Model Y trunk is already well-designed with sub-trunk storage. Most owners who buy trunk side organizers end up using them to store nothing but water bottles for two years. A collapsible grocery bag is a better solution.",
   },
+  { question: "Which accessories should I buy first instead?", answer: "Prioritize floor mats, screen protection, and a console organizer before lower-impact cosmetic add-ons." },
+  { question: "Why do some popular accessories disappoint in real use?", answer: "Many solve old-model issues or add complexity without improving daily ownership." },
 ]);
 
 export default function AccessoriesYouDontNeedPage() {
@@ -62,6 +64,11 @@ export default function AccessoriesYouDontNeedPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             6 Tesla Model Y Juniper Accessories You Don&apos;t Need (Save Your Money)
           </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Most Juniper owners can skip several heavily marketed accessories that add clutter but little real benefit. Put budget into high-impact protection and organization items instead of legacy-fit or cosmetic extras.
+          </p>
+        </section>
           <p className="text-lg text-zinc-200 leading-relaxed">
             Every &quot;must-have accessories&quot; list tells you what to buy. This one tells you what
             to skip. Because the best way to accessorize your Model Y is to not waste money on stuff

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 import GradientHero from "@/components/GradientHero";
-import { absoluteUrl, buildMetadata } from "@/lib/seo";
+import {absoluteUrl, buildMetadata, generateFAQSchema } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "10 Must-Have Accessories for Tesla Model Y Juniper (2025-2026)",
@@ -49,6 +49,13 @@ const breadcrumbJsonLd = {
     },
   ],
 };
+
+const faqSchema = generateFAQSchema([
+  { question: "What are the first accessories to buy for Juniper?", answer: "Start with floor mats, front screen protection, and console organization for immediate protection and usability gains." },
+  { question: "Do pre-refresh accessories usually fit Juniper?", answer: "Many do not. Confirm 2025-2026 Juniper fitment for any dimension-sensitive accessory." },
+  { question: "How much should I budget for essentials first?", answer: "Most owners can cover core day-one accessories with a few hundred dollars and add extras over time." },
+  { question: "Which item gives the highest protection value?", answer: "All-weather floor mats usually deliver the best protection value per dollar in daily use." },
+]);
 
 const accessories = [
   {
@@ -225,7 +232,7 @@ const accessories = [
 export default function BestAccessoriesPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-16">
-      <StructuredData data={[articleJsonLd, breadcrumbJsonLd]} />
+      <StructuredData data={[articleJsonLd, breadcrumbJsonLd, faqSchema]} />
       <GradientHero emoji="🏆" title="10 Must-Have Juniper Accessories" subtitle="A ranked starter kit to protect your Tesla, improve comfort, and avoid wasted spend." />
 
       {/* Header */}
@@ -234,6 +241,11 @@ export default function BestAccessoriesPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           10 Must-Have Accessories for Your Tesla Model Y Juniper
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Start with day-one protection items like floor mats and screen protection, then add organization and comfort upgrades over the first month. This ranked list prioritizes high-impact ownership problems, not filler accessories.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           Just picked up your Model Y Juniper? Congrats — it&apos;s a hell of a car. But Tesla
           ships a great vehicle with a few obvious gaps. Here are the 10 accessories that are

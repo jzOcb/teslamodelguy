@@ -32,7 +32,7 @@ const schemaData = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  {
+{
     question: "Do I need to drill into a Model Y Juniper to install mud flaps?",
     answer:
       "No. The best current options use factory holes and push clips, so installation is no-drill and reversible.",
@@ -52,6 +52,8 @@ const faqSchema = generateFAQSchema([
     answer:
       "You can, but full front and rear coverage gives better paint and rocker panel protection.",
   },
+  { question: "How often should I check mud flap hardware?", answer: "Recheck after the first week and periodically on rough-road vehicles." },
+  { question: "Do mud flaps help resale appearance?", answer: "They can reduce lower-panel chip accumulation and keep paint cleaner over time." },
 ]);
 
 export default function BestJuniperMudFlapsPage() {
@@ -70,6 +72,11 @@ export default function BestJuniperMudFlapsPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Best Tesla Model Y Juniper Mud Flaps: 4 No-Drill Options Compared
           </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            No-drill mud flaps are a high-value exterior protection upgrade for Juniper in wet or gravel conditions. REEVAA is the best balance pick, while Basenor and HALOBLK cover value and max-coverage needs.
+          </p>
+        </section>
           <p className="text-lg text-zinc-200 leading-relaxed">
             If you drive in rain, gravel, or winter slush, mud flaps are one of the highest-value upgrades for
             the Model Y Juniper. Every option below is no-drill and sits in the $25-45 range.

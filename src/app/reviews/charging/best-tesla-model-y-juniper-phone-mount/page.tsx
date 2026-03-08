@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
-import { generateArticleSchema } from "@/lib/seo";
+import {generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Best Tesla Model Y Phone Mount (Juniper): Wireless Charger Comparison",
@@ -114,10 +114,17 @@ const schemaData = generateArticleSchema({
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Charging", url: "/reviews/charging" }, { name: "Best Phone Mount", url: "/reviews/charging/best-tesla-model-y-juniper-phone-mount" }],
 });
 
+const faqSchema = generateFAQSchema([
+  { question: "What is the best overall Juniper phone mount?", answer: "JOWUA is the strongest overall option for fit, stability, and charging consistency." },
+  { question: "What is the best value option?", answer: "EVBASE usually offers the best value balance for daily commuting use." },
+  { question: "Do old Model Y mounts fit Juniper correctly?", answer: "Some do not align cleanly, so confirm explicit Juniper compatibility before buying." },
+  { question: "Are budget generic MagSafe mounts usable?", answer: "Yes as starter options, but long-term durability is typically less consistent than premium brands." },
+]);
+
 export default function BestModelYJuniperPhoneMountPage() {
   return (
     <>
-      <StructuredData data={schemaData} />
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="📱"
@@ -130,6 +137,11 @@ export default function BestModelYJuniperPhoneMountPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Best Tesla Model Y Juniper Phone Mount - Wireless Charger Comparison
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            JOWUA is the best overall Juniper phone mount for stability and finish, while EVBASE is the best value. Prioritize confirmed Juniper fitment and mount stability before focusing on price.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           I tested the top options owners keep asking about and narrowed this down to 4 good picks.
           If you want one quick answer, get JOWUA for the best overall fit and finish, or EVBASE

@@ -34,7 +34,7 @@ const schemaData = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  {
+{
     question: "Do old Model Y frunk organizers fit the Juniper?",
     answer:
       "No. The Juniper frunk is significantly deeper (~16 inches vs ~8.8 inches on the pre-refresh) and has a different shape. You need an organizer specifically designed for the 2025+ Model Y Juniper.",
@@ -59,6 +59,8 @@ const faqSchema = generateFAQSchema([
     answer:
       "ABS plastic and PP (polypropylene) are both good choices — they're waterproof, durable, and easy to clean. TPE (rubber-like) dividers like Spigen's are great for noise reduction. Avoid fabric organizers in the frunk since spills are common.",
   },
+  { question: "Which organizer style is best for groceries?", answer: "Compartment-style organizers usually work better than simple dividers for grocery runs." },
+  { question: "Do silicone or clip-in designs reduce noise?", answer: "Yes, they usually reduce movement and rattling on rough roads." },
 ]);
 
 export default function BestJuniperFrunkOrganizerPage() {
@@ -77,6 +79,11 @@ export default function BestJuniperFrunkOrganizerPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Best Frunk Organizer for Tesla Model Y Juniper: 4 Picks Compared
           </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Juniper's deeper frunk benefits from dedicated organization: Spigen for quiet divider use and Teslarati for full compartment storage. Buy Juniper-specific fitment since older frunk organizers do not match the new geometry.
+          </p>
+        </section>
           <p className="text-lg text-zinc-200 leading-relaxed">
             The Juniper&apos;s redesigned frunk is a game-changer — nearly twice as deep as the old Model Y
             (16&quot; vs 8.8&quot;) and now includes a drain plug so you can literally use it as a cooler.

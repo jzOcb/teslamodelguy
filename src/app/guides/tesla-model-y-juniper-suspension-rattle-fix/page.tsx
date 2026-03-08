@@ -109,6 +109,11 @@ export default function SuspensionRattlePage() {
 
       <article className="mx-auto max-w-3xl px-4 py-12">
         <p className="text-sm text-zinc-500 mb-8">Last updated: March 2026 · 10 min read</p>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            The Juniper suspension clunk is a known NVH issue with mixed repair outcomes, not a typical catastrophic suspension failure. Clear documentation and repeatable test evidence improve service-center outcomes.
+          </p>
+        </section>
 
         {/* Intro */}
         <p className="text-xl text-zinc-200 leading-relaxed mb-6">

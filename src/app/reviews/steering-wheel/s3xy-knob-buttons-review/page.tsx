@@ -36,7 +36,7 @@ const schemaData = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  {
+{
     question: "Do the S3XY Knob and Buttons work with the Model Y Juniper?",
     answer:
       "Yes, but with a caveat. US-built Model Y Juniper manufactured after November 2025 may have compatibility issues due to Tesla's CAN-BUS changes. Enhauto is working on a fix. Check their compatibility page before ordering.",
@@ -61,6 +61,8 @@ const faqSchema = generateFAQSchema([
     answer:
       "Yes, with the Commander module. You can set shortcuts for Autopilot activation, continuous Autopilot (auto re-engage after lane changes), and TACC. Some Autopilot features may require specific firmware versions.",
   },
+  { question: "Are Buttons enough without Knob for most drivers?", answer: "Yes, many owners cover most daily shortcuts with Buttons alone." },
+  { question: "Why is build-date compatibility important on Juniper?", answer: "Tesla hardware revisions can affect third-party module behavior, so compatibility checks prevent ordering issues." },
 ]);
 
 export default function S3XYKnobButtonsReviewPage() {
@@ -79,6 +81,11 @@ export default function S3XYKnobButtonsReviewPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             S3XY Knob & Buttons Review — Best Steering Wheel Upgrade for Tesla Model Y
           </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            S3XY Buttons are the best starting point for most owners, and the Knob is better if you specifically want dial-style climate and volume control. Check Juniper build-date compatibility before ordering.
+          </p>
+        </section>
           <p className="text-lg text-zinc-200 leading-relaxed">
             Tesla&apos;s all-touchscreen approach is polarizing. Some love it; some miss having a
             physical knob for climate and volume. Enhauto&apos;s S3XY Knob and S3XY Buttons are

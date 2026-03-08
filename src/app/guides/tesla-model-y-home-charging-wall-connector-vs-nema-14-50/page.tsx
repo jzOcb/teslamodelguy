@@ -137,6 +137,11 @@ export default function HomeChargingGuidePage() {
 
       <article className="mx-auto max-w-3xl px-4 py-12">
         <p className="text-sm text-zinc-500 mb-8">Last updated: March 2026 · 12 min read</p>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            For most owners, NEMA 14-50 is the best value because overnight charging is usually enough at lower install cost. Wall Connector makes sense when you need faster charging, cleaner permanent install, or multi-Tesla power sharing.
+          </p>
+        </section>
 
         {/* Intro */}
         <p className="text-xl text-zinc-200 leading-relaxed mb-6">

@@ -70,6 +70,15 @@ const websiteJsonLd = {
   inLanguage: "en-US",
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Tesla Model Guy",
+  url: "https://www.teslamodelguy.com",
+  description: "Real owner reviews and guides for Tesla Model Y Juniper accessories",
+  sameAs: ["https://medium.com/@jzclaws1", "https://www.pinterest.com/teslamodelguy/"],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -88,6 +97,7 @@ export default function RootLayout({
       </Script>
       <body className="font-sans antialiased bg-zinc-950 text-zinc-100">
         <StructuredData data={websiteJsonLd} />
+        <StructuredData data={organizationJsonLd} />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

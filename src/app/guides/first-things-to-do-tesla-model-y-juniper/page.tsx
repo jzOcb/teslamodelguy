@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
-import { generateArticleSchema } from "@/lib/seo";
+import { generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guides/first-things-to-do-tesla-model-y-juniper" },
@@ -73,10 +73,17 @@ const schemaData = generateArticleSchema({
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "First Things To Do", url: "/guides/first-things-to-do-tesla-model-y-juniper" }],
 });
 
+const faqSchema = generateFAQSchema([
+  { question: "What should I do first on Model Y Juniper delivery day?", answer: "Start with delivery inspection before signing, then complete app and phone-key setup so the car is fully usable and documented from day one." },
+  { question: "Do I need accessories before delivery?", answer: "At minimum, have floor mats and a screen protector ready because those are the fastest wear points in the first week." },
+  { question: "Should I set an 80% charge limit immediately?", answer: "Yes for daily use in most cases. Use 100% mainly for trip days when you need the extra range." },
+  { question: "Is Sentry storage required on day one?", answer: "You need external storage for reliable Sentry and dashcam recording, so adding an SSD early is strongly recommended." },
+]);
+
 export default function FirstThingsPage() {
   return (
     <>
-      <StructuredData data={schemaData} />
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="🚀"
@@ -88,6 +95,11 @@ export default function FirstThingsPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           First 7 Things to Do After Getting Your Tesla Model Y Juniper
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            The first 7 things every new Model Y Juniper owner should do are delivery inspection, Tesla app setup, screen protection, Sentry SSD setup, floor mats, key feature setup, and a charging routine. Doing these in your first week prevents the most common ownership headaches and protects your interior from day one. Start with inspection, phone key, and protection accessories before daily driving.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           Congrats on the new car. Here&apos;s exactly what to do on day one — from the delivery
           inspection to the settings most people don&apos;t find for weeks. This is the checklist

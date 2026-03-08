@@ -83,6 +83,11 @@ export default function JuniperUpgradeReview() {
       <article className="mx-auto max-w-3xl px-4 py-12">
         {/* Meta */}
         <p className="text-sm text-zinc-500 mb-6">Last updated: March 2026 · 10 min read</p>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            After 4 months, the Juniper upgrade is most compelling if FSD and daily convenience upgrades matter to you. Without those priorities, a recent pre-refresh Model Y still covers the core Tesla experience well.
+          </p>
+        </section>
 
         {/* Intro */}
         <p className="text-xl text-zinc-200 leading-relaxed mb-8">

@@ -88,6 +88,11 @@ export default function ModelYJuniperCostOfOwnership() {
 
       <article className="mx-auto max-w-3xl px-4 py-12">
         <p className="text-sm text-zinc-500 mb-6">Last updated: March 2026 · 10 min read</p>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            After 24,000 miles, this ownership data shows low running cost per mile and minimal maintenance compared with a gas SUV. The recurring costs to watch are tires and consumables, not traditional oil-and-brake service.
+          </p>
+        </section>
 
         {/* Intro */}
         <p className="text-xl text-zinc-200 leading-relaxed mb-8">

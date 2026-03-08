@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
-import { generateArticleSchema } from "@/lib/seo";
+import {generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guides/tesla-model-y-juniper-vs-old-differences" },
@@ -45,10 +45,17 @@ const schemaData = generateArticleSchema({
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "Juniper vs Old", url: "/guides/tesla-model-y-juniper-vs-old-differences" }],
 });
 
+const faqSchema = generateFAQSchema([
+  { question: "Is Juniper worth it over recent pre-refresh Model Y?", answer: "For new buyers, yes. For current owners, value depends on whether comfort and feature upgrades justify replacement cost." },
+  { question: "What daily upgrades are most noticeable?", answer: "Ventilated seats, improved cabin quietness, and updated passenger controls are the most practical improvements." },
+  { question: "Do old accessories fit Juniper?", answer: "Many do not, especially mats, protectors, and organizers that depend on exact dimensions." },
+  { question: "Can older models retrofit core Juniper hardware features?", answer: "In most cases no, because major changes are hardware and packaging differences." },
+]);
+
 export default function JuniperVsOldPage() {
   return (
     <>
-      <StructuredData data={schemaData} />
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="⚖️"
@@ -60,6 +67,11 @@ export default function JuniperVsOldPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Tesla Model Y Juniper vs Old Model Y: Every Difference
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Juniper is the better new purchase overall thanks to comfort, cabin, and usability upgrades. Existing owners should upgrade only if those specific feature gains justify replacement cost.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           The &quot;Juniper&quot; refresh is the biggest Model Y update since launch. But is it worth upgrading
           from a 2020-2024 Model Y? Here&apos;s every change, explained honestly.

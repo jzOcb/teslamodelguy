@@ -28,7 +28,12 @@ const schemaData = generateArticleSchema({
   dateModified: "2026-03-01",
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Screen Protectors", url: "/reviews/screen-protectors" }, { name: "Best Screen Protectors", url: "/reviews/screen-protectors/best-tesla-model-y-juniper-screen-protector" }],
 });
-const faqSchema = generateFAQSchema([{ question: "Will a screen protector affect touch sensitivity?", answer: "No. All major options maintain full touch responsiveness." }, { question: "What size screen protector for 2026 Model Y Premium?", answer: "The 2026 Premium and Performance have a 16-inch screen, not 15.4 inches. Make sure to buy the 16-inch version." }]);
+const faqSchema = generateFAQSchema([
+  { question: "Will a screen protector affect touch sensitivity?", answer: "No. All major options maintain full touch responsiveness." },
+  { question: "What size screen protector for 2026 Model Y Premium?", answer: "The 2026 Premium and Performance have a 16-inch screen, not 15.4 inches. Make sure to buy the 16-inch version." },
+  { question: "Should I install protection before regular driving?", answer: "Yes, early installation helps avoid first-week scratches and coating wear." },
+  { question: "Do matte protectors reduce reflections enough to matter?", answer: "In bright climates, matte protectors usually provide a noticeable glare reduction." },
+]);
 
 export default function ScreenProtectorPage() {
   return (
@@ -45,6 +50,11 @@ export default function ScreenProtectorPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Best Screen Protector for Tesla Model Y Juniper (15.4&quot; Display)
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Spigen EZ Fit is the best overall Juniper screen protector for installation ease and daily usability. Verify your trim's screen size first, because 15.4-inch and 16-inch fitments are not interchangeable.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           The Juniper upgraded to a 15.4-inch touchscreen — which means your old Model Y screen
           protector won&apos;t fit. Here are the 4 best options for the new display.

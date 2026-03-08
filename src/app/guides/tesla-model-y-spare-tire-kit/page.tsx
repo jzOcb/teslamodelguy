@@ -34,7 +34,7 @@ const schemaData = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  {
+{
     question: "Why doesn't the Tesla Model Y come with a spare tire?",
     answer:
       "Tesla omits spare tires to save weight (better range), save cost, and free up trunk space. They provide a tire repair kit and access to Tesla Roadside Assistance instead. This is increasingly common across EVs and even some gas cars.",
@@ -64,6 +64,8 @@ const faqSchema = generateFAQSchema([
     answer:
       "Modern Spare's Continental tire is DOT-rated for 81 mph. StanceMagic recommends max 65 mph. EZ Spare is rated for 55 mph. In all cases, these are temporary — drive to the nearest tire shop and get your regular tire repaired or replaced.",
   },
+  { question: "Is a plug kit enough without a spare?", answer: "It helps with punctures, but a spare is better for blowouts or remote travel." },
+  { question: "Which kit is best for highway flexibility?", answer: "Modern Spare leads on included tool quality and top speed rating." },
 ]);
 
 export default function SpareTireKitPage() {
@@ -82,6 +84,11 @@ export default function SpareTireKitPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Best Spare Tire Kit for Tesla Model Y — Is It Worth $400+?
           </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Modern Spare is the strongest overall kit, StanceMagic is the value option, and EZ Spare is strong for Performance brake-clearance needs. If you skip a full spare, at least carry a plug kit and compressor.
+          </p>
+        </section>
           <p className="text-lg text-zinc-200 leading-relaxed">
             Every Tesla Model Y ships without a spare tire. Tesla says use the repair kit or call
             roadside assistance. But if you&apos;ve ever had a blowout on a highway or a flat in an

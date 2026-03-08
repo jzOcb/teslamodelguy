@@ -33,7 +33,7 @@ const schemaData = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  {
+{
     question: "Do old Model Y floor mats fit Juniper?",
     answer:
       "No. Pre-refresh Model Y mats are not a proper fit for the 2025-2026 Juniper interior.",
@@ -58,6 +58,8 @@ const faqSchema = generateFAQSchema([
     answer:
       "OEM and third-party mats can both fit well if Juniper-specific. The key is generation fitment, then choosing your preferred material, edge height, and style.",
   },
+  { question: "Is temporary use of old mats acceptable?", answer: "It can work short term, but expect reduced coverage and weaker spill containment." },
+  { question: "How can I verify proper Juniper fit quickly?", answer: "Check for explicit 2025-2026 labeling and current-generation owner photos." },
 ]);
 
 export default function OldMatsFitJuniperPage() {
@@ -74,6 +76,11 @@ export default function OldMatsFitJuniperPage() {
         <header className="mb-10">
           <p className="text-sm text-blue-400 font-medium mb-2">REVIEWS / FLOOR MATS</p>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Do Old Model Y Floor Mats Fit Juniper?</h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            No, old Model Y mats do not properly fit Juniper for true edge sealing and spill control. Even when they sit in place, coverage gaps reduce real-world protection.
+          </p>
+        </section>
           <p className="text-lg text-zinc-200 leading-relaxed">
             No. Pre-refresh Model Y floor mats are not dimensionally correct for the 2025-2026 Juniper interior. They may sit in place,
             but they do not seal edges correctly where water and dirt usually collect.

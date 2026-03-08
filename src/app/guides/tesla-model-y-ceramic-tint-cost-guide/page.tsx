@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
-import { generateArticleSchema } from "@/lib/seo";
+import {generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guides/tesla-model-y-ceramic-tint-cost-guide" },
@@ -138,10 +138,17 @@ const schemaData = generateArticleSchema({
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "Ceramic Tint Guide", url: "/guides/tesla-model-y-ceramic-tint-cost-guide" }],
 });
 
+const faqSchema = generateFAQSchema([
+  { question: "How much does ceramic tint usually cost on Juniper?", answer: "Quality installs commonly land between about $600 and $1,200 for full coverage, depending on market and film tier." },
+  { question: "Is ceramic worth it on the Model Y glass area?", answer: "For many owners in sunny climates, yes. It can noticeably reduce heat load and glare." },
+  { question: "Should I choose ceramic or carbon tint?", answer: "Ceramic generally offers stronger heat rejection while carbon can be a lower-cost compromise." },
+  { question: "Do I still need to check local tint laws?", answer: "Yes. Front-window legal limits vary by state and should be confirmed before installation." },
+]);
+
 export default function CeramicTintGuidePage() {
   return (
     <>
-      <StructuredData data={schemaData} />
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="🌤️"
@@ -154,6 +161,11 @@ export default function CeramicTintGuidePage() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Best Ceramic Tint for Tesla Model Y — Complete Cost Guide
         </h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Ceramic tint for Model Y Juniper usually costs about $600–$1,200 for quality full coverage, depending on film tier and market. For most owners, ceramic delivers meaningful comfort gains on the large glass area, especially in hotter climates.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 leading-relaxed">
           The Model Y&apos;s massive glass roof and panoramic windows look stunning — but they turn the cabin into a greenhouse without tint. After spending hundreds of hours researching and talking to owners, here&apos;s everything you need to know before booking an appointment.
         </p>

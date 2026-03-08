@@ -3,7 +3,7 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import GradientHero from "@/components/GradientHero";
 import StructuredData from "@/components/StructuredData";
-import { generateArticleSchema } from "@/lib/seo";
+import {generateArticleSchema, generateFAQSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guides/tesla-model-y-juniper-delivery-checklist" },
@@ -84,10 +84,17 @@ const schemaData = generateArticleSchema({
   breadcrumbs: [{ name: "Home", url: "/" }, { name: "Guides", url: "/guides" }, { name: "Delivery Checklist", url: "/guides/tesla-model-y-juniper-delivery-checklist" }],
 });
 
+const faqSchema = generateFAQSchema([
+  { question: "How long should I spend on delivery inspection?", answer: "Plan roughly 30-45 minutes to inspect exterior, interior, and key electronic functions without rushing." },
+  { question: "What should I check before signing?", answer: "Prioritize paint, panel alignment, glass condition, wheel/tire condition, and touchscreen/camera behavior." },
+  { question: "Can I refuse delivery if major defects are present?", answer: "Yes. If issues are significant, you can request correction or rescheduled delivery." },
+  { question: "Should I document everything at pickup?", answer: "Yes. Take photos and ensure defects are noted before acceptance." },
+]);
+
 export default function DeliveryChecklistPage() {
   return (
     <>
-      <StructuredData data={schemaData} />
+      <StructuredData data={[...schemaData, faqSchema]} />
     <article className="max-w-4xl mx-auto px-4 py-16">
       <GradientHero
         emoji="✅"
@@ -97,6 +104,11 @@ export default function DeliveryChecklistPage() {
       <header className="mb-10">
         <p className="text-sm text-blue-400 font-medium mb-2">GUIDES</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Tesla Delivery Checklist 2025-2026</h1>
+        <section className="bg-blue-950/30 border-l-4 border-blue-500 p-4 rounded-r-xl mt-4 mb-6">
+          <p className="text-base text-blue-100 leading-relaxed">
+            Use this delivery checklist to inspect paint, panel gaps, glass, interior trim, wheels, and core electronics before signing. Most delivery issues are easiest to document and resolve immediately on-site.
+          </p>
+        </section>
         <p className="text-lg text-zinc-200 mb-6">
           Use this checklist for any new Tesla delivery: Model 3, Model Y, Model S, Model X, or Cybertruck.
           Tesla build quality is better than in prior years, but delivery-day misses still happen. Inspect first,
